@@ -1,0 +1,66 @@
+{
+	"busstop": {
+    "name": "busstop",
+    "mapTo": "busstop",
+    "class": "Material",
+    "persistentId": "8e3c53c1-704c-4e1f-8cfb-ee5e10a18a94",
+    "Stages": [
+      {
+        "colorMap": "levels/mk_americanroad/art/shapes/busstop/busstop_d.dds",
+        "normalMap": "levels/mk_americanroad/art/shapes/busstop/busstop_n.dds",
+        "pixelSpecular": true,
+        "reflectivityMap": "levels/mk_americanroad/art/shapes/busstop/busstop_r.dds",
+        "roughnessFactor": 0.607767701,
+        "specularMap": "levels/mk_americanroad/art/shapes/busstop/busstop_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 64,
+    "alphaTest": true,
+    "annotation": "OBSTACLES",
+    "cubemap": "global_cubemap_metalblurred",
+    "groundType": "METAL",
+    "translucentBlendOp": "None"
+  },
+  "busstop_windows": {
+    "name": "busstop_windows",
+    "mapTo": "busstop_windows",
+    "class": "Material",
+    "persistentId": "26d4016f-8223-41ad-9c30-ec06563b43ae",
+    "Stages": [
+      {
+        "colorMap": "levels/mk_americanroad/art/shapes/busstop/busstop_d.dds",
+        "normalMap": "levels/mk_americanroad/art/shapes/busstop/busstop_n.dds",
+        "pixelSpecular": true,
+        "reflectivityMap": "levels/mk_americanroad/art/shapes/busstop/busstop_r.dds",
+        "roughnessFactor": 0.607767701,
+        "specularMap": "levels/mk_americanroad/art/shapes/busstop/busstop_s.dds",
+        "useAnisotropic": true
+      },
+      {
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null
+      },
+      {
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null
+      },
+      {
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null
+      }
+    ],
+    "alphaRef": 49,
+    "cubemap": "global_cubemap_metalblurred",
+    "groundType": "METAL",
+    "translucent": true,
+    "translucentRecvShadows": true
+  }
+}

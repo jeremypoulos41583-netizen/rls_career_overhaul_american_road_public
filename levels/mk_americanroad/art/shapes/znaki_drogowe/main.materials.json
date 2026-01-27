@@ -1,0 +1,17 @@
+{
+  "zabudow": {
+    "name": "zabudow",
+    "mapTo": "zabudow",
+    "class": "Material",
+    "persistentId": "fd9d1b92-e2ed-486d-a0aa-fd2cd1a3b324",
+    "Stages": [
+      {
+        "colorMap": "/levels/mk_americanroad/art/shapes/znaki_drogowe/zabudow/zabudow"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

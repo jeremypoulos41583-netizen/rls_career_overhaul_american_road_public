@@ -1,0 +1,19 @@
+{
+  "sign_speed60kph_speed_sign" : {
+    "name" : "sign_speed60kph_speed_sign",
+    "mapTo" : "speed_sign",
+    "class" : "Material",
+    "persistentId" : "66f95d7d-d311-4e0b-94e7-d005eadb63ed",
+    "Stages" : [
+      {
+        "diffuseColor" : [ 0.6399999856948853, 0.6399999856948853, 0.6399999856948853, 1 ],
+        "specular" : [ 0.25, 0.25, 0.25, 1 ],
+        "specularPower" : 50
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  }
+}

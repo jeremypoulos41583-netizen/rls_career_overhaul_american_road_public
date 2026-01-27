@@ -1,0 +1,54 @@
+{
+  "wall_wire1_concrete_plain": {
+    "name": "wall_wire1_concrete_plain",
+    "mapTo": "concrete_plain",
+    "class": "Material",
+    "persistentId": "f410defb-f24e-4a73-a72c-22dbdcc34a1a",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.639999986,
+          0.639999986,
+          0.639999986,
+          1
+        ],
+        "specular": [
+          0.5,
+          0.5,
+          0.5,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "wall_wire1_wirefence": {
+    "name": "wall_wire1_wirefence",
+    "mapTo": "wirefence",
+    "class": "Material",
+    "persistentId": "fff3e58e-080e-4e60-819b-b504b77b2334",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.639999986,
+          0.639999986,
+          0.639999986,
+          1
+        ],
+        "specular": [
+          0.5,
+          0.5,
+          0.5,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucent": true
+  }
+}

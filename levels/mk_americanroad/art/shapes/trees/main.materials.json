@@ -1,0 +1,51 @@
+{
+  "SOFT_COLLISION_GENERAL" : {
+    "name" : "SOFT_COLLISION_GENERAL",
+    "mapTo" : "SOFT_COLLISION_GENERAL",
+    "class" : "Material",
+    "persistentId" : "fb988423-8b8e-46a4-9b3b-9edd4a3d784b",
+    "Stages" : [ {}, {}, {}, {} ],
+    "groundDepth" : 1,
+    "groundType" : "leaves_thin"
+  },
+  "eca_bld_ornate_01_lod1" : {
+    "name" : "eca_bld_ornate_01_lod1",
+    "mapTo" : "eca_bld_ornate_01_lod1",
+    "class" : "Material",
+    "persistentId" : "707583f2-57c7-41f9-b05d-069e0ad03635",
+    "Stages" : [
+      {
+        "colorMap" : "levels/mk_americanroad/art/shapes/low.png",
+        "vertColor" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "materialTag0" : "beamng",
+    "materialTag1" : "building",
+    "materialTag2" : "east_coast_usa",
+    "translucentBlendOp" : "None"
+  },
+  "lod_vertcol" : {
+    "name" : "lod_vertcol",
+    "mapTo" : "lod_vertcol",
+    "class" : "Material",
+    "persistentId" : "ed4b786d-24b7-470b-905a-5a96b3e2bc47",
+    "Stages" : [
+      {
+        "vertColor" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation" : "BUILDINGS",
+    "materialTag0" : "beamng",
+    "materialTag1" : "building",
+    "materialTag2" : "east_coast_usa",
+    "specularColor0" : "0.1 0.1 0.1 0.1",
+    "specularStrength0" : "0.05",
+    "translucentBlendOp" : "None"
+  }
+}

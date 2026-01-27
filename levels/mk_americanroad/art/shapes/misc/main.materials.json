@@ -1,0 +1,18 @@
+{
+  "RoadBarrier_01b_RoadBarrier_01" : {
+    "name" : "RoadBarrier_01b_RoadBarrier_01",
+    "mapTo" : "RoadBarrier-01",
+    "class" : "Material",
+    "persistentId" : "c170adb1-ccdc-4b93-9898-10d01c7839ac",
+    "Stages" : [
+      {
+        "diffuseColor" : [ 0.6399999856948853, 0.6399999856948853, 0.6399999856948853, 1 ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided" : true,
+    "translucentBlendOp" : "None"
+  }
+}

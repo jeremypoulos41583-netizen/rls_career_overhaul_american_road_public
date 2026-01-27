@@ -1,0 +1,68 @@
+{
+  "oak_leaves_02": {
+    "name": "oak_leaves_02",
+    "mapTo": "oak_leaves_02",
+    "class": "Material",
+    "persistentId": "21c59c4c-3e55-4591-a9f3-9e1652ff7679",
+    "Stages": [
+      {
+        "colorMap": "/levels/mk_americanroad/art/shapes/trees/trees_oak/oak_leaves02_d.dds",
+        "minnaertConstant": 0,
+        "normalMap": "/levels/mk_americanroad/art/shapes/trees/trees_oak/oak_leaves_n.dds",
+        "specular": [
+          0.992156982,
+          0.992156982,
+          0.992156982,
+          1
+        ],
+        "specularMap": "/levels/mk_americanroad/art/shapes/trees/trees_oak/oak_leaves_s.dds",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 35,
+    "alphaTest": true,
+    "annotation": "NATURE",
+    "doubleSided": true,
+    "groundType": "LEAVES_THIN",
+    "materialTag0": "vegetation",
+    "materialTag1": "beamng",
+    "materialTag2": "Natural",
+    "materialTag3": "vegetation",
+    "subSurfaceColor0": "0.466667 1 0 1",
+    "subSurfaceRolloff0": "1"
+  }
+
+"Oak_branch_02" : {
+    "name" : "Oak_branch_02",
+    "mapTo" : "Oak_branch_02",
+    "class" : "Material",
+    "persistentId" : "898e9845-04ad-411f-b949-1394a08f8c57",
+    "Stages" : [
+      {
+        "colorMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_branch02_d.dds",
+        "detailNormalMapStrength" : 1.5,
+        "detailScale" : [ 0.1000000014901161, 0.1000000014901161 ],
+        "diffuseColor" : [ 0.9921569228172302, 0.9921569228172302, 0.9921569228172302, 1 ],
+        "normalMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_branch02_n.dds",
+        "specularMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_branch02_s.dds",
+        "specularPower" : 71
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 75,
+    "alphaTest" : true,
+    "doubleSided" : true,
+    "groundType" : "WOOD",
+    "materialTag0" : "beamng",
+    "materialTag1" : "beamng",
+    "materialTag2" : "Natural",
+    "materialTag3" : "vegetation",
+    "materialTag4" : "BNG_sky",
+    "specularStrength0" : "0.392157"
+  },
+}

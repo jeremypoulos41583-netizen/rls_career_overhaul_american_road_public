@@ -1,0 +1,31 @@
+{
+  "cypress" : {
+    "name" : "cypress",
+    "mapTo" : "cypress",
+    "class" : "Material",
+    "persistentId" : "a8a3499b-e779-46e6-9cbd-aa23529559f2",
+    "Stages" : [
+      {
+        "colorMap" : "cypress_d.dds",
+        "minnaertConstant" : -2,
+        "normalMap" : "cypress_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "cypress_s.dds",
+        "specularPower" : 1,
+        "subSurfaceColor" : [ 1, 0.8235290050506592, 0, 1 ],
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 93,
+    "alphaTest" : true,
+    "annotation" : "NATURE",
+    "doubleSided" : true,
+    "materialTag0" : "beamng",
+    "materialTag1" : "vegetation",
+    "materialTag2" : "Natural",
+    "materialTag3" : "Natural"
+  }
+}

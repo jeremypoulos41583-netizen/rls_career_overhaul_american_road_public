@@ -1,0 +1,322 @@
+{
+    "version": 1,
+    "routes":[
+	{"routeID":"100",
+            "variance":"a",
+            "direction":"NC Mall",
+            "routeColor": "#ff0000",
+            "vehicle" : {
+                "model": "citybus",
+                "config": "base"
+            },
+            "tasklist":[
+                "stop_ncairport",
+                "stop_nccentral2"
+				"stop_ncmart"
+            ],
+            "spawnLocation": {
+                "pos": {"x": 5539.498,"y": -707.963,"z": -545.892},
+                "rotAngAxisF": {"x": -0.000,"y": -0.000,"z": 156.182,"w": 145.000}
+            },
+            "previews":[
+                "100a.png"
+            ]
+        },
+		{"routeID":"100",
+            "variance":"b",
+            "direction":"NC Airport",
+            "routeColor": "#ff0000",
+            "vehicle" : {
+                "model": "citybus",
+                "config": "base"
+            },
+            "tasklist":[
+                "stop_ncmart",
+				"stop_nccentral1",
+				"stop_ncairport"
+            ],
+            "spawnLocation": {
+                "pos": {"x": 5404.238,"y": -1655.776,"z": -547.393},
+                "rotAngAxisF": {"x": -0.000,"y": -0.000,"z": -18.154,"w": 0.000}
+            },
+            "previews":[
+                "100b.png"
+            ]
+        },
+        {"routeID":"101",
+            "variance":"a",
+            "direction":"NC Circle",
+            "routeColor": "#43d400",
+            "vehicle" : {
+                "model": "citybus",
+                "config": "base"
+            },
+            "tasklist":[
+                "stop_nccentral2",
+                "stop_nchospital"
+				"stop_ncbank",
+				"stop_ncupper",
+				"stop_ncpetshop1",
+				"stop_nccentral3"
+            ],
+            "spawnLocation": {
+                "pos": {"x": 5427.832,"y": -1038.674,"z": -545.026},
+                "rotAngAxisF": {"x": -0.000,"y": -0.000,"z": 51.110,"w": 48.000}
+            },
+			"navhelp":{
+                "stop_ncbank":["wp1","wp7"],
+			    "stop_ncpetshop1":["wp6"]
+            },
+            "previews":[
+                "101.png"
+            ]
+        },
+        {"routeID":"101",
+            "variance":"b",
+            "direction":"NC Circle | Tower",
+            "routeColor": "#43d400",
+            "vehicle" : {
+                "model": "citybus",
+                "config": "base"
+            },
+            "tasklist":[
+                "stop_nccentral2",
+                "stop_nchospital"
+				"stop_ncbank",
+				"stop_ncupper",
+				"stop_nctower",
+				"stop_nccentral1"
+            ],
+            "spawnLocation": {
+                "pos": {"x": 5427.832,"y": -1038.674,"z": -545.026},
+                "rotAngAxisF": {"x": -0.000,"y": -0.000,"z": 51.110,"w": 48.000}
+            },
+			"navhelp":{
+                "stop_ncbank":["wp1","wp7"],
+				"stop_nctower":["wp14","wp2","wp16"]
+            },
+            "previews":[
+                "101.png"
+            ]
+        },
+		{"routeID":"101",
+            "variance":"c",
+            "direction":"NC Circle | Lake",
+            "routeColor": "#43d400",
+            "vehicle" : {
+                "model": "citybus",
+                "config": "base"
+            },
+            "tasklist":[
+                "stop_nccentral2",
+                "stop_nclake",
+				"stop_ncpetshop2",
+				"stop_ncbank",
+				"stop_nchospital",
+				"stop_nccentral3"
+            ],
+            "spawnLocation": {
+                "pos": {"x": 5427.832,"y": -1038.674,"z": -545.026},
+                "rotAngAxisF": {"x": -0.000,"y": -0.000,"z": 51.110,"w": 48.000}
+            },
+			"navhelp":{
+				"stop_ncbank":["wp200","wp1","wp7"],
+                "stop_nchospital":["wp9","wp8","wp4","wp201"],
+				"stop_nccentral3":["wp5"]
+            },
+            "previews":[
+                "101.png"
+            ]
+        },
+		{"routeID":"102",
+            "variance":"a",
+            "direction":"Eastdale",
+            "routeColor": "#0000ff",
+            "vehicle" : {
+                "model": "citybus",
+                "config": "base"
+            },
+            "tasklist":[
+                "stop_nccentral2",
+                "stop_maryville2",
+				"stop_eastdale_ap1",
+				"stop_eastdale_church1",
+				"stop_eastdale_hw1",
+				"stop_eastdale_suburbs2"
+            ],
+            "spawnLocation": {
+                "pos": {"x": 5427.832,"y": -1038.674,"z": -545.026},
+                "rotAngAxisF": {"x": -0.000,"y": -0.000,"z": 51.110,"w": 48.000}
+            },
+			"navhelp":{
+				"stop_eastdale_suburbs2":["wp11"]
+            },
+            "previews":[
+                "102a.png"
+            ]
+        }
+		{"routeID":"102",
+            "variance":"b",
+            "direction":"New Cargill",
+            "routeColor": "#0000ff",
+            "vehicle" : {
+                "model": "citybus",
+                "config": "base"
+            },
+            "tasklist":[
+                "stop_eastdale_suburbs1",
+                "stop_eastdale_hw2",
+				"stop_eastdale_church2",
+				"stop_eastdale_ap2",
+				"stop_maryville1",
+				"stop_nccentral1"
+            ],
+            "spawnLocation": {
+                "pos": {"x": 5492.077,"y": -5794.483,"z": -548.549},
+                "rotAngAxisF": {"x": -0.000,"y": -0.000,"z": 79.741,"w": 95.000}
+            },
+			"navhelp":{
+                "stop_eastdale_hw2":["wp3"],
+            },
+            "previews":[
+                "102b.png"
+            ]
+        },
+		{"routeID":"103",
+            "variance":"a",
+            "direction":"Green Ridge",
+            "routeColor": "#fcba03",
+            "vehicle" : {
+                "model": "citybus",
+                "config": "base"
+            },
+            "tasklist":[
+                "stop_nccentral2",
+				"stop_maryville2",
+                "stop_bolford2",
+				"stop_greenridge_downtown1",
+				"stop_greenridge_suburbs1",
+				],
+            "spawnLocation": {
+                "pos": {"x": 5427.832,"y": -1038.674,"z": -545.026},
+                "rotAngAxisF": {"x": -0.000,"y": -0.000,"z": 51.110,"w": 48.000}
+            },
+			"navhelp":{
+                "stop_bolford2":["wp15"],
+            },
+            "previews":[
+                "103a.png"
+            ]
+        },
+		{"routeID":"103",
+            "variance":"b",
+            "direction":"New Cargill",
+            "routeColor": "#fcba03",
+            "vehicle" : {
+                "model": "citybus",
+                "config": "base"
+            },
+            "tasklist":[
+                "stop_greenridge_suburbs1",
+                "stop_greenridge_downtown2",
+				"stop_bolford1",
+				"stop_maryville1",
+				"stop_nccentral1",
+				],
+            "spawnLocation": {
+                "pos": {"x": -2786.420,"y": 1551.755,"z": -552.042},
+                "rotAngAxisF": {"x": -0.082,"y": 0.142,"z": 61.024,"w": 65.000}
+            },
+			"navhelp":{
+                "stop_greenridge_downtown2":["wp12"],
+				"stop_maryville1":["wp15"]
+            },
+            "previews":[
+                "103b.png"
+            ]
+        },
+		{"routeID":"104",
+            "variance":"a",
+            "direction":"Green Ridge",
+            "routeColor": "#ff5703",
+            "vehicle" : {
+                "model": "citybus",
+                "config": "base"
+            },
+            "tasklist":[
+                "stop_nccentral1",
+				"stop_ncpetshop2",
+				"stop_pancakes1",
+                "stop_sparena",
+				"stop_dirttrack2",
+				"stop_greenridge_downtown1",
+				"stop_greenridge_suburbs1",
+				"stop_racetrack"
+				],
+            "spawnLocation": {
+                "pos": {"x": 5427.832,"y": -1038.674,"z": -545.026},
+                "rotAngAxisF": {"x": -0.000,"y": -0.000,"z": 51.110,"w": 48.000}
+            },
+			"navhelp":{
+                "stop_dirttrack2":["wp20"]
+            },
+            "previews":[
+                "103a.png"
+            ]
+        },
+		{"routeID":"104",
+            "variance":"b",
+            "direction":"New Cargill",
+            "routeColor": "#ff5703",
+            "vehicle" : {
+                "model": "citybus",
+                "config": "base"
+            },
+            "tasklist":[
+                "stop_racetrack",
+                "stop_greenridge_suburbs2",
+				"stop_greenridge_downtown2",
+				"stop_dirttrack1",
+				"stop_sparena",
+				"stop_pancakes2",
+				"stop_ncpetshop1",
+				"stop_nccentral2"
+				],
+            "spawnLocation": {
+                "pos": {"x": -1663.263,"y": -1121.342,"z": -508.667},
+                "rotAngAxisF": {"x": -0.000,"y": -0.000,"z": 47.406,"w": 50.000}
+            },
+			"navhelp":{
+                "stop_pancakes2":["wp20","wp70","wp71","wp72","wp73","wp84","wp83","wp74","wp82","wp75","wp81","wp76","wp77","wp78","wp79","wp80"]
+            },
+            "previews":[
+                "103b.png"
+            ]
+        },
+		{"routeID":"227",
+            "variance":"a",
+            "direction":"Mountain Hotel",
+            "routeColor": "#c403ff",
+            "vehicle" : {
+                "model": "citybus",
+                "config": "base"
+            },
+            "tasklist":[
+                "stop_nccentral1",
+				"stop_ncpetshop2",
+				"stop_pancakes1",
+                "stop_mtnhotel",
+				"stop_pancakes2",
+				"stop_ncpetshop1",
+				"stop_nccentral2"
+				],
+            "spawnLocation": {
+                "pos": {"x": 5427.832,"y": -1038.674,"z": -545.026},
+                "rotAngAxisF": {"x": -0.000,"y": -0.000,"z": 51.110,"w": 48.000}
+            },
+            "previews":[
+                "227.png"
+            ]
+        }
+    ]
+}

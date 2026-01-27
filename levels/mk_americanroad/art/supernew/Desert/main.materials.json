@@ -1,0 +1,19 @@
+{
+  "cactus_1_Cactus_001" : {
+    "name" : "cactus_1_Cactus_001",
+    "mapTo" : "Cactus_001",
+    "class" : "Material",
+    "persistentId" : "4febad0b-4bb6-403d-8c15-ff0809060067",
+    "Stages" : [
+      {
+        "colorMap" : "cactus",
+        "specular" : [ 0.25, 0.25, 0.25, 1 ],
+        "specularPower" : 50
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  }
+}

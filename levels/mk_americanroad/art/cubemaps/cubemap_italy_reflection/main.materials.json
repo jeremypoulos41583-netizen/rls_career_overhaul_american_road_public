@@ -1,0 +1,24 @@
+{
+  "cubemap_italy_reflection" : {
+    "name" : "cubemap_italy_reflection",
+    "class" : "CubemapData",
+    "cubeFace" : [
+      "/levels/mk_americanroad/art/cubemaps/cubemap_italy_reflection/cubemap/skybox0.hdr.dds",
+      "/levels/mk_americanroad/art/cubemaps/cubemap_italy_reflection/cubemap/skybox1.hdr.dds",
+      "/levels/mk_americanroad/art/cubemaps/cubemap_italy_reflection/cubemap/skybox2.hdr.dds",
+      "/levels/mk_americanroad/art/cubemaps/cubemap_italy_reflection/cubemap/skybox3.hdr.dds",
+      "/levels/mk_americanroad/art/cubemaps/cubemap_italy_reflection/cubemap/skybox4.hdr.dds",
+      "/levels/mk_americanroad/art/cubemaps/cubemap_italy_reflection/cubemap/skybox5.hdr.dds"
+    ]
+  },
+  "italy_reflection" : {
+    "name" : "italy_reflection",
+    "mapTo" : "unmapped_mat",
+    "class" : "Material",
+    "Stages" : [ {}, {}, {}, {} ],
+    "cubemap" : "cubemap_italy_reflection",
+    "materialTag0" : "beamng",
+    "materialTag1" : "Natural",
+    "materialTag2" : "BNG_sky"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "eca_bld_bridge_concrete_22m_eca_road_sidewalk_concrete_annotation_sidebars" : {
+    "name" : "eca_bld_bridge_concrete_22m_eca_road_sidewalk_concrete_annotation_sidebars",
+    "mapTo" : "eca_road_sidewalk_concrete_annotation_sidebars",
+    "class" : "Material",
+    "persistentId" : "d9fe76aa-95a7-4bf3-8cbc-a2d29eb8a990",
+    "Stages" : [
+      {
+        "diffuseColor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1 ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided" : true,
+    "translucentBlendOp" : "None"
+  }
+}

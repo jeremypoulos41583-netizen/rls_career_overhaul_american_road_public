@@ -1,0 +1,31 @@
+{
+  "binaryFormat": "version(char), size(unsigned int), heightMap(heightMapSize * heightMapItemSize), layerMap(layerMapSize * layerMapItemSize), layerTextureMap(layerMapSize * layerMapItemSize), materialNames",
+  "datafile": "/levels/mk_americanroad/terenia24.ter",
+  "heightMapItemSize": 2,
+  "heightMapSize": 67108864,
+  "heightmapImage": "/levels/mk_americanroad/terenia24.terrainheightmap.png",
+  "layerMapItemSize": 1,
+  "layerMapSize": 67108864,
+  "materials": [
+    "Grass",
+    "Rockmale",
+    "groundmodel_asphalt1",
+    "rocks_large",
+    "derby_dirt",
+    "Mud",
+    "RockyDirt",
+    "Dirt",
+    "Rockmale",
+    "Wielka skala",
+    "BeachSand",
+    "Grass2",
+    "Dirtpolowy",
+    "Concrete",
+    "Grasspole",
+    "blototrawne",
+    "dirt_loose",
+    "Rock_cliff"
+  ],
+  "size": 8192,
+  "version": 9
+}

@@ -1,0 +1,199 @@
+{
+  "Moss_01" : {
+    "name" : "Moss_01",
+    "mapTo" : "Moss_01",
+    "class" : "Material",
+    "persistentId" : "762522b3-8630-4db3-be36-3cc1819c165e",
+    "Stages" : [
+      {
+        "baseColorFactor" : [ 0.9960784912109375, 0.9960784912109375, 0.9960784912109375, 1 ],
+        "baseColorMap" : "/levels/mk_americanroad/art/shapes/trees/trees_oak/Moss_d.dds",
+        "detailNormalMapStrength" : 1.5,
+        "detailScale" : [ 0.1000000014901161, 0.1000000014901161 ],
+        "normalMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/Moss_n.dds",
+        "specularMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/Moss_s.dds",
+        "specularPower" : 1
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 168,
+    "alphaTest" : true,
+    "doubleSided" : true,
+    "groundType" : "GRASS",
+    "materialTag0" : "beamng",
+    "materialTag1" : "beamng",
+    "materialTag2" : "Natural",
+    "materialTag3" : "vegetation",
+    "specularStrength0" : "0.392157",
+    "translucentZWrite" : true,
+    "version" : 1
+  },
+  "Oak_bark_01" : {
+    "name" : "Oak_bark_01",
+    "mapTo" : "Oak_bark_01",
+    "class" : "Material",
+    "persistentId" : "deea0fd0-e378-4269-adf6-866838feeff1",
+    "Stages" : [
+      {
+        "colorMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_bark02_d.dds",
+        "detailNormalMapStrength" : 0.5,
+        "detailScale" : [ 1, 1 ],
+        "diffuseColor" : [ 0.8627449870109558, 0.8627449870109558, 0.8627449870109558, 1 ],
+        "normalMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_bark02_n.dds",
+        "specularMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_bark02_s.dds",
+        "specularPower" : 1
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType" : "WOOD",
+    "materialTag0" : "beamng",
+    "materialTag1" : "beamng",
+    "materialTag2" : "Natural",
+    "materialTag3" : "vegetation",
+    "roundType" : "WOOD",
+    "specularStrength0" : "0.392157"
+  },
+  "Oak_branch_01" : {
+    "name" : "Oak_branch_01",
+    "mapTo" : "Oak_branch_01",
+    "class" : "Material",
+    "persistentId" : "6eaadf6b-9fcb-47b2-83a5-eb1d2dddad9c",
+    "Stages" : [
+      {
+        "colorMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_branch_d.dds",
+        "detailNormalMapStrength" : 1.5,
+        "detailScale" : [ 0.1000000014901161, 0.1000000014901161 ],
+        "diffuseColor" : [ 0.9921569228172302, 0.9921569228172302, 0.9921569228172302, 1 ],
+        "normalMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_branch_n.dds",
+        "specularMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_branch_s.dds",
+        "specularPower" : 71
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 75,
+    "alphaTest" : true,
+    "doubleSided" : true,
+    "groundType" : "WOOD",
+    "materialTag0" : "beamng",
+    "materialTag1" : "beamng",
+    "materialTag2" : "Natural",
+    "materialTag3" : "vegetation",
+    "materialTag4" : "BNG_sky",
+    "specularStrength0" : "0.392157"
+  },
+  "Oak_branch_02" : {
+    "name" : "Oak_branch_02",
+    "mapTo" : "Oak_branch_02",
+    "class" : "Material",
+    "persistentId" : "898e9845-04ad-411f-b949-1394a08f8c57",
+    "Stages" : [
+      {
+        "colorMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_branch02_d.dds",
+        "detailNormalMapStrength" : 1.5,
+        "detailScale" : [ 0.1000000014901161, 0.1000000014901161 ],
+        "diffuseColor" : [ 0.9921569228172302, 0.9921569228172302, 0.9921569228172302, 1 ],
+        "normalMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_branch02_n.dds",
+        "specularMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_branch02_s.dds",
+        "specularPower" : 71
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 75,
+    "alphaTest" : true,
+    "doubleSided" : true,
+    "groundType" : "WOOD",
+    "materialTag0" : "beamng",
+    "materialTag1" : "beamng",
+    "materialTag2" : "Natural",
+    "materialTag3" : "vegetation",
+    "materialTag4" : "BNG_sky",
+    "specularStrength0" : "0.392157"
+  },
+  "oak_leaves_01" : {
+    "name" : "oak_leaves_01",
+    "mapTo" : "oak_leaves_01",
+    "class" : "Material",
+    "persistentId" : "8e283949-b0df-43fd-9dbd-108b9b743618",
+    "Stages" : [
+      {
+        "baseColorMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_leaves01_d.dds",
+        "normalMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_leaves_n.dds",
+        "specularMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_leaves_s.dds",
+        "specularPower" : 30,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 100,
+    "alphaTest" : true,
+    "doubleSided" : true,
+    "groundType" : "LEAVES_THIN",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vegetation",
+    "materialTag2" : "Natural",
+    "version" : 1
+  },
+  "oak_leaves_02" : {
+    "name" : "oak_leaves_02",
+    "mapTo" : "oak_leaves_02",
+    "class" : "Material",
+    "persistentId" : "21c59c4c-3e55-4591-a9f3-9e1652ff7679",
+    "Stages" : [
+      {
+        "baseColorMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_leaves02_d.dds",
+        "normalMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_leaves_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_leaves_s.dds",
+        "specularPower" : 30,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 100,
+    "alphaTest" : true,
+    "doubleSided" : true,
+    "groundType" : "LEAVES_THIN",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vegetation",
+    "materialTag2" : "Natural",
+    "version" : 1
+  },
+  "oak_leaves_03" : {
+    "name" : "oak_leaves_03",
+    "mapTo" : "oak_leaves_03",
+    "class" : "Material",
+    "persistentId" : "fc5231ad-0426-4ed0-a31a-7333f972a0dc",
+    "Stages" : [
+      {
+        "baseColorMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_leaves03_d.dds",
+        "normalMap" : "levels/mk_americanroad/art/shapes/trees/trees_oak/oak_leaves_n.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 30,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 100,
+    "alphaTest" : true,
+    "doubleSided" : true,
+    "groundType" : "LEAVES_THIN",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vegetation",
+    "materialTag2" : "Natural",
+    "version" : 1
+  }
+}

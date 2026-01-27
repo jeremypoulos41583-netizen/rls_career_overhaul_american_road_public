@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.76.0 commit date:2015-11-03, commit time:10:56, hash:f337fea</authoring_tool>
+    </contributor>
+    <created>2016-03-14T12:51:26</created>
+    <modified>2016-03-14T12:51:26</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="eca_bld_brick_brown-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="eca_bld_woodcladding_01_a-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="eca_bld_doors_bare-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="eca_bld_tiles_01_dark-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="eca_bld_concrete_01-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="eca_bld_decking_01-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="eca_bld_moderncorrugated_tin_grey-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="eca_bld_brick_red-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="eca_bld_stone_clean-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="eca_bld_windows-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="ind_bld__2__extras-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="eca_bld_metal_01_red-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="ColorEffectR27G177B88-material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.08561849 0.5550975 0.2773633 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="eca_bld_brick_brown-material" name="eca_bld_brick_brown">
+      <instance_effect url="#eca_bld_brick_brown-effect"/>
+    </material>
+    <material id="eca_bld_woodcladding_01_a-material" name="eca_bld_woodcladding_01_a">
+      <instance_effect url="#eca_bld_woodcladding_01_a-effect"/>
+    </material>
+    <material id="eca_bld_doors_bare-material" name="eca_bld_doors_bare">
+      <instance_effect url="#eca_bld_doors_bare-effect"/>
+    </material>
+    <material id="eca_bld_tiles_01_dark-material" name="eca_bld_tiles_01_dark">
+      <instance_effect url="#eca_bld_tiles_01_dark-effect"/>
+    </material>
+    <material id="eca_bld_concrete_01-material" name="eca_bld_concrete_01">
+      <instance_effect url="#eca_bld_concrete_01-effect"/>
+    </material>
+    <material id="eca_bld_decking_01-material" name="eca_bld_decking_01">
+      <instance_effect url="#eca_bld_decking_01-effect"/>
+    </material>
+    <material id="eca_bld_moderncorrugated_tin_grey-material" name="eca_bld_moderncorrugated_tin_grey">
+      <instance_effect url="#eca_bld_moderncorrugated_tin_grey-effect"/>
+    </material>
+    <material id="eca_bld_brick_red-material" name="eca_bld_brick_red">
+      <instance_effect url="#eca_bld_brick_red-effect"/>
+    </material>
+    <material id="eca_bld_stone_clean-material" name="eca_bld_stone_clean">
+      <instance_effect url="#eca_bld_stone_clean-effect"/>
+    </material>
+    <material id="eca_bld_windows-material" name="eca_bld_windows">
+      <instance_effect url="#eca_bld_windows-effect"/>
+    </material>
+    <material id="ind_bld__2__extras-material" name="ind_bld__2__extras">
+      <instance_effect url="#ind_bld__2__extras-effect"/>
+    </material>
+    <material id="eca_bld_metal_01_red-material" name="eca_bld_metal_01_red">
+      <instance_effect url="#eca_bld_metal_01_red-effect"/>
+    </material>
+    <material id="ColorEffectR27G177B88-material-material" name="ColorEffectR27G177B88-material">
+      <instance_effect url="#ColorEffectR27G177B88-material-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="ind_bld_a300-mesh" name="ind_bld_a300">
+      <mesh>
+        <source id="ind_bld_a300-mesh-positions">
+          <float_array id="ind_bld_a300-mesh-positions-array" count="30">6.199997 3 4.25 -6.2 0 5.839443 -6.2 -3 4.25 -6.2 3 4.25 6.199997 0 5.839443 6.199997 -3 4.25 -6 -3 -3 -6 3 -3 6 3 -3 6 -3 -3</float_array>
+          <technique_common>
+            <accessor source="#ind_bld_a300-mesh-positions-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ind_bld_a300-mesh-normals">
+          <float_array id="ind_bld_a300-mesh-normals-array" count="33">0 -1 0 1 0 0 0 1 0 -1 0 0 0.9996199 0 -0.02757525 -0.9996197 0 -0.02757567 0 0.4681656 0.8836408 0 -0.4681656 0.8836408 0 -1 0 0 0.4681656 0.8836408 0 -0.4681656 0.8836408</float_array>
+          <technique_common>
+            <accessor source="#ind_bld_a300-mesh-normals-array" count="11" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ind_bld_a300-mesh-map-0">
+          <float_array id="ind_bld_a300-mesh-map-0-array" count="84">3.75142 3.050305 -10.85534 3.050306 -10.85534 -5.470302 11.05479 3.050307 7.403106 4.985023 3.75142 3.050305 11.05479 3.050307 11.0548 -5.470299 25.66155 -5.47029 -10.85534 3.050306 -14.50703 4.985022 -18.15872 3.050303 11.05479 3.050307 3.75142 3.050305 3.751423 -5.470302 -10.85534 3.050306 -18.15872 3.050303 -18.15872 -5.470299 14.09535 5.89891 -13.09524 5.899182 -13.09534 -3.308559 14.09525 -3.308845 14.09536 5.898906 -13.09523 5.899187 3.751423 -5.470302 3.75142 3.050305 -10.85534 -5.470302 25.66155 3.050313 11.05479 3.050307 25.66155 -5.47029 11.0548 -5.470299 11.05479 3.050307 3.751423 -5.470302 -10.85534 -5.470302 -10.85534 3.050306 -18.15872 -5.470299 14.09526 -3.30884 14.09535 5.89891 -13.09534 -3.308559 -13.09532 -3.30856 14.09525 -3.308845 -13.09523 5.899187</float_array>
+          <technique_common>
+            <accessor source="#ind_bld_a300-mesh-map-0-array" count="42" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ind_bld_a300-mesh-vertices">
+          <input semantic="POSITION" source="#ind_bld_a300-mesh-positions"/>
+        </vertices>
+        <polylist material="eca_bld_brick_brown-material" count="10">
+          <input semantic="VERTEX" source="#ind_bld_a300-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ind_bld_a300-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ind_bld_a300-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>5 0 0 2 0 1 6 0 2 0 1 3 4 1 4 5 1 5 0 2 6 8 2 7 7 2 8 2 3 9 1 3 10 3 3 11 0 4 12 5 4 13 9 4 14 2 5 15 3 5 16 7 5 17 9 8 24 5 8 25 6 8 26 3 2 27 0 2 28 7 2 29 8 4 30 0 4 31 9 4 32 6 5 33 2 5 34 7 5 35</p>
+        </polylist>
+        <polylist material="eca_bld_tiles_01_dark-material" count="4">
+          <input semantic="VERTEX" source="#ind_bld_a300-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ind_bld_a300-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ind_bld_a300-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 </vcount>
+          <p>1 6 18 4 6 19 0 6 20 5 7 21 4 7 22 1 7 23 3 9 36 1 9 37 0 9 38 2 10 39 5 10 40 1 10 41</p>
+        </polylist>
+      </mesh>
+      <extra><technique profile="MAYA"><double_sided>1</double_sided></technique></extra>
+    </geometry>
+    <geometry id="Colmesh-1-mesh" name="Colmesh-1">
+      <mesh>
+        <source id="Colmesh-1-mesh-positions">
+          <float_array id="Colmesh-1-mesh-positions-array" count="60">6.199997 3 4.25 -6.2 0 5.839443 -6.2 -3 4.25 -6.2 3 4.25 6.199997 0 5.839443 6.199997 -3 4.25 -6 -3 -3 -6 3 -3 6 3 -3 6 -3 -3 6 3 3.544176 -6 3 3.544177 -6 -3 3.544177 6 -3 3.544176 6.199997 0 5.789443 6 0 -3 6 0 5.083619 -6.2 0 5.789443 -6 0 -3 -6 0 5.08362</float_array>
+          <technique_common>
+            <accessor source="#Colmesh-1-mesh-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Colmesh-1-mesh-normals">
+          <float_array id="Colmesh-1-mesh-normals-array" count="69">0 -1 0 1 -1.27155e-5 0 0 1 0 -1 0 0 0.9528433 0.1385452 -0.2699908 -0.952842 -0.1385469 -0.2699945 0 0.4681656 0.8836408 0 -0.4681656 0.8836408 0 -1 2.17928e-7 1 -1.57302e-7 0 -1 1.57302e-7 0 0.9528433 -0.1385452 -0.2699908 1 0 0 -0.952842 0.1385465 -0.2699944 -1 -3.14603e-7 0 -1 2.78152e-6 0 1 7.9472e-6 0 0.9528435 0.138545 -0.2699903 -0.9528421 -0.1385471 -0.269994 0 0.4681656 0.8836408 0 -0.4681656 0.8836408 0.9528435 -0.138545 -0.2699903 -0.9528421 0.1385471 -0.269994</float_array>
+          <technique_common>
+            <accessor source="#Colmesh-1-mesh-normals-array" count="23" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Colmesh-1-mesh-map-0">
+          <float_array id="Colmesh-1-mesh-map-0-array" count="192">3.751421 -1.209998 -10.85534 -1.209998 -10.85534 -5.470302 7.403106 4.985023 3.75142 3.050305 7.403106 3.050306 11.0548 -1.209996 11.0548 -5.470299 25.66155 -5.47029 -14.50703 4.985022 -18.15872 3.050303 -14.50703 3.050305 7.403109 -1.209997 7.403106 3.050306 3.75142 3.050305 -14.50703 -1.209998 -14.50703 3.050305 -18.15872 3.050303 14.09535 5.89891 -13.09524 5.899182 -13.09534 -3.308559 14.09525 -3.308845 14.09536 5.898906 -13.09523 5.899187 3.75142 3.050305 -10.85534 3.050306 -10.85534 -1.209998 11.05479 3.050307 11.0548 -1.209996 25.66155 -1.209988 7.403112 -5.470301 7.403109 -1.209997 3.751421 -1.209998 -14.50703 -5.470301 -14.50703 -1.209998 -18.15872 -1.209998 11.05479 3.050307 7.403106 3.050306 7.403109 -1.209997 11.0548 -1.209996 7.403109 -1.209997 7.403112 -5.470301 -10.85534 3.050306 -14.50703 3.050305 -14.50703 -1.209998 -10.85534 -1.209998 -14.50703 -1.209998 -14.50703 -5.470301 -10.85534 3.050306 -14.50703 4.985022 -14.50703 3.050305 11.05479 3.050307 7.403106 4.985023 7.403106 3.050306 3.751423 -5.470302 3.751421 -1.209998 -10.85534 -5.470302 25.66155 -1.209988 11.0548 -1.209996 25.66155 -5.47029 3.751421 -1.209998 7.403109 -1.209997 3.75142 3.050305 -18.15872 -1.209998 -14.50703 -1.209998 -18.15872 3.050303 14.09526 -3.30884 14.09535 5.89891 -13.09534 -3.308559 -13.09532 -3.30856 14.09525 -3.308845 -13.09523 5.899187 3.751421 -1.209998 3.75142 3.050305 -10.85534 -1.209998 25.66155 3.050313 11.05479 3.050307 25.66155 -1.209988 3.751423 -5.470302 7.403112 -5.470301 3.751421 -1.209998 -18.15872 -5.470299 -14.50703 -5.470301 -18.15872 -1.209998 11.0548 -1.209996 11.05479 3.050307 7.403109 -1.209997 11.0548 -5.470299 11.0548 -1.209996 7.403112 -5.470301 -10.85534 -1.209998 -10.85534 3.050306 -14.50703 -1.209998 -10.85534 -5.470302 -10.85534 -1.209998 -14.50703 -5.470301</float_array>
+          <technique_common>
+            <accessor source="#Colmesh-1-mesh-map-0-array" count="96" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Colmesh-1-mesh-vertices">
+          <input semantic="POSITION" source="#Colmesh-1-mesh-positions"/>
+        </vertices>
+        <polylist material="ColorEffectR27G177B88-material-material" count="32">
+          <input semantic="VERTEX" source="#Colmesh-1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Colmesh-1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Colmesh-1-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>13 0 0 12 0 1 6 0 2 4 1 3 5 1 4 14 1 5 10 2 6 8 2 7 7 2 8 1 3 9 3 3 10 17 3 11 16 4 12 14 4 13 5 4 14 19 5 15 17 5 16 3 5 17 1 6 18 4 6 19 0 6 20 5 7 21 4 7 22 1 7 23 5 8 24 2 8 25 12 8 26 0 2 27 10 2 28 11 2 29 15 9 30 16 9 31 13 9 32 18 10 33 19 10 34 11 10 35 0 11 36 14 11 37 16 11 38 10 12 39 16 12 40 15 12 41 2 13 42 17 13 43 19 13 44 12 14 45 19 14 46 18 14 47 2 15 48 1 15 49 17 15 50 0 16 51 4 16 52 14 16 53 9 0 54 13 0 55 6 0 56 11 2 57 10 2 58 7 2 59 13 17 60 16 17 61 5 17 62 11 18 63 19 18 64 3 18 65 3 19 66 1 19 67 0 19 68 2 20 69 5 20 70 1 20 71 13 0 72 5 0 73 12 0 74 3 2 75 0 2 76 11 2 77 9 12 78 15 12 79 13 12 80 7 3 81 18 3 82 11 3 83 10 21 84 0 21 85 16 21 86 8 12 87 10 12 88 15 12 89 12 22 90 2 22 91 19 22 92 6 3 93 12 3 94 18 3 95</p>
+        </polylist>
+      </mesh>
+      <extra><technique profile="MAYA"><double_sided>1</double_sided></technique></extra>
+    </geometry>
+    <geometry id="nd_bld_a30_002-mesh" name="nd_bld_a30.002">
+      <mesh>
+        <source id="nd_bld_a30_002-mesh-positions">
+          <float_array id="nd_bld_a30_002-mesh-positions-array" count="150">-6 2.821115 4.089443 6 2.821115 4.089443 6 -2.821115 4.089443 -6 -2.821115 4.089443 -6 0 5.589443 6 0 5.589443 6.199997 -3 4.25 6.199997 3 4.25 6.200001 0 5.589443 -6.2 3 4 -6.2 -3 4 -6.2 0 5.589443 6.199997 -3 4 6.199997 3 4.200001 6.199997 -3 4.200001 -6.2 0 5.789443 -6.2 -3 4.200001 6.199997 3 4 -6.2 3 4.200001 6.200001 0 5.789443 -6.2 0 5.839443 -6.2 -3 4.25 -6.2 3 4.25 6.200001 0 5.839443 -6.2 -3 4 6.199997 -3 4 -6.2 -3 3.8 6.199997 -3 3.8 -6.2 -3.2 4 6.199997 -3.2 4 -6.2 -3.2 3.8 6.199997 -3.2 3.8 6.199997 3 4 -6.200001 3.000001 4 6.199997 3 3.8 -6.200001 3.000001 3.8 6.199997 3.2 4 -6.200001 3.200001 4 6.199997 3.2 3.8 -6.200001 3.200001 3.8 6 0 5.589443 -6 0 5.589443 -6 -3 4 -6 3 4 6 3 4 6 -3 4 -6 -3 -3 -6 3 -3 6 3 -3 6 -3 -3</float_array>
+          <technique_common>
+            <accessor source="#nd_bld_a30_002-mesh-positions-array" count="50" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="nd_bld_a30_002-mesh-normals">
+          <float_array id="nd_bld_a30_002-mesh-normals-array" count="93">0 1 0 0 -1 0 0 -0.4694678 -0.8829497 -0.02355551 0.4680356 -0.8833957 1 -1.27155e-5 0 1 1.07287e-5 0 -1 0 0 -1 2.78152e-6 0 1 3.57629e-6 0 1 -3.17892e-6 0 0 0.4694683 -0.8829494 0.02355581 -0.4680338 -0.8833966 0 0.4472158 -0.8944262 0 -0.4472158 -0.8944262 0 -0.4681656 0.8836408 0 0.4681656 0.8836408 1 0 0 0 0 -1 0 0 1 0 -1 0 0 1 0 0 0 -1 -0.02355551 -0.4680356 -0.8833957 0 0.4694678 -0.8829497 0.02355581 0.4680338 -0.8833966 0 -0.4694683 -0.8829494 0 0.4472158 -0.8944262 0 -0.4472162 -0.8944259 0 -0.4681656 0.8836408 0 0.4681656 0.8836408 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#nd_bld_a30_002-mesh-normals-array" count="31" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="nd_bld_a30_002-mesh-map-0">
+          <float_array id="nd_bld_a30_002-mesh-map-0-array" count="444">14.09525 -3.375489 14.09526 -3.30884 -13.09534 -3.308559 14.09525 -3.375489 14.09525 -3.308845 -13.09532 -3.30856 0.4024733 0.9946911 -0.6048428 0.9946924 -0.6048429 0.9646548 -0.6016716 0.9946883 -0.6317051 0.9646555 0.4056662 0.9646551 14.15496 5.869102 14.09536 5.898906 14.09525 -3.308845 -13.09534 -3.308559 -13.09524 5.899182 -13.15495 5.86933 14.15496 5.869105 14.09535 5.89891 14.09526 -3.30884 -13.09532 -3.30856 -13.09523 5.899187 -13.15493 5.869335 -0.6182739 0.9377931 0.4190967 0.9377931 0.4056662 0.9646551 -0.6048429 0.9646548 -0.6182739 0.9377931 0.41908 0.9377931 -0.6182739 0.9377931 0.4190985 0.9377931 0.4056679 0.9646548 0.4190748 0.9678322 0.4325055 0.9946936 -0.6048428 0.9946924 2.414989 0.9678262 2.41499 0.9978588 -0.6483011 0.9978671 -0.6182739 0.9678254 -0.6182739 0.9377931 2.445023 0.9377934 -0.5882356 0.9377942 0.4190746 0.9377945 0.4190748 0.9678322 -0.6016716 0.9946882 -0.6317051 0.9646556 0.4056679 0.9646548 -0.6182739 0.9377931 2.384957 0.9377934 2.414989 0.9678262 -0.5882409 0.9978584 -0.6182739 0.9678254 2.445023 0.9678398 14.09525 -3.308845 14.09536 5.898906 -13.09523 5.899187 14.09535 5.89891 -13.09524 5.899182 -13.09534 -3.308559 2.651882 0.2665315 2.661983 0.1975094 -1.618208 -0.4288845 -1.648514 -0.221804 2.631675 0.4045993 2.641779 0.3355674 2.641779 0.3355674 2.631675 0.4045993 2.700698 0.4147024 -1.648514 -0.221804 -1.638413 -0.2908264 -1.707435 -0.3009284 2.631675 0.4045993 -1.648514 -0.221804 -1.658618 -0.1527684 -1.638413 -0.2908264 2.641779 0.3355674 2.651882 0.2665315 2.651882 0.2665315 2.661983 0.1975094 -1.618208 -0.4288845 -1.648514 -0.221804 2.631675 0.4045993 2.641779 0.3355674 2.641779 0.3355674 2.631675 0.4045993 2.700698 0.4147024 -1.648514 -0.221804 -1.638413 -0.2908264 -1.707435 -0.3009284 2.631675 0.4045993 -1.648514 -0.221804 -1.658618 -0.1527684 -1.638413 -0.2908264 2.641779 0.3355674 2.651882 0.2665315 -10.85534 3.050306 -18.15872 3.050303 -18.15872 -5.470299 11.05479 3.050307 3.75142 3.050305 3.751423 -5.470302 -10.85534 3.050306 -14.50703 4.985022 -18.15872 3.050303 11.05479 3.050307 11.0548 -5.470299 25.66155 -5.47029 11.05479 3.050307 7.403106 4.985023 3.75142 3.050305 -10.85534 3.050306 -10.85534 -5.470302 3.751423 -5.470302 -13.09534 -3.375603 14.09525 -3.375489 -13.09534 -3.308559 -13.09532 -3.375604 14.09525 -3.375489 -13.09532 -3.30856 0.4325109 0.9646536 0.4024733 0.9946911 -0.6048429 0.9646548 0.4056662 0.9946929 -0.6016716 0.9946883 0.4056662 0.9646551 14.15496 -3.338697 14.15496 5.869102 14.09525 -3.308845 -13.15494 -3.338363 -13.09534 -3.308559 -13.15495 5.86933 14.15496 -3.338695 14.15496 5.869105 14.09526 -3.30884 -13.15493 -3.338361 -13.09532 -3.30856 -13.15493 5.869335 -0.6317051 0.9646555 -0.6182739 0.9377931 0.4056662 0.9646551 0.4325109 0.9646536 -0.6048429 0.9646548 0.41908 0.9377931 -0.6317051 0.9646556 -0.6182739 0.9377931 0.4056679 0.9646548 -0.6182733 0.9678313 0.4190748 0.9678322 -0.6048428 0.9946924 -0.6483011 0.9678204 2.414989 0.9678262 -0.6483011 0.9978671 2.445023 0.9678398 -0.6182739 0.9678254 2.445023 0.9377934 -0.6182733 0.9678313 -0.5882356 0.9377942 0.4190748 0.9678322 0.4056679 0.9946924 -0.6016716 0.9946882 0.4056679 0.9646548 -0.6483011 0.9678204 -0.6182739 0.9377931 2.414989 0.9678262 2.414996 0.9978671 -0.5882409 0.9978584 2.445023 0.9678398 -13.09532 -3.30856 14.09525 -3.308845 -13.09523 5.899187 14.09526 -3.30884 14.09535 5.89891 -13.09534 -3.308559 -1.628311 -0.3598486 2.651882 0.2665315 -1.618208 -0.4288845 -1.638413 -0.2908264 -1.648514 -0.221804 2.641779 0.3355674 2.710807 0.3456751 2.641779 0.3355674 2.700698 0.4147024 -1.717537 -0.2319059 -1.648514 -0.221804 -1.707435 -0.3009284 2.621573 0.4736214 2.631675 0.4045993 -1.658618 -0.1527684 -1.628311 -0.3598486 -1.638413 -0.2908264 2.651882 0.2665315 -1.628311 -0.3598486 2.651882 0.2665315 -1.618208 -0.4288845 -1.638413 -0.2908264 -1.648514 -0.221804 2.641779 0.3355674 2.710807 0.3456751 2.641779 0.3355674 2.700698 0.4147024 -1.717537 -0.2319059 -1.648514 -0.221804 -1.707435 -0.3009284 2.621573 0.4736214 2.631675 0.4045993 -1.658618 -0.1527684 -1.628311 -0.3598486 -1.638413 -0.2908264 2.651882 0.2665315 -10.85534 -5.470302 -10.85534 3.050306 -18.15872 -5.470299 11.0548 -5.470299 11.05479 3.050307 3.751423 -5.470302 25.66155 3.050313 11.05479 3.050307 25.66155 -5.47029 3.75142 3.050305 -10.85534 3.050306 3.751423 -5.470302</float_array>
+          <technique_common>
+            <accessor source="#nd_bld_a30_002-mesh-map-0-array" count="222" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="nd_bld_a30_002-mesh-vertices">
+          <input semantic="POSITION" source="#nd_bld_a30_002-mesh-positions"/>
+        </vertices>
+        <polylist material="eca_bld_brick_brown-material" count="10">
+          <input semantic="VERTEX" source="#nd_bld_a30_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#nd_bld_a30_002-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#nd_bld_a30_002-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>42 6 96 43 6 97 47 6 98 44 16 99 45 16 100 49 16 101 42 6 102 41 6 103 43 6 104 44 0 105 48 0 106 47 0 107 44 16 108 40 16 109 45 16 110 42 1 111 46 1 112 49 1 113 46 6 210 42 6 211 47 6 212 48 16 213 44 16 214 49 16 215 43 0 216 44 0 217 47 0 218 45 1 219 42 1 220 49 1 221</p>
+        </polylist>
+        <polylist material="eca_bld_doors_bare-material" count="24">
+          <input semantic="VERTEX" source="#nd_bld_a30_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#nd_bld_a30_002-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#nd_bld_a30_002-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 2 6 4 2 7 11 2 8 3 3 9 10 3 10 11 3 11 16 6 24 15 6 25 11 6 26 11 6 27 15 6 28 18 6 29 13 8 30 19 8 31 8 8 32 8 9 33 19 9 34 14 9 35 12 1 36 14 1 37 16 1 38 9 0 39 18 0 40 13 0 41 2 10 42 5 10 43 8 10 44 1 11 45 17 11 46 8 11 47 3 12 48 2 12 49 12 12 50 0 13 51 9 13 52 17 13 53 9 22 120 0 22 121 11 22 122 4 23 123 3 23 124 11 23 125 10 6 138 16 6 139 11 6 140 9 6 141 11 6 142 18 6 143 17 16 144 13 16 145 8 16 146 12 16 147 8 16 148 14 16 149 10 1 150 12 1 151 16 1 152 17 0 153 9 0 154 13 0 155 12 24 156 2 24 157 8 24 158 5 25 159 1 25 160 8 25 161 10 26 162 3 26 163 12 26 164 1 27 165 0 27 166 17 27 167</p>
+        </polylist>
+        <polylist material="eca_bld_tiles_01_dark-material" count="16">
+          <input semantic="VERTEX" source="#nd_bld_a30_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#nd_bld_a30_002-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#nd_bld_a30_002-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>18 0 0 22 0 1 7 0 2 14 1 3 6 1 4 21 1 5 19 4 12 23 4 13 6 4 14 7 5 15 23 5 16 19 5 17 15 6 18 20 6 19 22 6 20 21 7 21 20 7 22 15 7 23 6 14 54 23 14 55 20 14 56 20 15 57 23 15 58 7 15 59 13 0 114 18 0 115 7 0 116 16 1 117 14 1 118 21 1 119 14 16 126 19 16 127 6 16 128 13 16 129 7 16 130 19 16 131 18 6 132 15 6 133 22 6 134 16 6 135 21 6 136 15 6 137 21 28 168 6 28 169 20 28 170 22 29 171 20 29 172 7 29 173</p>
+        </polylist>
+        <polylist material="eca_bld_metal_01_red-material" count="24">
+          <input semantic="VERTEX" source="#nd_bld_a30_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#nd_bld_a30_002-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#nd_bld_a30_002-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>25 0 60 27 0 61 26 0 62 30 1 63 31 1 64 29 1 65 29 16 66 31 16 67 27 16 68 30 6 69 28 6 70 24 6 71 31 17 72 30 17 73 26 17 74 28 18 75 29 18 76 25 18 77 33 19 78 35 19 79 34 19 80 38 20 81 39 20 82 37 20 83 37 6 84 39 6 85 35 6 86 38 16 87 36 16 88 32 16 89 39 21 90 38 21 91 34 21 92 36 18 93 37 18 94 33 18 95 24 0 174 25 0 175 26 0 176 28 1 177 30 1 178 29 1 179 25 16 180 29 16 181 27 16 182 26 6 183 30 6 184 24 6 185 27 17 186 31 17 187 26 17 188 24 18 189 28 18 190 25 18 191 32 19 192 33 19 193 34 19 194 36 20 195 38 20 196 37 20 197 33 6 198 37 6 199 35 6 200 34 16 201 38 16 202 32 16 203 35 30 204 39 30 205 34 30 206 32 18 207 36 18 208 33 18 209</p>
+        </polylist>
+      </mesh>
+      <extra><technique profile="MAYA"><double_sided>1</double_sided></technique></extra>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="base00" name="base00" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="collision-1" name="collision-1" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        </node>
+        <node id="detail30" name="detail30" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        </node>
+        <node id="start01" name="start01" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <node id="ind_bld_a50" name="ind_bld_a50" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            <instance_geometry url="#ind_bld_a300-mesh" name="ind_bld_a50">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="eca_bld_brick_brown-material" target="#eca_bld_brick_brown-material"/>
+                  <instance_material symbol="eca_bld_woodcladding_01_a-material" target="#eca_bld_woodcladding_01_a-material"/>
+                  <instance_material symbol="eca_bld_doors_bare-material" target="#eca_bld_doors_bare-material"/>
+                  <instance_material symbol="eca_bld_tiles_01_dark-material" target="#eca_bld_tiles_01_dark-material"/>
+                  <instance_material symbol="eca_bld_concrete_01-material" target="#eca_bld_concrete_01-material"/>
+                  <instance_material symbol="eca_bld_decking_01-material" target="#eca_bld_decking_01-material"/>
+                  <instance_material symbol="eca_bld_moderncorrugated_tin_grey-material" target="#eca_bld_moderncorrugated_tin_grey-material"/>
+                  <instance_material symbol="eca_bld_brick_red-material" target="#eca_bld_brick_red-material"/>
+                  <instance_material symbol="eca_bld_stone_clean-material" target="#eca_bld_stone_clean-material"/>
+                  <instance_material symbol="eca_bld_windows-material" target="#eca_bld_windows-material"/>
+                  <instance_material symbol="ind_bld__2__extras-material" target="#ind_bld__2__extras-material"/>
+                  <instance_material symbol="eca_bld_metal_01_red-material" target="#eca_bld_metal_01_red-material"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+          <node id="Colmesh-1" name="Colmesh-1" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            <instance_geometry url="#Colmesh-1-mesh" name="Colmesh-1">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="ColorEffectR27G177B88-material-material" target="#ColorEffectR27G177B88-material-material"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+          <node id="ind_bld_a650" name="ind_bld_a650" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            <instance_geometry url="#nd_bld_a30_002-mesh" name="ind_bld_a650">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="eca_bld_brick_brown-material" target="#eca_bld_brick_brown-material"/>
+                  <instance_material symbol="eca_bld_woodcladding_01_a-material" target="#eca_bld_woodcladding_01_a-material"/>
+                  <instance_material symbol="eca_bld_doors_bare-material" target="#eca_bld_doors_bare-material"/>
+                  <instance_material symbol="eca_bld_tiles_01_dark-material" target="#eca_bld_tiles_01_dark-material"/>
+                  <instance_material symbol="eca_bld_concrete_01-material" target="#eca_bld_concrete_01-material"/>
+                  <instance_material symbol="eca_bld_decking_01-material" target="#eca_bld_decking_01-material"/>
+                  <instance_material symbol="eca_bld_moderncorrugated_tin_grey-material" target="#eca_bld_moderncorrugated_tin_grey-material"/>
+                  <instance_material symbol="eca_bld_brick_red-material" target="#eca_bld_brick_red-material"/>
+                  <instance_material symbol="eca_bld_stone_clean-material" target="#eca_bld_stone_clean-material"/>
+                  <instance_material symbol="eca_bld_windows-material" target="#eca_bld_windows-material"/>
+                  <instance_material symbol="ind_bld__2__extras-material" target="#ind_bld__2__extras-material"/>
+                  <instance_material symbol="eca_bld_metal_01_red-material" target="#eca_bld_metal_01_red-material"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+        <node id="detail300" name="detail300" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        </node>
+        <node id="nulldetail1" name="nulldetail1" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

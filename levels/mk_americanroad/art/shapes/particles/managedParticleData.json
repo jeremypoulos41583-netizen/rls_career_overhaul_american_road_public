@@ -1,0 +1,56 @@
+{
+  "BNG_fire_huge": {
+    "name": "BNG_fire_huge",
+    "class": "ParticleData",
+    "persistentId": "68c3b235-171e-412c-a841-aa4c0cdf706e",
+    "animTexName": "art/shapes/particles/afterfire_orange_flame.dds",
+    "colors": [
+      [
+        1,
+        0.758032203,
+        0,
+        0
+      ],
+      [
+        1,
+        0.881307364,
+        0.35372895,
+        1
+      ],
+      [
+        1,
+        0.408171177,
+        0,
+        0.5
+      ],
+      [
+        0.490196109,
+        0,
+        0,
+        0
+      ]
+    ],
+    "dragCoefficient": 2,
+    "gravityCoefficient": -0.699999988,
+    "inheritedVelFactor": 1,
+    "lifetimeMS": 2500,
+    "lifetimeVarianceMS": 1500,
+    "sizes": [
+      null,
+      2.5,
+      5,
+      7
+    ],
+    "spinRandomMax": 360,
+    "spinRandomMin": -360,
+    "spinSpeed": 0.300000012,
+    "textureName": "art/shapes/particles/afterfire_orange_flame.dds",
+    "times": [
+      null,
+      0.200000003,
+      0.649999976,
+      0.949999988
+    ],
+    "useInvAlpha": true
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "mk_americanroad",
+  "version": 2,
+  "data": {
+    "gen": {
+	"pattern": ["%c%c%c %D%d%d"],
+	"patternData": {},
+	},
+
+    "format": {
+      "30-15": { //US
+        "size": {
+          "x": 900,
+          "y": 450
+        },
+		
+		"text": {
+          "x": 0.5,
+          "y": 0.45,
+          "scale": 1.2,
+          "color": "white",
+		  "toUpperCase": true,
+		  "textCut":[
+		  [0, 7]
+		  ],
+      }, 
+        "generator": "vehicles/common/licenseplates/mk_americanroad/licenseplate.html",
+        "characterLayout": "vehicles/common/licenseplates/mk_americanroad/platefont.json",
+        "diffuse": {
+          "spriteImg": "vehicles/common/licenseplates/mk_americanroad/platefont.png",
+          "backgroundImg": "vehicles/common/licenseplates/mk_americanroad/us.png",
+          "fillStyle": "white"
+        },
+        "bump": {
+          "spriteImg": "vehicles/common/licenseplates/mk_americanroad/platefont_n.png",
+          "backgroundImg": "vehicles/common/licenseplates/mk_americanroad/us_n.png",
+          "fillStyle": "rgb(0,0,255)"
+        },
+        "specular": {
+          //"spriteImg": "vehicles/common/licenseplates/default/platefont_s.png",
+          //"backgroundImg": "vehicles/common/licenseplates/mk_americanroad/us_s.png",
+          "fillStyle": "rgb(233,233,233)"
+        }
+      }
+    }
+  }
+}

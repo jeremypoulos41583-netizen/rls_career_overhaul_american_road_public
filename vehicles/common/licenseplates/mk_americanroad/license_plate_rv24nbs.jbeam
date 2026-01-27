@@ -1,0 +1,11 @@
+{
+  "mk_americanroad": {
+    "information": {
+      "authors": "RealVector",
+      "name": "North Barstow State License Plate Design (made by @RealVector)",
+      "value": 50
+    },
+    "slotType": "licenseplate_design_2_1",
+    "licenseplate_path": "vehicles/common/licenseplates/mk_americanroad/licensePlate-default.json"
+  }
+}
