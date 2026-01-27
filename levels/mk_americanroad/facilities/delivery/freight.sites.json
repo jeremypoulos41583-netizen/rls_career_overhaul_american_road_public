@@ -19,7 +19,7 @@
       },
       "isMultiSpot":false,
       "name":"airport_freight",
-      "oldId":4939,
+      "oldId":14831,
       "pos":[
         5627.2915039063,
         -539.44451904297,
@@ -55,7 +55,7 @@
       },
       "isMultiSpot":false,
       "name":"airport_trailer",
-      "oldId":4940,
+      "oldId":14832,
       "pos":[
         5610.681640625,
         -534.8935546875,
@@ -91,7 +91,7 @@
       },
       "isMultiSpot":false,
       "name":"airport_loaner",
-      "oldId":4941,
+      "oldId":14833,
       "pos":[
         5622.8955078125,
         -542.40844726563,
@@ -127,7 +127,7 @@
       },
       "isMultiSpot":false,
       "name":"sawmill_freight",
-      "oldId":4942,
+      "oldId":14834,
       "pos":[
         -1621.0104980469,
         389.89413452148,
@@ -163,7 +163,7 @@
       },
       "isMultiSpot":false,
       "name":"sawmill_trailer",
-      "oldId":4943,
+      "oldId":14835,
       "pos":[
         -1674.2834472656,
         372.46572875977,
@@ -174,6 +174,78 @@
         0,
         0,
         1
+      ],
+      "scl":[
+        4,
+        14,
+        8
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"OrllyParcel_parking",
+      "oldId":14836,
+      "pos":[
+        -2576.3208007813,
+        1484.6994628906,
+        -545.93872070313
+      ],
+      "rot":[
+        0,
+        0,
+        -0.85443309618914,
+        0.51956113768067
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"OrllyTrailer_parking",
+      "oldId":14837,
+      "pos":[
+        -2596.732421875,
+        1490.32421875,
+        -545.62548828125
+      ],
+      "rot":[
+        0,
+        0,
+        0.96609789660215,
+        0.25817562744363
       ],
       "scl":[
         4,
