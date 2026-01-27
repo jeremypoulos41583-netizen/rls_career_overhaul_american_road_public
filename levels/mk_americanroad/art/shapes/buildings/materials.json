@@ -1,0 +1,35 @@
+{
+  "racingline_accelerate": {
+    "name": "racingline_accelerate",
+    "mapTo": "misc_billboard_title",
+    "class": "Material",
+    "persistentId": "19f588b3-5721-4d1f-9aad-c15441520bca",
+    "Stages": [
+      {
+        "colorMap": "levels/mk_americanroad/art/road/curb_stripes_d.dds",
+        "diffuseColor": [
+          0,
+          1,
+          0.266666681,
+          2
+        ],
+        "emissive": true,
+        "roughnessFactor": 0.690170348
+      },
+      {
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 80,
+    "castShadows": false,
+    "materialTag0": "RoadAndPath",
+    "materialTag1": "beamng",
+    "materialTag2": "mymap",
+    "materialTag3": "decal",
+    "specularStrength0": "1.37255",
+    "translucent": true,
+    "translucentZWrite": true
+  }
+}

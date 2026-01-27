@@ -1,0 +1,20 @@
+{
+  "ind_bld_05_ColorEffectR27G177B88_material_001" : {
+    "name" : "ind_bld_05_ColorEffectR27G177B88_material_001",
+    "mapTo" : "ColorEffectR27G177B88-material.001",
+    "class" : "Material",
+    "persistentId" : "61b78fc8-a87a-478b-b6e8-350537bb441e",
+    "Stages" : [
+      {
+        "diffuseColor" : [ 0.06849478930234909, 0.4440779983997345, 0.2218905985355377, 1 ],
+        "specular" : [ 0.25, 0.25, 0.25, 1 ],
+        "specularPower" : 50
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided" : true,
+    "translucentBlendOp" : "None"
+  }
+}

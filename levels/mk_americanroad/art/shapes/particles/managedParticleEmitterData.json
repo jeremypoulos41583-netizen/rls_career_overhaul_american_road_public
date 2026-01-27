@@ -1,0 +1,24 @@
+{
+  "BNGP_Fire_Huge": {
+    "name": "BNGP_Fire_Huge",
+    "class": "ParticleEmitterData",
+    "persistentId": "0ebb2d52-39a5-40b4-911e-128bd71512c0",
+    "alignDirection": [
+      0,
+      0,
+      0
+    ],
+    "blendStyle": "ADDITIVE",
+    "ejectionPeriodMS": 70,
+    "ejectionVelocity": 5,
+    "originalName": "BNGP_20",
+    "particles": "BNG_fire_huge",
+    "phiVariance": 0,
+    "reverseOrder": true,
+    "softParticles": "0",
+    "softnessDistance": 0.5,
+    "thetaMax": 0,
+    "useLighting": false,
+    "velocityVariance": 2
+  }
+}

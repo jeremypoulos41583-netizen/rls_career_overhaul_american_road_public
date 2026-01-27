@@ -1,0 +1,33 @@
+{
+  "shrub" : {
+    "name" : "shrub",
+    "mapTo" : "shrub",
+    "class" : "Material",
+    "persistentId" : "8fcbe568-8d59-4ab3-be1a-87aea76b7d22",
+    "Stages" : [
+      {
+        "colorMap" : "levels/mk_americanroad/art/shapes/trees/trees_shrub/shrub_d.dds",
+        "diffuseColor" : [ 0.9960780143737793, 0.9960780143737793, 0.9960780143737793, 1 ],
+        "normalMap" : "levels/mk_americanroad/art/shapes/trees/trees_shrub/shrub_n.dds",
+        "specular" : [ 0.992156982421875, 0.992156982421875, 0.992156982421875, 1 ],
+        "specularMap" : "levels/mk_americanroad/art/shapes/trees/trees_shrub/shrub_s.dds",
+        "specularPower" : 1,
+        "subSurfaceColor" : [ 0.9960780143737793, 0.9254900217056274, 0.007843139581382275, 1 ],
+        "subSurfaceRolloff" : 1.049999952316284,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 50,
+    "alphaTest" : true,
+    "annotation" : "NATURE",
+    "doubleSided" : true,
+    "materialTag0" : "beamng",
+    "materialTag1" : "vegetation",
+    "materialTag2" : "Natural",
+    "materialTag3" : "vegetation",
+    "specularStrength0" : "0"
+  }
+}

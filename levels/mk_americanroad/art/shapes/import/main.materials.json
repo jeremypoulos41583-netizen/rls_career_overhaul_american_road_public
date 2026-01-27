@@ -1,0 +1,30 @@
+"roadsigns": {
+    "name": "roadsigns",
+    "mapTo": "roadsigns",
+    "class": "Material",
+    "persistentId": "2ef69b57-0f78-4d98-a8fc-8a9c480424cd",
+    "Stages": [
+      {
+        "colorMap": "levels/mk_americanroad/art/shapes/import/roadsigns.dds",
+        "detailScale": [
+          4,
+          0.5
+        ],
+        "pixelSpecular": false,
+        "specularPower": 0,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 128,
+    "alphaTest": true,
+    "annotation": "TRAFFIC_SIGNS",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "specularColor0": "1 1 1 1",
+    "translucent": true,
+    "translucentBlendOp": "None"
+  },

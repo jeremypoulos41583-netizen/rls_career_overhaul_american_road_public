@@ -1,0 +1,15 @@
+{
+  "signs5_material": {
+    "name": "signs5_material",
+    "mapTo": "signs5-material",
+    "class": "Material",
+    "persistentId": "4f984567-ee1d-4d4d-8716-30553e932c35",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

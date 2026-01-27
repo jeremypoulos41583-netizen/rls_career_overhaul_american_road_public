@@ -1,0 +1,89 @@
+{
+  "BNGGrassm" : {
+    "name" : "BNGGrassm",
+    "mapTo" : "unmapped_mat",
+    "class" : "Material",
+    "persistentId" : "b2d38e39-359b-4603-b334-a3263a4bcc57",
+    "Stages" : [
+      {
+        "colorMap" : "levels/mk_americanroad/art/supernew/Desert/GC/groundcover/Grass_Green_d.dds",
+        "diffuseColor" : [ 0.9960784912109375, 0.9960784912109375, 0.9960784912109375, 1 ],
+        "normalMap" : "levels/mk_americanroad/art/supernew/Desert/GC/groundcover/Grass_Green_n.dds",
+        "specular" : [ 0.9921569228172302, 0.9921569228172302, 0.9921569228172302, 1 ],
+        "specularMap" : "levels/mk_americanroad/art/supernew/Desert/GC/groundcover/Grass_Green_s.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 70,
+    "alphaTest" : true,
+    "annotation" : "NATURE",
+    "doubleSided" : true,
+    "materialTag0" : "beamng",
+    "materialTag1" : "vegetation",
+    "materialTag2" : "vegetation",
+    "materialTag3" : "Natural",
+    "materialTag4" : "east_coast_usa",
+    "translucentBlendOp" : "None"
+  },
+  "Groundcover_springm" : {
+    "name" : "Groundcover_springm",
+    "mapTo" : "unmapped_mat",
+    "class" : "Material",
+    "persistentId" : "f68bc39e-8fb1-4aaf-80c0-469fedd808f3",
+    "Stages" : [
+      {
+        "colorMap" : "levels/mk_americanroad/art/supernew/Desert/GC/groundcover/forest_vegetation_d.dds",
+        "diffuseColor" : [ 0.9921569228172302, 0.9921569228172302, 0.9921569228172302, 1 ],
+        "specular" : [ 0.9921569228172302, 0.9921569228172302, 0.9921569228172302, 1 ],
+        "specularMap" : "levels/mk_americanroad/art/supernew/Desert/GC/groundcover/forest_vegetation_s.dds",
+        "specularPower" : 1,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 45,
+    "alphaTest" : true,
+    "annotation" : "NATURE",
+    "doubleSided" : true,
+    "materialTag0" : "beamng",
+    "materialTag1" : "vegetation",
+    "materialTag2" : "vegetation",
+    "materialTag3" : "Natural",
+    "materialTag4" : "east_coast_usa"
+  },
+  "forest_vegetationm" : {
+    "name" : "forest_vegetationm",
+    "mapTo" : "forest_vegetationm",
+    "class" : "Material",
+    "persistentId" : "7c001266-ad0a-45da-97db-b3d7086c0f64",
+    "Stages" : [
+      {
+        "colorMap" : "levels/mk_americanroad/art/supernew/Desert/GC/groundcover/forest_vegetation_d.dds",
+        "diffuseColor" : [ 0.9921569228172302, 0.9921569228172302, 0.9921569228172302, 1 ],
+        "normalMap" : "levels/mk_americanroad/art/supernew/Desert/GC/groundcover/forest_vegetation_n.dds",
+        "pixelSpecular" : true,
+        "specular" : [ 0.5019609928131104, 0.5019609928131104, 0.5019609928131104, 1 ],
+        "specularPower" : 1,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 80,
+    "alphaTest" : true,
+    "annotation" : "NATURE",
+    "doubleSided" : true,
+    "materialTag0" : "beamng",
+    "materialTag1" : "vegetation",
+    "materialTag2" : "vegetation",
+    "materialTag3" : "Natural",
+    "materialTag4" : "east_coast_usa"
+  }
+}

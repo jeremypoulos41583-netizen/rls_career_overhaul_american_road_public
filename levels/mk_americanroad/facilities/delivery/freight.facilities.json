@@ -1,0 +1,325 @@
+{
+  "deliveryProviders": [
+    {
+      "id": "airport",
+      "name": "Airport",
+      "description": "Ships and receives a wide variety of cargo types.",
+      "associatedOrganization": "airport",
+      "preview": "",
+      "manualAccessPoints": [
+        {
+          "psName": "airport_freight",
+          "isInspectSpot": true,
+          "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","pcofficeSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruckNeedsRepair"],
+          "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruck"]
+        },
+		{
+          "psName": "airport_loaner",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+		  "loanerTrailerPriority": 0,
+		  "loanerNonTrailerPriority": 1
+        },
+        {
+          "psName": "airport_trailer",
+          "logisticTypesProvided": ["trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair"],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 0
+        }
+      ]
+      "sitesFile": "freight.sites.json",
+      "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair"],
+      "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryConstructionMaterials","vehLargeTruck"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelProvider",
+          "logisticTypes": ["freight2Supplies","freight3Supplies","freightSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial"],
+          "min": 10,
+          "max": 50,
+          "interval": 60
+        },
+        {
+          "type": "parcelreceiver",
+          "logisticTypes": ["freight2Supplies","freight3Supplies","freightSupplies","parcel","cropsSupplies","shopSupplies","officeSupplies"],
+          "min": 10,
+          "max": 45,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "smallEmptyTrailers",
+          "logisticTypes": [
+            "trailerDeliveryResidential"
+          ],
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 180,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "smallFurnitureTrailers",
+          "logisticTypes": [
+            "trailerDeliveryResidential"
+          ],
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "smallCratePlanksTrailers",
+          "logisticTypes": [
+            "trailerDeliveryConstructionMaterials",
+            "trailerDeliveryResidential"
+          ],
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "mediumEmptyTrailer",
+          "logisticTypes": [
+            "trailerDeliveryResidential"
+          ],
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "mediumFurnitureTrailers",
+          "logisticTypes": [
+            "trailerDeliveryResidential"
+          ],
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "mediumCratePlanksTrailers",
+          "logisticTypes": [
+            "trailerDeliveryConstructionMaterials",
+            "trailerDeliveryResidential"
+          ],
+        },
+		{
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "bigConstructionMaterials",
+          "logisticTypes": [
+            "trailerDeliveryConstructionMaterials"
+          ],
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "bigEmptyTrailers",
+          "logisticTypes": [
+            "trailerDeliveryConstructionMaterials"
+          ],
+        }
+      ]
+    },
+	{
+      "id": "sawmill",
+      "name": "Sawmill",
+      "description": "Ships and receives a wide variety of cargo types.",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "",
+      "manualAccessPoints": [
+        {
+          "psName": "sawmill_freight",
+          "isInspectSpot": true,
+          "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","pcofficeSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruckNeedsRepair"],
+          "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruck"]
+        },
+		{
+          "psName": "sawmill_trailer",
+          "logisticTypesProvided": ["trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair"],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 0
+        }
+      ]
+      "sitesFile": "freight.sites.json",
+      "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair"],
+      "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryConstructionMaterials","vehLargeTruck"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "parcelProvider",
+          "logisticTypes": ["freight2Supplies","freight3Supplies","freightSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial"],
+          "min": 10,
+          "max": 50,
+          "interval": 60
+        },
+        {
+          "type": "parcelreceiver",
+          "logisticTypes": ["freight2Supplies","freight3Supplies","freightSupplies","parcel","cropsSupplies","shopSupplies","officeSupplies"],
+          "min": 10,
+          "max": 45,
+          "interval": 60
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "smallEmptyTrailers",
+          "logisticTypes": [
+            "trailerDeliveryResidential"
+          ],
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 180,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "smallFurnitureTrailers",
+          "logisticTypes": [
+            "trailerDeliveryResidential"
+          ],
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "smallCratePlanksTrailers",
+          "logisticTypes": [
+            "trailerDeliveryConstructionMaterials",
+            "trailerDeliveryResidential"
+          ],
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "mediumEmptyTrailer",
+          "logisticTypes": [
+            "trailerDeliveryResidential"
+          ],
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "mediumFurnitureTrailers",
+          "logisticTypes": [
+            "trailerDeliveryResidential"
+          ],
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "mediumCratePlanksTrailers",
+          "logisticTypes": [
+            "trailerDeliveryConstructionMaterials",
+            "trailerDeliveryResidential"
+          ],
+        },
+		{
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "bigConstructionMaterials",
+          "logisticTypes": [
+            "trailerDeliveryConstructionMaterials"
+          ],
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "bigEmptyTrailers",
+          "logisticTypes": [
+            "trailerDeliveryConstructionMaterials"
+          ],
+        }
+      ]
+    },
+  ]
+}
+	

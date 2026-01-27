@@ -1,0 +1,66 @@
+{
+  "garages":[
+     {
+      "id": "starterApartment",
+      "name": "Starter Apartment",
+      "description": "A quaint start",
+      "preview": "",
+      "zoneNames": [
+	  
+        "Starter Apartment"
+      ],
+      "parkingSpotNames": [
+	  
+        "apartment_parking1",
+		"apartment_parking2"
+	  ],
+      "icon": "poi_garage_2_round",
+      "tags": [
+        "truck"
+      ],
+      "defaultPrice": 25000,
+      "capacity": 2,
+      "starterGarage": true
+	}
+  ]	
+  "computers": [
+    {
+      "id": "starterApartment",
+      "garageId": "starterApartment",
+      "name": "Starter Apartment",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "",
+      "doors": [
+        [
+          "starterApartmentComputer_area",
+          "starterApartmentComputer_icon"
+        ]
+      ],
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurancePolicies": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Store Vehicle"
+        },
+        {
+          "keyLabel": "sleep"
+        }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+	},
+  ],
+  "gasStations": []
+}

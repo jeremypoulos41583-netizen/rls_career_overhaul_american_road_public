@@ -1,0 +1,30 @@
+{
+  "name":"AR Racetrack - short",
+  "description":"Short circuit at AR Racetrack. Track is little bit bumpy because of American Roads map size. Track is not perfect for fast cars, but it is good for slower ones.",
+  "authors":"Primo3001",
+  "difficulty":"16",
+  "date":1432914025,
+  "lapCount":2,
+  "reversible":false,
+  "closed":true,
+  "allowRollingStart":true,
+
+
+ "lapConfig" : [
+      "Checkpoint_1",
+      "Checkpoint_2",
+      "Checkpoint_3",
+      "Checkpoint_4",
+      "Checkpoint_5",
+      "Checkpoint_6",
+      "Checkpoint_7",
+      "Checkpoint_8",
+      "Checkpoint_9",
+      "Checkpoint_10",
+      "Checkpoint_11",
+      "Checkpoint_12",
+      "Checkpoint_13",
+      "Checkpoint_14"
+    ],
+  "finishLineCheckpoint" : "Checkpoint_finish"
+}

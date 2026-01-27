@@ -1,0 +1,19 @@
+{
+  "binaryFormat" : "version(char), size(unsigned int), heightMap(heightMapSize * heightMapItemSize), layerMap (layerMapSize * layerMapItemSize), materialNames",
+  "datafile" : "levels/mk_americanroad/theTerrain.ter",
+  "heightMapItemSize" : 2,
+  "heightMapSize" : 4194304,
+  "heightmapImage" : "levels/mk_americanroad/theTerrain.terrainheightmap.png",
+  "layerMapItemSize" : 1,
+  "layerMapSize" : 4194304,
+  "materials" : [
+    "Grass",
+    "Grass2",
+    "Dirt",
+    "groundmodel_asphalt1",
+    "Rock",
+    "Forest",
+    "rocks_large"
+  ],
+  "size" : 2048
+}

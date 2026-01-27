@@ -1,0 +1,56 @@
+{
+  "eucalyptus" : {
+    "name" : "eucalyptus",
+    "mapTo" : "eucalyptus",
+    "class" : "Material",
+    "persistentId" : "57168756-9cf0-4224-9f14-18c4f056eb13",
+    "Stages" : [
+      {
+        "colorMap" : "eucalyptus_d.dds",
+        "diffuseColor" : [ 0.9960780143737793, 0.9960780143737793, 0.9960780143737793, 1 ],
+        "normalMap" : "eucalyptus_n.dds",
+        "pixelSpecular" : true,
+        "specular" : [ 0.992156982421875, 0.992156982421875, 0.992156982421875, 1 ],
+        "specularMap" : "eucalyptus_s.dds",
+        "specularPower" : 29,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 80,
+    "alphaTest" : true,
+    "annotation" : "NATURE",
+    "doubleSided" : true,
+    "materialTag0" : "beamng",
+    "materialTag1" : "vegetation",
+    "materialTag2" : "Natural",
+    "materialTag3" : "vegetation"
+  },
+  "eucalyptus_bark" : {
+    "name" : "eucalyptus_bark",
+    "mapTo" : "eucalyptus_bark",
+    "class" : "Material",
+    "persistentId" : "b5d06f7f-1c4d-4d57-a78d-6db80f947e95",
+    "Stages" : [
+      {
+        "colorMap" : "eucalyptus_bark_d.dds",
+        "diffuseColor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1 ],
+        "normalMap" : "eucalyptus_bark_n.dds",
+        "pixelSpecular" : true,
+        "specular" : [ 0.2000000029802322, 0.2000000029802322, 0.2000000029802322, 0.5 ],
+        "specularPower" : 4,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation" : "NATURE",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vegetation",
+    "materialTag2" : "utah",
+    "materialTag3" : "Natural"
+  }
+}

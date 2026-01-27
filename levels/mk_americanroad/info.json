@@ -1,0 +1,281 @@
+{
+"features":"120sq km, Dirt Track, 1:1 Top Gear track, refinery, three airports, multiple highways and much, much more!      !!!8 GB RAM REQUIRED!!!   ",
+"suitablefor":"Everything!",
+"authors":"Primo, edited by MegaKnight, career modded by jpoulos",
+"roads":"Asphalt, Dirt, Racetrack, Off-road, Swamps, Desert",
+"title":"American Road",
+"defaultSpawnPointName":"spawns_mountain_map1",
+"biome":"Mountains, plains, towns, beaches, swamps, farmlands, deserts",
+"size":[
+  11000,
+  11000
+],
+"previews":[
+  "prv1.png",
+  "prv2.png",
+  "prv3.png",
+  "prv4.png",
+  "prv5.png",
+  "prv8.png",
+  "prv6.png",
+  "prv7.png"
+],
+"spawnPoints":[
+  {
+    "translationId":"Mountain Hotel",
+    "objectname":"spawns_mountain_map",
+    "preview":"map_mountain_halfway.png"
+  },
+  {
+    "translationId":"Racetrack",
+    "objectname":"spawns_racetrack",
+    "preview":"track.png"
+  },
+  {
+    "translationId":"Racetrack Parking",
+    "objectname":"spawns_racetrack_parking",
+    "preview":"racetrack_parking.png"
+  },
+  {
+    "translationId":"Swamp",
+    "objectname":"spawns_swamp",
+    "preview":"swamp.png"
+  },
+  {
+    "translationId":"Swamp Sawmill",
+    "objectname":"spawns_sawmill_swamp",
+    "preview":"sawmill_swamp.png"
+  },
+  {
+    "translationId":"Track Sawmill",
+    "objectname":"spawns_sawmill_track",
+    "preview":"sawmill_trackside.png"
+  },
+  {
+    "translationId":"Pine Hill Logging Corp.",
+    "objectname":"spawns_logging",
+    "preview":"logging.png"
+  },
+  {
+    "translationId":"Dirt Track",
+    "objectname":"spawns_dirttrack",
+    "preview":"dirt_track.png"
+  },
+  {
+    "translationId":"Sandstorm Performance Motorsport Arena",
+    "objectname":"spawns_beach_arena",
+    "preview":"beach_arena.png"
+  },
+  {
+    "translationId":"Top Gear test track",
+    "objectname":"spawns_topgear",
+    "preview":"topgeartt.png"
+  },
+   {
+    "translationId":"Highway",
+    "objectname":"spawns_highway",
+    "preview":"highway.png"
+  },
+   {
+    "translationId":"Mountain Off-road",
+    "objectname":"spawns_offroad",
+    "preview":"offroad.png"
+  },
+   {
+    "translationId":"Rally road",
+    "objectname":"spawns_rally",
+    "preview":"rally.png"
+  },
+  {
+    "translationId":"OhDeere Distribution Center",
+    "objectname":"spawns_logistics1",
+    "preview":"logistics1.png"
+  },
+  {
+    "translationId":"Lake Restaurant",
+    "objectname":"spawns_restaurant_lake",
+    "preview":"sausagefest.png"
+  },
+  {
+    "translationId":"River Restaurant",
+    "objectname":"spawns_restaurant_riverend",
+    "preview":"restaurant3.png"
+  },
+  {
+    "translationId":"Valley Restaurant",
+    "objectname":"spawns_pancake",
+    "preview":"pancakes.png"
+  },
+  {
+    "translationId":"Chinese Restaurant",
+    "objectname":"spawns_chinese",
+    "preview":"china.png"
+  },
+  {
+    "translationId":"Cliff Restaurant",
+    "objectname":"spawns_restaurant_fjord",
+    "preview":"restaurant2.png"
+  },{
+    "translationId":"Cliff Valley",
+    "objectname":"spawns_cliff_valley",
+    "preview":"cliff_valley.png"
+  },
+  {
+    "translationId":"Pig Farm",
+    "objectname":"spawns_farm1",
+    "preview":"pig_farm.png"
+  },
+  {
+    "translationId":"McDonald Farm",
+    "objectname":"spawns_farm2",
+    "preview":"farm2.png"
+  },
+  {
+    "translationId":"Wheat Farm",
+    "objectname":"spawns_farm3",
+    "preview":"farm3.png"
+  },
+  {
+    "translationId":"O'Rlly? Auto Parts / Green Ridge",
+    "objectname":"spawns_road1",
+    "preview":"road_1.png"
+  },
+  {
+    "translationId":"Small Airport",
+    "objectname":"spawns_airport_small",
+    "preview":"small_airport.png"
+  },
+  {
+    "translationId":"Eastdale Airport",
+    "objectname":"spawns_airport_medium",
+    "preview":"eastdale_fh.png"
+  },
+  {
+    "translationId":"Bolford",
+    "objectname":"spawns_bolford",
+    "preview":"bolford.png"
+  },
+  {
+    "translationId":"Bus Depot / Bolford",
+    "objectname":"spawns_depot",
+    "preview":"depot.png"
+  },
+  {
+    "translationId":"Roundabout / New Cargill",
+    "objectname":"spawns_city",
+    "preview":"roundabout.png"
+  },
+  {
+    "translationId":"Sprawl Mart / New Cargill",
+    "objectname":"spawns_mart",
+    "preview":"sprawl.png"
+  },
+  {
+    "translationId":"Luksor Junkyard & Repairs / New Cargill",
+    "objectname":"spawns_junkyard",
+    "preview":"luksor.png"
+  },
+  {
+    "translationId":"Fee First Bank / New Cargill",
+    "objectname":"spawns_bank",
+    "preview":"bank.png"
+  },
+  {
+    "translationId":"Barstow Hospital / New Cargill",
+    "objectname":"spawns_hospital",
+    "preview":"hospital.png"
+  },
+  {
+    "translationId":"Upper District / New Cargill",
+    "objectname":"spawns_upper",
+    "preview":"upper.png"
+  },
+  {
+    "translationId":"Meteorological Observation Tower / New Cargill",
+    "objectname":"spawns_tower",
+    "preview":"tower.png"
+  },
+  {
+    "translationId":"New Cargill Airport West",
+    "objectname":"spawns_ap_west",
+    "preview":"west.png"
+  },
+  {
+    "translationId":"New Cargill Airport East",
+    "objectname":"spawns_ap_east",
+    "preview":"east.png"
+  },
+  {
+    "translationId":"Maryville",
+    "objectname":"spawns_maryville",
+    "preview":"maryville.png"
+  },
+  {
+    "translationId":"Radio Station (Mountain Top)",
+    "objectname":"spawns_radio_station",
+    "preview":"funkturm.png"
+  },
+  {
+    "translationId":"Mountain Lodge (Offroader Required)",
+    "objectname":"spawns_mountain_lodge",
+    "preview":"lodge1.png"
+  },
+  {
+    "translationId":"Lake Lodge (Offroader Required)",
+    "objectname":"spawns_forest_lodge2",
+    "preview":"lake_lodge.png"
+  },
+  {
+    "translationId":"Cliff Lodge",
+    "objectname":"spawns_cliff_lodge",
+    "preview":"ididntevenknowthisroadexisted!.png"
+  },
+  {
+    "translationId":"Forest Lodge",
+    "objectname":"spawns_forest_lodge1",
+    "preview":"lodge2.png"
+  },
+  {
+    "translationId":"Upper Mountain Lake",
+    "objectname":"spawns_upper_lake",
+    "preview":"upper_lake.png"
+  },
+  {
+    "translationId":"Mountaintop",
+    "objectname":"spawns_mountaintop",
+    "preview":"mountaintop.png"
+  },
+  {
+    "translationId":"Refinery",
+    "objectname":"spawns_refinery1",
+    "preview":"refinery.png"
+  },
+  {
+    "translationId":"Sand Mine",
+    "objectname":"spawns_sandmine",
+    "preview":"sandmine.png"
+  },
+  {
+    "translationId":"Highway Rest Area",
+    "objectname":"spawns_gas_station",
+    "preview":"gas_station.png"
+  },
+  {
+    "translationId":"Solar Farm",
+    "objectname":"spawns_solarpark",
+    "preview":"solarpark.png"
+  },
+  {
+    "translationId":"Desert",
+    "objectname":"desert_spawn",
+    "preview":"desert.png"
+  },
+  {
+    "translationId":"Eastdale",
+    "objectname":"spawns_eastdale",
+    "preview":"eastdale.png"
+  }
+  
+],
+"description":"Edited version of American Road with 30+ new spawn points and POIs"
+}

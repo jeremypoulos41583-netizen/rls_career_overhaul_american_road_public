@@ -1,0 +1,35 @@
+{
+  "name":"AR Racetrack",
+  "description":"Circuit at AR Racetrack. Track is very flat, and it is perfect for fast cars.",
+  "authors":"Primo3001",
+  "difficulty":"16",
+  "date":1432914025,
+  "lapCount":2,
+  "reversible":false,
+  "closed":true,
+  "allowRollingStart":true,
+
+
+ "lapConfig" : [
+      "Checkpoint_1",
+      "Checkpoint_2",
+      "Checkpoint_3",
+      "Checkpoint_4",
+      "Checkpoint_5",
+      "Checkpoint_6",
+      "Checkpoint_7",
+      "Checkpoint_8",
+      "Checkpoint_9",
+      "Checkpoint_10",
+      "Checkpoint_11",
+      "Checkpoint_12",
+      "Checkpoint_13",
+      "Checkpoint_14",
+      "Checkpoint_15",
+      "Checkpoint_16",
+      "Checkpoint_17",
+      "Checkpoint_18",
+      "Checkpoint_19"
+    ],
+  "finishLineCheckpoint" : "Checkpoint_finish"
+}

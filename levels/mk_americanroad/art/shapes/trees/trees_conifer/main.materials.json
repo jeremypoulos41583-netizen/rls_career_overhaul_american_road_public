@@ -1,0 +1,79 @@
+{
+  "douglasfir_trunk" : {
+    "name" : "douglasfir_trunk",
+    "mapTo" : "douglasfir_trunk",
+    "class" : "Material",
+    "persistentId" : "60c7b63e-fb5f-4b5c-8fca-9307362c5f56",
+    "Stages" : [
+      {
+        "colorMap" : "vegetation_douglasfir_bark_d.dds",
+        "diffuseColor" : [ 0.9490200281143188, 0.8745099902153015, 0.7882350087165833, 1 ],
+        "normalMap" : "vegetation_douglasfir_bark_n.dds",
+        "specularMap" : "vegetation_douglasfir_bark_s.dds",
+        "specularPower" : 1
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation" : "NATURE",
+    "materialTag0" : "vegetation",
+    "materialTag1" : "beamng",
+    "materialTag2" : "Natural",
+    "specularStrength0" : "0.294118"
+  },
+  "pine1" : {
+    "name" : "pine1",
+    "mapTo" : "pine1",
+    "class" : "Material",
+    "persistentId" : "a7d4cfc9-329a-4452-a75d-693ad64a6806",
+    "Stages" : [
+      {
+        "colorMap" : "levels/mk_americanroad/art/shapes/trees/trees_conifer/conifer1_d.dds",
+        "diffuseColor" : [ 0.9960780143737793, 0.9960780143737793, 0.9960780143737793, 1 ],
+        "normalMap" : "levels/mk_americanroad/art/shapes/trees/trees_conifer/conifer1_n.dds",
+        "specular" : [ 0.992156982421875, 0.992156982421875, 0.992156982421875, 1 ],
+        "specularMap" : "levels/mk_americanroad/art/shapes/trees/trees_conifer/conifer1_s.dds",
+        "specularPower" : 1,
+        "subSurfaceColor" : [ 0.9960780143737793, 0.9254900217056274, 0.007843139581382275, 1 ],
+        "subSurfaceRolloff" : 1.049999952316284,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 100,
+    "alphaTest" : true,
+    "annotation" : "NATURE",
+    "doubleSided" : true,
+    "materialTag0" : "beamng",
+    "materialTag1" : "vegetation",
+    "materialTag2" : "Natural",
+    "materialTag3" : "vegetation",
+    "specularStrength0" : "0"
+  },
+  "redwood_trunk" : {
+    "name" : "redwood_trunk",
+    "mapTo" : "redwood_trunk",
+    "class" : "Material",
+    "persistentId" : "2bf9b6a4-2da5-469d-848c-2da302f9b799",
+    "Stages" : [
+      {
+        "colorMap" : "vegetation_redwood_bark_d.dds",
+        "diffuseColor" : [ 0.9490200281143188, 0.8745099902153015, 0.7882350087165833, 1 ],
+        "normalMap" : "vegetation_douglasfir_bark_n.dds",
+        "specularMap" : "vegetation_douglasfir_bark_s.dds",
+        "specularPower" : 1
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation" : "NATURE",
+    "materialTag0" : "vegetation",
+    "materialTag1" : "beamng",
+    "materialTag2" : "Natural",
+    "specularStrength0" : "0.294118"
+  }
+}

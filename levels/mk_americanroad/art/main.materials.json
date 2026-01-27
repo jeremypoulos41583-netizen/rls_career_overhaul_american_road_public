@@ -1,0 +1,19 @@
+{
+  "randomMountainmesh_italy_mesh_fence" : {
+    "name" : "randomMountainmesh_italy_mesh_fence",
+    "mapTo" : "italy_mesh_fence",
+    "class" : "Material",
+    "persistentId" : "25252af6-1e5c-4d39-898d-be3adee637a3",
+    "Stages" : [
+      {
+        "diffuseColor" : [ 0.6399999856948853, 0.6399999856948853, 0.6399999856948853, 1 ],
+        "specular" : [ 0.5, 0.5, 0.5, 1 ],
+        "specularPower" : 50
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp" : "None"
+  }
+}

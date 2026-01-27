@@ -1,0 +1,227 @@
+//--- OBJECT WRITE BEGIN ---
+$ThisPrefab = new SimGroup() {
+   canSave = "1";
+   canSaveDynamicFields = "1";
+      groupPosition = "0.000000 0.000000 0.000000";
+
+   new TSStatic() {
+      shapeName = "levels/mk_americanroad/art/shapes/buildings/eca/eca_lamppost.dae";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      useInstanceRenderData = "0";
+      instanceColor = "White";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      prebuildCollisionData = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "5178.11475 -848.123169 -504.422791";
+      scale = "1 1 1";
+      rotationMatrix = "0.993897676 -0.110257879 0 0.110257879 0.993897676 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new SpawnSphere(asphalt_tg_rolling_spawn) {
+      autoSpawn = "0";
+      spawnTransform = "0";
+      radius = "100";
+      dataBlock = "SpawnSphereMarker";
+      position = "5579.37646 -357.805145 -546.237061";
+      scale = "1 1 1";
+      rotationMatrix = "-0.569498599 0.821992993 0 -0.821992993 -0.569498599 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         autoplaceOnSpawn = "0";
+         cloneOrigin = "asphalt_mix_standing_spawn";
+         enabled = "1";
+   };
+   new SpawnSphere(asphalt_tg_standing_spawn) {
+      autoSpawn = "0";
+      spawnTransform = "0";
+      radius = "100";
+      dataBlock = "SpawnSphereMarker";
+      position = "5512.76074 -473.406006 -546.237061";
+      scale = "1 1 1";
+      rotationMatrix = "0.852078915 0.523411632 0 -0.523411632 0.852078915 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         autoplaceOnSpawn = "0";
+         enabled = "1";
+   };
+   new BeamNGVehicle(tgop) {
+      JBeam = "tirewall";
+      color = "White";
+      colorPalette0 = "White";
+      colorPalette1 = "White";
+      renderDistance = "500";
+      renderFade = "0.100000001";
+      dataBlock = "default_vehicle";
+      position = "5828.18945 -718.253357 -546.186096";
+      scale = "1 1 1";
+      rotationMatrix = "0.181482092 0.983393908 -1.90993887e-10 -0.98339361 0.181482017 -0.000690533721 -0.000679066812 0.000125319057 0.999999762";
+      annotation = "CAR";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         isAIControlled = "0";
+         licenseText = "BYK-5518";
+   };
+   new BeamNGWaypoint(Checkpoint_1) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "5642.3877 -714.246582 -546.237061";
+      scale = "10.5676003 10.5676003 10.5676003";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new BeamNGWaypoint(Checkpoint_13) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "5496.69873 -445.898804 -546.237061";
+      scale = "10.5676003 10.5676003 10.5676003";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         cloneOrigin = "Checkpoint_12";
+   };
+   new BeamNGWaypoint(Checkpoint_12) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "5576.92432 -361.119324 -546.237061";
+      scale = "10.5676003 10.5676003 10.5676003";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         cloneOrigin = "Checkpoint_11";
+   };
+   new BeamNGWaypoint(Checkpoint_11) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "5725.0835 -479.088959 -546.237061";
+      scale = "10.5676003 10.5676003 10.5676003";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         cloneOrigin = "Checkpoint_10";
+   };
+   new BeamNGWaypoint(Checkpoint_10) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "5826.09863 -707.578186 -546.237061";
+      scale = "10.5676003 10.5676003 10.5676003";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         cloneOrigin = "Checkpoint_9";
+   };
+   new BeamNGWaypoint(Checkpoint_9) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "5861.26074 -1028.56055 -546.237061";
+      scale = "10.5676003 10.5676003 10.5676003";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         cloneOrigin = "Checkpoint_8";
+   };
+   new BeamNGWaypoint(Checkpoint_8) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "6145.26855 -1189.45459 -546.237061";
+      scale = "10.5676003 10.5676003 10.5676003";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         cloneOrigin = "Checkpoint_7";
+   };
+   new BeamNGWaypoint(Checkpoint_7) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "6161.05029 -1143.71521 -546.237061";
+      scale = "10.5676003 10.5676003 10.5676003";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         cloneOrigin = "Checkpoint_6";
+   };
+   new BeamNGWaypoint(Checkpoint_6) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "6111.87354 -1115.04358 -546.237061";
+      scale = "10.5676003 10.5676003 10.5676003";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         cloneOrigin = "Checkpoint_5";
+   };
+   new BeamNGWaypoint(Checkpoint_4) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "5838.27979 -698.782837 -546.237061";
+      scale = "10.5676003 10.5676003 10.5676003";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         cloneOrigin = "Checkpoint_3";
+   };
+   new BeamNGWaypoint(Checkpoint_5) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "5884.29785 -713.192444 -546.237061";
+      scale = "10.5676003 10.5676003 10.5676003";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         cloneOrigin = "Checkpoint_4";
+   };
+   new BeamNGWaypoint(Checkpoint_3) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "5817.38232 -893.906311 -546.237061";
+      scale = "10.5676003 10.5676003 10.5676003";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         cloneOrigin = "Checkpoint_2";
+   };
+   new BeamNGWaypoint(Checkpoint_2) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "5708.77393 -911.857361 -546.237061";
+      scale = "10.5676003 10.5676003 10.5676003";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         cloneOrigin = "Checkpoint_1";
+   };
+   new BeamNGWaypoint(Checkpoint_finish) {
+      drawDebug = "0";
+      directionalWaypoint = "0";
+      position = "5513.95361 -475.117767 -546.237061";
+      scale = "7.85980988 7.85980988 7.85980988";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      mode = "Ignore";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+         cloneOrigin = "Checkpoint_19";
+   };
+};
+//--- OBJECT WRITE END ---

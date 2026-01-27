@@ -1,0 +1,3 @@
+{"name":"Right_FromEastdale","class":"SimGroup","__parent":"DesertHighway"}
+{"name":"Left_FromDesert","class":"SimGroup","__parent":"DesertHighway"}
+{"name":"End_Desert","class":"SimGroup","__parent":"DesertHighway"}
