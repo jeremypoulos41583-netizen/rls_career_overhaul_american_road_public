@@ -1,0 +1,81 @@
+{
+  "description": "Description of these Sites. Contains Locations, Zones, and Parking Spots.",
+  "dir": "/mods/unpacked/rls_career_overhaul_american_road/levels/mk_americanroad/facilities/delivery/",
+  "filename": "mechanics.sites.json",
+  "locations": {},
+  "name": "mechanics.sites.json",
+  "parkingSpots": [
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": {},
+        "tags": {},
+        "types": {},
+        "values": {}
+      },
+      "isMultiSpot": false,
+      "name": "OrllyParcel_parking",
+      "oldId": 14836,
+      "pos": [
+        -2576.3208007813,
+        1484.6994628906,
+        -545.93872070313
+      ],
+      "rot": [
+        0,
+        0,
+        -0.85443309618914,
+        0.51956113768067
+      ],
+      "scl": [
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": {},
+        "tags": {},
+        "types": {},
+        "values": {}
+      },
+      "isMultiSpot": false,
+      "name": "OrllyTrailer_parking",
+      "oldId": 14837,
+      "pos": [
+        -2596.732421875,
+        1490.32421875,
+        -545.62548828125
+      ],
+      "rot": [
+        0,
+        0,
+        0.96609789660215,
+        0.25817562744363
+      ],
+      "scl": [
+        4,
+        14,
+        8
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    }
+  ]
+}

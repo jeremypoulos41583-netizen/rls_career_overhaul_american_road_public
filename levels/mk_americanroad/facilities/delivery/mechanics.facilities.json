@@ -1,0 +1,74 @@
+{
+  "deliveryProviders": [
+  {
+    "id": "ORllyAutoParts",
+    "name": "O'Rlly Auto Parts",
+    "description": "Auto parts store.",
+    "associatedOrganization": "localDeliveryAssociation",
+    "preview": "",
+    "manualAccessPoints": [
+      {
+        "psName": "OrllyParcel_parking",
+        "isInspectSpot": true,
+        "logisticTypesProvided": ["mechanicalParts","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","refundReturns"],
+        "logisticTypesReceived": ["mechanicalParts","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","refundReturns"]
+      },
+      {
+        "psName": "OrllyTrailer_parking",
+        "logisticTypesProvided": ["trailerDeliveryResidential"],
+        "logisticTypesReceived": ["trailerDeliveryConstructionMaterials"],
+        "loanerTrailerPriority": 1,
+        "loanerNonTrailerPriority": 0
+      }
+    ],
+    "sitesFile": "mechanics.sites.json",
+    "logisticTypesProvided": ["mechanicalParts","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","refundReturns","trailerDeliveryResidential"],
+    "logisticTypesReceived": ["mechanicalParts","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","refundReturns","trailerDeliveryConstructionMaterials"],
+    "logisticMaxItems": 10,
+    "logisticGenerators": [
+      {
+        "type": "parcelProvider",
+        "logisticTypes": ["mechanicalParts","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","refundReturns"],
+        "min": 5,
+        "max": 20,
+        "interval": 60
+      },
+      {
+        "type": "parcelreceiver",
+        "logisticTypes": ["mechanicalParts","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","refundReturns"],
+        "min": 5,
+        "max": 20,
+        "interval": 60
+      },
+      {
+        "type": "trailerOfferProvider",
+        "interval": 210,
+        "min": 0,
+        "max": 2,
+        "offerDuration": {
+          "min": 300,
+          "max": 600
+        },
+        "filter": "emptyDryvanTrailers",
+        "logisticTypes": [
+          "trailerDeliveryResidential"
+        ]
+      },
+      {
+        "type": "trailerOfferProvider",
+        "interval": 210,
+        "min": 0,
+        "max": 2,
+        "offerDuration": {
+          "min": 300,
+          "max": 600
+        },
+        "filter": "loadedDryvanTrailers",
+        "logisticTypes": [
+          "trailerDeliveryConstructionMaterials"
+        ]
+      }
+    ]
+  }
+  ]
+}

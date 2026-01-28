@@ -21,8 +21,8 @@
       "defaultPrice": 25000,
       "capacity": 2,
       "starterGarage": true
-	}
-  ]	
+    }
+  ],
   "computers": [
     {
       "id": "starterApartment",
@@ -60,7 +60,224 @@
       "iconOffsetHeight": 0.24,
       "iconLift": 0.24,
       "icon": "poi_laptop_round"
-	},
+	}
   ],
-  "gasStations": []
+  "gasStations": [
+    {
+      "id": "gas_station_hw1_r",
+      "name": "Highway Gas Station (Right)",
+      "description": "Refuel your vehicle.",
+      "preview": "",
+      "energyTypes": ["gasoline", "diesel", "unknown"],
+      "pumps": [
+        ["gas_station_hw1_r", "gas_station_hw1_r_poi"]
+      ],
+      "prices": {
+        "gasoline": {
+          "priceBaseline": 10.37,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        },
+        "diesel": {
+          "priceBaseline": 10.53,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        }
+      }
+    },
+    {
+      "id": "gas_station_hw1_l",
+      "name": "Highway Gas Station (Left)",
+      "description": "Refuel your vehicle.",
+      "preview": "",
+      "energyTypes": ["gasoline", "diesel", "unknown"],
+      "pumps": [
+        ["gas_station_hw1_l", "gas_station_hw1_l_poi"]
+      ],
+      "prices": {
+        "gasoline": {
+          "priceBaseline": 10.37,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        },
+        "diesel": {
+          "priceBaseline": 10.53,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        }
+      }
+    },
+    {
+      "id": "gas_station_hw2_1",
+      "name": "Highway Gas Station 2",
+      "description": "Refuel your vehicle.",
+      "preview": "",
+      "energyTypes": ["gasoline", "diesel", "unknown"],
+      "pumps": [
+        ["gas_station_hw2_1", "gas_station_hw2_poi"]
+      ],
+      "prices": {
+        "gasoline": {
+          "priceBaseline": 10.37,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        },
+        "diesel": {
+          "priceBaseline": 10.53,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        }
+      }
+    },
+    {
+      "id": "gas_station_track",
+      "name": "Track Gas Station",
+      "description": "Refuel your vehicle.",
+      "preview": "",
+      "energyTypes": ["gasoline", "diesel", "unknown"],
+      "pumps": [
+        ["gas_station_track", "gas_station_track_poi"]
+      ],
+      "prices": {
+        "gasoline": {
+          "priceBaseline": 10.37,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        },
+        "diesel": {
+          "priceBaseline": 10.53,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        }
+      }
+    },
+    {
+      "id": "gas_station_ref",
+      "name": "Refinery Gas Station",
+      "description": "Refuel your vehicle.",
+      "preview": "",
+      "energyTypes": ["gasoline", "diesel", "unknown"],
+      "pumps": [
+        ["gas_station_ref", "gas_station_ref_poi"]
+      ],
+      "prices": {
+        "gasoline": {
+          "priceBaseline": 10.37,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        },
+        "diesel": {
+          "priceBaseline": 10.53,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        }
+      }
+    },
+    {
+      "id": "gas_station_ed",
+      "name": "Eastdale Gas Station",
+      "description": "Refuel your vehicle.",
+      "preview": "",
+      "energyTypes": ["gasoline", "diesel", "unknown"],
+      "pumps": [
+        ["gas_station_ed", "gas_station_ed_poi"]
+      ],
+      "prices": {
+        "gasoline": {
+          "priceBaseline": 10.37,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        },
+        "diesel": {
+          "priceBaseline": 10.53,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        }
+      }
+    },
+    {
+      "id": "gas_station_nc",
+      "name": "North Country Gas Station",
+      "description": "Refuel your vehicle.",
+      "preview": "",
+      "energyTypes": ["gasoline", "diesel", "unknown"],
+      "pumps": [
+        ["gas_station_nc", "gas_station_nc_poi"]
+      ],
+      "prices": {
+        "gasoline": {
+          "priceBaseline": 10.37,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        },
+        "diesel": {
+          "priceBaseline": 10.53,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        }
+      }
+    },
+    {
+      "id": "gas_station_bolford",
+      "name": "Bolford Gas Station",
+      "description": "Refuel your vehicle.",
+      "preview": "",
+      "energyTypes": ["gasoline", "diesel", "unknown"],
+      "pumps": [
+        ["gas_station_bolford", "gas_station_bolford_poi"]
+      ],
+      "prices": {
+        "gasoline": {
+          "priceBaseline": 10.37,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        },
+        "diesel": {
+          "priceBaseline": 10.53,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        }
+      }
+    },
+    {
+      "id": "gas_station_farm",
+      "name": "Farm Gas Station",
+      "description": "Refuel your vehicle.",
+      "preview": "",
+      "energyTypes": ["gasoline", "diesel", "unknown"],
+      "pumps": [
+        ["gas_station_farm", "gas_station_farm_poi"]
+      ],
+      "prices": {
+        "gasoline": {
+          "priceBaseline": 10.37,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        },
+        "diesel": {
+          "priceBaseline": 10.53,
+          "priceRandomnessGain": 0.1,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax": true
+        }
+      }
+    }
+  ]
 }
