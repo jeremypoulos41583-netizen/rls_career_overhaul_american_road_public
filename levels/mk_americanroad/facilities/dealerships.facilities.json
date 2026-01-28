@@ -1,0 +1,235 @@
+{
+  "dealerships":[
+    {
+      "id":"plastiCarDealer",
+      "name":"Plasti-Car Car Sales",
+      "description":"Plasti-Car Car Sales - Quality used cars",
+      "stock": 30,
+      "range": [0.5, 0.80, 1.25, 1.5],
+      "associatedOrganization":"plastiCarDealer",
+      "preview":"plasticar.png",
+      "doors":[["plastiCarComputer_area","plastiCarComputer_icon", 30]],
+      "parkingSpotNames":["Parking 7206"],
+      "activityAcceptProps":[
+        {"keyLabel":"Used Vehicles"}
+      ],
+      "filter": {
+        "blackList":{"Type":["Trailer"], "Config Type":["Police","Service","Frame"],"Body Style":["Semi Truck","Bus", "Tanker Truck", "Flatbed Truck","Box Truck","Truck","Fifth Wheel Truck", "Chassis Cab","Dump Truck","Flatbed","Mixer Truck","Logging Truck"]}
+      },
+      "subFilters": [
+        {
+          "probability":4,
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Bruckell"]}
+        },
+        {
+          "probability":4,
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Burnside"]}
+        },
+        {
+          "probability":4,
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Gavril"],"Body Style":["Pickup"]}
+        },
+        {
+          "probability":4,
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Gavril"],"Type":["Car"]}
+        },
+        {
+          "probability":4,
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845}, "Config Type":["Custom"],"Brand":["Soliad"]}
+        },
+        {
+          "probability":1,
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Civetta"]}
+        },
+        {
+          "probability":2,
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["ETK"]}
+        },
+        {
+          "probability":2,
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Cherrier"]}
+        },
+        {
+          "probability":1,
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Autobello"]}
+        },
+        {
+          "probability":1,
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["FPU"]}
+        },
+        {
+          "probability":2,
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Ibishu"]}
+        },
+        {
+          "probability":2,
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Hirochi"]}
+        },
+        {
+          "probability":1,
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Config Type":["Custom"],"Brand":["Arima"]}
+        }
+      ],
+      "fees": 649,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees" : 250,
+        "timeLimit" : 120,
+        "licencePlate" : "PLASTI"
+      },
+      "iconOffsetHeight":1.0,
+      "iconLift":0.25,
+      "playModeIconName":"poi_entrance_round"
+    },
+    {
+      "id":"carsrus",
+      "name":"Cars-R-Us",
+      "description":"Online Dealership",
+      "stock": 20,
+      "range": [0.75, 0.80, 1.10, 1.2],
+      "associatedOrganization":"carsrus",
+      "preview":"USDM_Dealer_TB.png",
+      "doors":[["carsRusDealerComputer_area","carsRusDealerComputer_icon", 30]],
+      "parkingSpotNames":["carsRusDealer_parking"],
+      "activityAcceptProps":[
+          {"keyLabel":"Used Vehicles"},
+          {"keyLabel":"Low Fees"}
+      ],
+      "filter": {
+          "whiteList":{"Mileage":{"min":8800028, "max":264000845},"Body Style":["Pickup","Van","Chassis Cab"], "Config Type":["Factory"] },
+          "blackList":{"Type":["Trailer","car"], "Config Type":["Police","Service","Frame"]}
+      },
+      "subFilters": [
+        {
+            "probability":3,
+            "whiteList":{"Brand":["Bruckell"]}
+        },  
+        {
+            "probability":3,
+            "whiteList":{"Brand":["Burnside"]}
+        },
+      
+        {
+            "probability":3,
+            "whiteList":{"Brand":["Gavril"]}
+        },
+      
+        {
+            "probability":3,
+            "whiteList":{"Brand":["Soliad"]}
+        },
+      
+        {
+            "probability":1,
+            "whiteList":{"Brand":["ETK"]}
+        },
+      
+        {
+            "probability":2,
+            "whiteList":{"Brand":["Cherrier"]}
+        },
+      
+        {
+            "probability":1,
+            "whiteList":{"Brand":["Autobello"]}
+        },
+      
+        {
+            "probability":2,
+            "whiteList":{"Brand":["Ibishu"]}
+        },
+      
+        {
+            "probability":1,
+            "whiteList":{"Brand":["Hirochi"]}
+        },
+      
+        {
+            "probability":1,
+            "whiteList":{"Brand":["Arima"]}
+        }
+      
+        ],
+    
+      "fees": 249,
+      "containsStarterVehicles": true,
+      "testDrive": {
+          "abandonFees" : 50,
+          "timeLimit" : 120,
+          "licencePlate" : "carsRus"
+      }
+    }
+  ],
+  "privateSellers":[
+      {
+        "id": "private",
+        "name": "Private",
+        "stock": 30,
+        "filter": {
+          "whiteList":{"Mileage":{"min":25000000, "max":380000000}, "Value":{"min":950}},
+          "blackList":{"Type":["Trailer", "Semi Truck"]}
+        },
+        "subFilters": [
+          {
+              "probability":3,
+              "whiteList":{"Brand":["Bruckell"]}
+          },  
+          {
+              "probability":3,
+              "whiteList":{"Brand":["Burnside"]}
+          },
+        
+          {
+              "probability":3,
+              "whiteList":{"Brand":["Gavril"]}
+          },
+        
+          {
+              "probability":3,
+              "whiteList":{"Brand":["Soliad"]}
+          },
+        
+          {
+              "probability":1,
+              "whiteList":{"Brand":["ETK"]}
+          },
+        
+          {
+              "probability":2,
+              "whiteList":{"Brand":["Cherrier"]}
+          },
+          {
+            "probability":1,
+            "whiteList":{"Brand":["Civetta"]}
+        },
+        
+          {
+              "probability":1,
+              "whiteList":{"Brand":["Autobello"]}
+          },
+        
+          {
+              "probability":2,
+              "whiteList":{"Brand":["Ibishu"]}
+          },
+        
+          {
+              "probability":1,
+              "whiteList":{"Brand":["Hirochi"]}
+          },
+        
+          {
+              "probability":3,
+              "whiteList":{"Body Style":["Boat"]}
+          },
+  
+  
+          {
+            "probability":4,
+            "whiteList":{"Years": {"min":1901, "max":2025}}
+        }
+        
+          ]
+      }
+    ]
+}

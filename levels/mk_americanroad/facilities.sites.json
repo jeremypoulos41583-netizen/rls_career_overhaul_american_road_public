@@ -1,6 +1,7 @@
 {
   "description":"Description of these Sites. Contains Locations, Zones, and Parking Spots.",
   "dir":"/mods/unpacked/rls_career_overhaul_american_road/levels/mk_americanroad/",
+  "filename":"facilities.sites.json",
   "locations":{},
   "name":"facilities.sites.json",
   "parkingSpots":[
@@ -18,7 +19,7 @@
       },
       "isMultiSpot":false,
       "name":"apartment_parking1",
-      "oldId":7205,
+      "oldId":9903,
       "pos":[
         5479.3896484375,
         -1029.2894287109,
@@ -54,7 +55,7 @@
       },
       "isMultiSpot":false,
       "name":"Parking 7206",
-      "oldId":7206,
+      "oldId":9904,
       "pos":[
         5476.6772460938,
         -1031.6467285156,
@@ -65,6 +66,150 @@
         0,
         -0.33502828099409,
         0.9422079912233
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"upstateCottage_parking1",
+      "oldId":9905,
+      "pos":[
+        4877.888671875,
+        2715.4133300781,
+        -233.22148132324
+      ],
+      "rot":[
+        0.04406750947237,
+        0.0078356266021729,
+        -0.17488825321198,
+        0.98357033729553
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"upstateCottage_parking2",
+      "oldId":9906,
+      "pos":[
+        4885.255859375,
+        2707.3203125,
+        -233.38569641113
+      ],
+      "rot":[
+        0.076756112277508,
+        -0.048540614545345,
+        0.67813211679459,
+        0.72930729389191
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"plastiCarDealer_parking",
+      "oldId":9910,
+      "pos":[
+        5589.2143554688,
+        -1002.8582763672,
+        -553.97552490234
+      ],
+      "rot":[
+        0,
+        0,
+        0.90992909669876,
+        -0.41476386785507
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"carsRusDealer_parking",
+      "oldId":9912,
+      "pos":[
+        6020.2377929688,
+        -5595.6748046875,
+        -552.63714599609
+      ],
+      "rot":[
+        0,
+        0,
+        -0.14242121577263,
+        0.98980611562729
       ],
       "scl":[
         2.5,
@@ -104,7 +249,7 @@
         "values":{}
       },
       "name":"Starter Apartment",
-      "oldId":7204,
+      "oldId":9902,
       "top":{
         "active":false,
         "normal":[

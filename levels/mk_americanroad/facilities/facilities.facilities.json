@@ -21,6 +21,25 @@
       "defaultPrice": 25000,
       "capacity": 2,
       "starterGarage": true
+    },
+    {
+      "id": "upstateCottage",
+      "name": "Upstate Cottage",
+      "description": "A cozy cottage",
+      "preview": "",
+      "zoneNames": [
+        "Upstate Cottage"
+      ],
+      "parkingSpotNames": [
+        "upstateCottage_parking1",
+        "upstateCottage_parking2"
+      ],
+      "icon": "poi_garage_2_round",
+      "tags": [
+        "truck"
+      ],
+      "defaultPrice": 25000,
+      "capacity": 2
     }
   ],
   "computers": [
@@ -60,7 +79,44 @@
       "iconOffsetHeight": 0.24,
       "iconLift": 0.24,
       "icon": "poi_laptop_round"
-	}
+    },
+    {
+      "id": "upstateCottage",
+      "garageId": "upstateCottage",
+      "name": "Upstate Cottage",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "",
+      "doors": [
+        [
+          "upstateCottageComputer_area",
+          "upstateCottageComputer_icon"
+        ]
+      ],
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurancePolicies": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Store Vehicle"
+        },
+        {
+          "keyLabel": "sleep"
+        }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+    }
   ],
   "gasStations": [
     {

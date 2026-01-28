@@ -69,6 +69,56 @@
         ]
       }
     ]
+  },
+  {
+    "id": "plastiCarShop",
+    "name": "Plasti-Car Shop",
+    "description": "Auto parts and service.",
+    "associatedOrganization": "plastiCarDealer",
+    "preview": "plasticar.png",
+    "manualAccessPoints": [
+      {
+        "psName": "plasticCarShop_parking",
+        "isInspectSpot": true,
+        "logisticTypesProvided": ["vehNeedsRepair", "vehRepairFinished", "refundReturns"],
+        "logisticTypesReceived": ["mechanicalParts","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","refundReturns", "parcel"]
+      }
+    ],
+    "sitesFile": "mechanics.sites.json",
+    "logisticTypesProvided": ["vehNeedsRepair", "vehRepairFinished", "refundReturns"],
+    "logisticTypesReceived": ["mechanicalParts","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","refundReturns", "parcel"],
+    "logisticMaxItems": 10,
+    "logisticGenerators": [
+      {
+        "type": "parcelReceiver",
+        "logisticTypes": ["mechanicalParts","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","refundReturns", "parcel"],
+        "min": 1,
+        "max": 10,
+        "interval": 120
+      },
+      {
+        "type": "parcelProvider",
+        "logisticTypes": ["refundReturns"],
+        "min": 1,
+        "max": 10,
+        "interval": 120
+      },
+      {
+        "type": "vehOfferProvider",
+        "interval": 300,
+        "min": 1,
+        "max": 4,
+        "offerDuration": {
+          "min": 300,
+          "max": 600
+        },
+        "filter": "compactVehFilter",
+        "logisticTypes": [
+          "vehNeedsRepair",
+          "vehRepairFinished"
+        ]
+      }
+    ]
   }
   ]
 }
