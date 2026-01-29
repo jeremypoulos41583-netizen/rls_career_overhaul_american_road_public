@@ -15,15 +15,15 @@
       },
       {
         "psName": "OrllyTrailer_parking",
-        "logisticTypesProvided": ["trailerDeliveryResidential"],
-        "logisticTypesReceived": ["trailerDeliveryConstructionMaterials"],
+        "logisticTypesProvided": ["trailerDeliveryEmptyRetail"],
+        "logisticTypesReceived": ["trailerDeliveryLoadedRetail"],
         "loanerTrailerPriority": 1,
         "loanerNonTrailerPriority": 0
       }
     ],
     "sitesFile": "mechanics.sites.json",
-    "logisticTypesProvided": ["mechanicalParts","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","refundReturns","trailerDeliveryResidential"],
-    "logisticTypesReceived": ["mechanicalParts","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","refundReturns","trailerDeliveryConstructionMaterials"],
+    "logisticTypesProvided": ["mechanicalParts","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","refundReturns","trailerDeliveryResidential","trailerDeliveryEmptyRetail"],
+    "logisticTypesReceived": ["mechanicalParts","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","refundReturns","trailerDeliveryLoadedRetail"],
     "logisticMaxItems": 10,
     "logisticGenerators": [
       {
@@ -51,11 +51,11 @@
         },
         "filter": "emptyDryvanTrailers",
         "logisticTypes": [
-          "trailerDeliveryResidential"
+          "trailerDeliveryEmptyRetail"
         ]
       },
       {
-        "type": "trailerOfferProvider",
+        "type": "trailerOfferReceiver",
         "interval": 210,
         "min": 0,
         "max": 2,
@@ -65,7 +65,7 @@
         },
         "filter": "loadedDryvanTrailers",
         "logisticTypes": [
-          "trailerDeliveryConstructionMaterials"
+          "trailerDeliveryLoadedRetail"
         ]
       }
     ]

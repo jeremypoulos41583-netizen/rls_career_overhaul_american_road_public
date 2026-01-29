@@ -19,7 +19,7 @@
       },
       "isMultiSpot":false,
       "name":"apartment_parking1",
-      "oldId":9903,
+      "oldId":8406,
       "pos":[
         5479.3896484375,
         -1029.2894287109,
@@ -55,7 +55,7 @@
       },
       "isMultiSpot":false,
       "name":"Parking 7206",
-      "oldId":9904,
+      "oldId":8407,
       "pos":[
         5476.6772460938,
         -1031.6467285156,
@@ -91,7 +91,7 @@
       },
       "isMultiSpot":false,
       "name":"upstateCottage_parking1",
-      "oldId":9905,
+      "oldId":8408,
       "pos":[
         4877.888671875,
         2715.4133300781,
@@ -127,7 +127,7 @@
       },
       "isMultiSpot":false,
       "name":"upstateCottage_parking2",
-      "oldId":9906,
+      "oldId":8409,
       "pos":[
         4885.255859375,
         2707.3203125,
@@ -163,7 +163,7 @@
       },
       "isMultiSpot":false,
       "name":"plastiCarDealer_parking",
-      "oldId":9910,
+      "oldId":8410,
       "pos":[
         5589.2143554688,
         -1002.8582763672,
@@ -199,7 +199,7 @@
       },
       "isMultiSpot":false,
       "name":"carsRusDealer_parking",
-      "oldId":9912,
+      "oldId":8411,
       "pos":[
         6020.2377929688,
         -5595.6748046875,
@@ -215,6 +215,42 @@
         2.5,
         6,
         3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"commercialDealer_parking",
+      "oldId":8412,
+      "pos":[
+        5414.3701171875,
+        -1124.5072021484,
+        -553.76495361328
+      ],
+      "rot":[
+        0,
+        0,
+        0.40486794710159,
+        0.91437512636185
+      ],
+      "scl":[
+        4,
+        14,
+        8
       ],
       "spotAmount":1,
       "spotDirection":"Left",
@@ -249,7 +285,7 @@
         "values":{}
       },
       "name":"Starter Apartment",
-      "oldId":9902,
+      "oldId":8405,
       "top":{
         "active":false,
         "normal":[
