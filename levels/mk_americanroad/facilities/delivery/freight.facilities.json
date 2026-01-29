@@ -8,8 +8,14 @@
       "preview": "",
       "manualAccessPoints": [
         {
-          "psName": "airport_freight",
+          "psName": "airport_parking",
           "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "airport_freight",
+          "isInspectSpot": false,
           "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","pcofficeSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruckNeedsRepair"],
           "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruck"]
         },
