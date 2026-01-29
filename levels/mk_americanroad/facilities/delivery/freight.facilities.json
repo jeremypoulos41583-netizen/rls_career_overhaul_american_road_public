@@ -278,20 +278,20 @@
         {
           "psName": "sawmill_freight",
           "isInspectSpot": true,
-          "logisticTypesProvided": ["lumberFlatbed", "emptyLogTrailer"],
-          "logisticTypesReceived": ["mechanicalParts","tiresSupplies","carPartsLightSupplies","carPartsHeavySupplies","vehLargeTruck", "loadedLogTrailer", "emptyFlatbedTrailers"]
+          "logisticTypesProvided": ["lumberFlatbed", "emptyLogTrailer", "trailerDeliveryLumber"],
+          "logisticTypesReceived": ["mechanicalParts","tiresSupplies","carPartsLightSupplies","carPartsHeavySupplies","vehLargeTruck", "loadedLogTrailer", "emptyFlatbedTrailers", "trailerDeliveryLumber"]
         },
         {
           "psName": "sawmill_trailer",
-          "logisticTypesProvided": ["lumberFlatbed", "emptyLogTrailer"],
-          "logisticTypesReceived": ["loadedLogTrailer", "emptyFlatbedTrailers"],
+          "logisticTypesProvided": ["lumberFlatbed", "emptyLogTrailer", "trailerDeliveryLumber"],
+          "logisticTypesReceived": ["loadedLogTrailer", "emptyFlatbedTrailers", "trailerDeliveryLumber"],
           "loanerTrailerPriority": 1,
           "loanerNonTrailerPriority": 0
         }
       ],
       "sitesFile": "freight.sites.json",
-      "logisticTypesProvided": ["lumberFlatbed", "emptyLogTrailer"],
-      "logisticTypesReceived": ["mechanicalParts","tiresSupplies","carPartsLightSupplies","carPartsHeavySupplies","vehLargeTruck", "loadedLogTrailer", "emptyFlatbedTrailers"],
+      "logisticTypesProvided": ["lumberFlatbed", "emptyLogTrailer", "trailerDeliveryLumber"],
+      "logisticTypesReceived": ["mechanicalParts","tiresSupplies","carPartsLightSupplies","carPartsHeavySupplies","vehLargeTruck", "loadedLogTrailer", "emptyFlatbedTrailers", "trailerDeliveryLumber"],
       "logisticMaxItems": 10,
       "logisticGenerators": [
         {
@@ -312,7 +312,7 @@
           },
           "filter": "lumberFlatbed",
           "logisticTypes": [
-            "lumberFlatbed"
+            "trailerDeliveryLumber"
           ]
         },
         {
@@ -326,7 +326,7 @@
           },
           "filter": "emptyLogTrailer",
           "logisticTypes": [
-            "emptyLogTrailer"
+            "trailerDeliveryLumber"
           ]
         },
         {
@@ -340,7 +340,7 @@
           },
           "filter": "loadedLogTrailer",
           "logisticTypes": [
-            "loadedLogTrailer"
+            "trailerDeliveryLumber"
           ]
         },
         {
@@ -354,7 +354,7 @@
           },
           "filter": "emptyFlatbedTrailers",
           "logisticTypes": [
-            "emptyFlatbedTrailers"
+            "trailerDeliveryLumber"
           ]
         }
       ]
@@ -369,20 +369,20 @@
         {
           "psName": "sprawlMartLogistics_parking",
           "isInspectSpot": true,
-          "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","pcofficeSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruckNeedsRepair", "emptyFlatbedTrailers"],
-          "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruck", "lumberFlatbed", "tastiColaDryvan"]
+          "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","pcofficeSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruckNeedsRepair", "trailerDeliveryRetail", "trailerDeliveryCola"],
+          "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruck", "trailerDeliveryLumber", "trailerDeliveryCola"]
         },
         {
           "psName": "sprawlMartTrailer_parking",
-          "logisticTypesProvided": ["trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair", "emptyFlatbedTrailers"],
-          "logisticTypesReceived": ["trailerDeliveryConstructionMaterials", "lumberFlatbed", "tastiColaDryvan"],
+          "logisticTypesProvided": ["trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair", "trailerDeliveryRetail", "trailerDeliveryCola"],
+          "logisticTypesReceived": ["trailerDeliveryConstructionMaterials", "trailerDeliveryCola"],
           "loanerTrailerPriority": 1,
           "loanerNonTrailerPriority": 0
         }
       ],
       "sitesFile": "freight.sites.json",
-      "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair", "emptyFlatbedTrailers"],
-      "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryConstructionMaterials","vehLargeTruck", "lumberFlatbed", "tastiColaDryvan"],
+      "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair", "trailerDeliveryRetail", "trailerDeliveryCola"],
+      "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryConstructionMaterials","vehLargeTruck", "trailerDeliveryCola"],
       "logisticMaxItems": 10,
       "logisticGenerators": [
         {
@@ -410,21 +410,7 @@
           },
           "filter": "emptyDryvanTrailers",
           "logisticTypes": [
-            "trailerDeliveryResidential"
-          ]
-        },
-        {
-          "type": "trailerOfferProvider",
-          "interval": 210,
-          "min": 0,
-          "max": 2,
-          "offerDuration": {
-            "min": 300,
-            "max": 600
-          },
-          "filter": "emptyFlatbedTrailers",
-          "logisticTypes": [
-            "emptyFlatbedTrailers"
+            "trailerDeliveryRetail"
           ]
         },
         {
@@ -438,21 +424,7 @@
           },
           "filter": "tastiColaDryvan",
           "logisticTypes": [
-            "tastiColaDryvan"
-          ]
-        },
-        {
-          "type": "trailerOfferReceiver",
-          "interval": 210,
-          "min": 0,
-          "max": 2,
-          "offerDuration": {
-            "min": 300,
-            "max": 600
-          },
-          "filter": "lumberFlatbed",
-          "logisticTypes": [
-            "lumberFlatbed"
+            "trailerDeliveryCola"
           ]
         },
         {
@@ -466,7 +438,7 @@
           },
           "filter": "tastiColaDryvan",
           "logisticTypes": [
-            "tastiColaDryvan"
+            "trailerDeliveryCola"
           ]
         }
       ]
