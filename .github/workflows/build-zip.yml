@@ -14,7 +14,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with: 
-          lfs:true
+          lfs: true
       
       - name: Create ZIP archive
         run: |
