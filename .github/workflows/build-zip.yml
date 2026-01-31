@@ -18,16 +18,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Create ZIP archive
+      - name: Create ZIP archive with mod folders at root
         run: |
-          zip -r rls_career_overhaul_american_road.zip . -x "*.git*"
+          # Zip only the mod content folders, excluding repo files
+          zip -r rls_career_overhaul_american_road-pr-${{ github.event.pull_request.number }}.zip \
+            gameplay levels lua vehicles scripts \
+            -x "*.git*"
       
       - name: Upload ZIP artifact
         uses: actions/upload-artifact@v4
         id: artifact-upload
         with:
           name: rls_career_overhaul_american_road-pr-${{ github.event.pull_request.number }}
-          path: rls_career_overhaul_american_road.zip
+          path: rls_career_overhaul_american_road-pr-${{ github.event.pull_request.number }}.zip
           retention-days: 30
       
       - name: Comment on PR with download link
@@ -38,17 +41,17 @@ jobs:
             const repo = context.repo;
             const prNumber = context.payload.pull_request.number;
             
-            const comment = `## 📦 Build Ready for QA
+            const comment = `## ��� Build Ready for QA
             
             A new build has been created for this PR.
             
             **[⬇️ Download ZIP Here](https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId})**
             
-            ### How to download:
+            ### Installation:
             1. Click the link above
-            2. Scroll to the bottom of the page
-            3. Find the "Artifacts" section
-            4. Click on \`rls_career_overhaul_american_road-pr-${prNumber}\` to download
+            2. Scroll to the bottom to the "Artifacts" section
+            3. Download \`rls_career_overhaul_american_road-pr-${prNumber}.zip\`
+            4. Place the downloaded .zip file directly in your BeamNG mods folder (do NOT extract)
             
             _Artifact will be available for 30 days._`;
             
