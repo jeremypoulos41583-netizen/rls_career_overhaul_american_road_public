@@ -28,6 +28,7 @@ jobs:
             --exclude='doc' \
             --exclude='tests' \
             --exclude='test' \
+            --exclude="$MOD_NAME" \
             ./ "$MOD_NAME/"
 
       - name: Create ZIP
