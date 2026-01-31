@@ -9,8 +9,5 @@
 # Documentation: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
 # Default owner for all files - QA team will be notified for all changes
-# Update the line below with your QA team or user:
-#   - For a team: @jeremypoulos41583-netizen/qa-team
-#   - For a user: @qa-username
-# The user/team must have write access to this repository.
-* @jeremypoulos41583-netizen
+# Currently set to @Bigred2998 (matching the existing CODEOWNERS on dev branch)
+* @Bigred2998
