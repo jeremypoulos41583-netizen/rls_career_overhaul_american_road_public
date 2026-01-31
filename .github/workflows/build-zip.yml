@@ -10,6 +10,7 @@ permissions:
   contents: read
   pull-requests: write
   actions: write
+  issues: write
 
 jobs:
   build:
@@ -19,43 +20,31 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Calculate version and delete old artifacts
-        id: version
+      - name: Delete old artifacts
         run: |
           PR_NUMBER="${{ github.event.number }}"
-          PREFIX="${PR_NUMBER}\."
+          ARTIFACT_PREFIX="rls_career_overhaul_american_road-pr-${PR_NUMBER}"
 
-          ARTIFACTS_JSON=$(gh api repos/${{ github.repository }}/actions/artifacts --jq "[.artifacts[] | select(.name | startswith(\"$PREFIX\")) | {id: .id, name: .name}]" 2>/dev/null || echo "[]")
+          echo "Looking for artifacts starting with: $ARTIFACT_PREFIX"
+          
+          ARTIFACTS_JSON=$(gh api repos/${{ github.repository }}/actions/artifacts --jq "[.artifacts[] | select(.name | startswith(\"$ARTIFACT_PREFIX\")) | {id: .id, name: .name}]" 2>/dev/null || echo "[]")
 
           ARTIFACT_COUNT=$(echo "$ARTIFACTS_JSON" | jq 'length')
 
           if [ "$ARTIFACT_COUNT" = "0" ] || [ -z "$ARTIFACTS_JSON" ] || [ "$ARTIFACTS_JSON" = "[]" ]; then
-            MINOR_VERSION=1
-            VERSION="${PR_NUMBER}.${MINOR_VERSION}"
-            echo "No existing artifacts found, starting at version $VERSION"
+            echo "No existing artifacts found"
           else
-            echo "Found $ARTIFACT_COUNT existing artifact(s), finding max version..."
-            MAX_MINOR=$(echo "$ARTIFACTS_JSON" | jq -r '.[].name' | sed -e "s/$PREFIX//" -e "s/_career_overhaul$//" | sort -n | tail -1)
-            if [ -z "$MAX_MINOR" ] || [ "$MAX_MINOR" = "null" ]; then
-              MAX_MINOR=0
-            fi
-
-            echo "Deleting old artifacts in parallel (max version was $MAX_MINOR)..."
+            echo "Found $ARTIFACT_COUNT existing artifact(s), deleting..."
             echo "$ARTIFACTS_JSON" | jq -r '.[].id' | xargs -P 4 -I {} sh -c 'gh api repos/${{ github.repository }}/actions/artifacts/{} -X DELETE 2>/dev/null || true'
-
-            MINOR_VERSION=$((MAX_MINOR + 1))
-            VERSION="${PR_NUMBER}.${MINOR_VERSION}"
-            echo "Calculated new version: $VERSION"
+            echo "Old artifacts deleted"
           fi
-
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Upload mod directories as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ steps.version.outputs.version }}_career_overhaul
+          name: rls_career_overhaul_american_road-pr-${{ github.event.pull_request.number }}
           path: |
             gameplay/
             levels/
@@ -71,9 +60,9 @@ jobs:
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
-            const version = '${{ steps.version.outputs.version }}';
             const runId = context.runId;
             const repo = context.repo;
+            const artifactName = `rls_career_overhaul_american_road-pr-${prNumber}`;
             
             // Delete old "Build Ready for QA" comments
             const comments = await github.rest.issues.listComments({
@@ -82,20 +71,39 @@ jobs:
               issue_number: prNumber
             });
             
+            console.log(`Found ${comments.data.length} total comments`);
+            
             for (const comment of comments.data) {
-              if (comment.body && comment.body.includes('📦 Build Ready for QA')) {
-                console.log('Deleting comment:', comment.id);
-                await github.rest.issues.deleteComment({
-                  owner: repo.owner,
-                  repo: repo.repo,
-                  comment_id: comment.id
-                });
+              if (comment.body && (comment.body.includes('Build Ready for QA') || comment.body.includes('📦'))) {
+                console.log(`Deleting comment ID: ${comment.id}`);
+                try {
+                  await github.rest.issues.deleteComment({
+                    owner: repo.owner,
+                    repo: repo.repo,
+                    comment_id: comment.id
+                  });
+                  console.log(`Successfully deleted comment ${comment.id}`);
+                } catch (error) {
+                  console.log(`Failed to delete comment ${comment.id}: ${error.message}`);
+                }
               }
             }
             
             // Post new comment
             const downloadUrl = `https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId}`;
-            const body = `## 📦 Build Ready for QA\n\nA new build has been created for this PR.\n\n**[⬇️ Download ZIP Here](${downloadUrl})**\n\n### Installation:\n1. Click the link above\n2. Scroll to the bottom to the "Artifacts" section\n3. Download \`${version}_career_overhaul.zip\`\n4. Place the downloaded .zip file directly in your BeamNG mods folder (do NOT extract)\n\n_Artifact will be available for 30 days._`;
+            const body = `## 📦 Build Ready for QA
+
+A new build has been created for this PR.
+
+**[⬇️ Download ZIP Here](${downloadUrl})**
+
+### Installation:
+1. Click the link above
+2. Scroll to the bottom to the "Artifacts" section
+3. Download \\`${artifactName}.zip\\`
+4. Place the downloaded .zip file directly in your BeamNG mods folder (do NOT extract)
+
+_Artifact will be available for 30 days._`;
             
             await github.rest.issues.createComment({
               owner: repo.owner,
