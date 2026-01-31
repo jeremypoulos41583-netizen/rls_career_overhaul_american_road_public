@@ -1,0 +1,44 @@
+name: BeamNG PR Zip
+
+on:
+  pull_request:
+
+jobs:
+  build-mod-zip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR
+        uses: actions/checkout@v4
+
+      - name: Set variables
+        id: vars
+        run: |
+          echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+          echo "PR_NUMBER=${{ github.event.pull_request.number }}" >> $GITHUB_ENV
+          echo "MOD_NAME=my_mod_name" >> $GITHUB_ENV
+
+      - name: Prepare mod folder
+        run: |
+          mkdir "$MOD_NAME"
+          rsync -av \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='docs' \
+            --exclude='doc' \
+            --exclude='tests' \
+            --exclude='test' \
+            --exclude="$MOD_NAME" \
+            ./ "$MOD_NAME/"
+
+      - name: Create ZIP
+        run: |
+          ZIP_NAME="${MOD_NAME}-PR${PR_NUMBER}-${SHORT_SHA}.zip"
+          zip -r "$ZIP_NAME" "$MOD_NAME"
+          echo "ZIP_NAME=$ZIP_NAME" >> $GITHUB_ENV
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.ZIP_NAME }}
+          path: ${{ env.ZIP_NAME }}
