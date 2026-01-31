@@ -62,7 +62,7 @@ jobs:
             const prNumber = context.payload.pull_request.number;
             const runId = context.runId;
             const repo = context.repo;
-            const artifactName = `rls_career_overhaul_american_road-pr-${prNumber}`;
+            const artifactName = 'rls_career_overhaul_american_road-pr-' + prNumber;
             
             // Delete old "Build Ready for QA" comments
             const comments = await github.rest.issues.listComments({
@@ -71,27 +71,27 @@ jobs:
               issue_number: prNumber
             });
             
-            console.log(`Found ${comments.data.length} total comments`);
+            console.log('Found ' + comments.data.length + ' total comments');
             
             for (const comment of comments.data) {
               if (comment.body && (comment.body.includes('Build Ready for QA') || comment.body.includes('📦'))) {
-                console.log(`Deleting comment ID: ${comment.id}`);
+                console.log('Deleting comment ID: ' + comment.id);
                 try {
                   await github.rest.issues.deleteComment({
                     owner: repo.owner,
                     repo: repo.repo,
                     comment_id: comment.id
                   });
-                  console.log(`Successfully deleted comment ${comment.id}`);
+                  console.log('Successfully deleted comment ' + comment.id);
                 } catch (error) {
-                  console.log(`Failed to delete comment ${comment.id}: ${error.message}`);
+                  console.log('Failed to delete comment ' + comment.id + ': ' + error.message);
                 }
               }
             }
             
             // Post new comment
-            const downloadUrl = `https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId}`;
-            const body = `## 📦 Build Ready for QA\n\nA new build has been created for this PR.\n\n**[⬇️ Download ZIP Here](${downloadUrl})**\n\n### Installation:\n1. Click the link above\n2. Scroll to the bottom to the "Artifacts" section\n3. Download \\`${artifactName}.zip\\`\n4. Place the downloaded .zip file directly in your BeamNG mods folder (do NOT extract)\n\n_Artifact will be available for 30 days._`;
+            const downloadUrl = 'https://github.com/' + repo.owner + '/' + repo.repo + '/actions/runs/' + runId;
+            const body = '## 📦 Build Ready for QA\n\nA new build has been created for this PR.\n\n**[⬇️ Download ZIP Here](' + downloadUrl + ')**\n\n### Installation:\n1. Click the link above\n2. Scroll to the bottom to the "Artifacts" section\n3. Download `' + artifactName + '.zip`\n4. Place the downloaded .zip file directly in your BeamNG mods folder (do NOT extract)\n\n_Artifact will be available for 30 days._';
             
             await github.rest.issues.createComment({
               owner: repo.owner,
