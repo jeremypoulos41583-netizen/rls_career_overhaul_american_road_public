@@ -9,6 +9,7 @@ on:
 permissions:
   contents: read
   pull-requests: write
+  actions: write
 
 jobs:
   build:
@@ -18,66 +19,65 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Create ZIP archive with mod folders at root
+      - name: Calculate version and delete old artifacts
+        id: version
         run: |
-          # Zip only the mod content folders, excluding repo files
-          zip -r rls_career_overhaul_american_road-pr-${{ github.event.pull_request.number }}.zip \
-            gameplay levels lua vehicles scripts \
-            -x "*.git*"
+          PR_NUMBER="${{ github.event.number }}"
+          PREFIX="${PR_NUMBER}."
+
+          ARTIFACTS_JSON=$(gh api repos/${{ github.repository }}/actions/artifacts --jq "[.artifacts[] | select(.name | startswith(\"$PREFIX\")) | {id: .id, name: .name}]" 2>/dev/null || echo "[]")
+
+          ARTIFACT_COUNT=$(echo "$ARTIFACTS_JSON" | jq 'length')
+
+          if [ "$ARTIFACT_COUNT" = "0" ] || [ -z "$ARTIFACTS_JSON" ] || [ "$ARTIFACTS_JSON" = "[]" ]; then
+            MINOR_VERSION=1
+            VERSION="${PR_NUMBER}.${MINOR_VERSION}"
+            echo "No existing artifacts found, starting at version $VERSION"
+          else
+            echo "Found $ARTIFACT_COUNT existing artifact(s), finding max version..."
+            MAX_MINOR=$(echo "$ARTIFACTS_JSON" | jq -r '.[].name' | sed -e "s/$PREFIX//" -e "s/_career_overhaul$//" | sort -n | tail -1)
+            if [ -z "$MAX_MINOR" ] || [ "$MAX_MINOR" = "null" ]; then
+              MAX_MINOR=0
+            fi
+
+            echo "Deleting old artifacts in parallel (max version was $MAX_MINOR)..."
+            echo "$ARTIFACTS_JSON" | jq -r '.[].id' | xargs -P 4 -I {} sh -c 'gh api repos/${{ github.repository }}/actions/artifacts/{} -X DELETE 2>/dev/null || true'
+
+            MINOR_VERSION=$((MAX_MINOR + 1))
+            VERSION="${PR_NUMBER}.${MINOR_VERSION}"
+            echo "Calculated new version: $VERSION"
+          fi
+
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Upload ZIP artifact
+      - name: Upload mod directories as artifact
         uses: actions/upload-artifact@v4
-        id: artifact-upload
         with:
-          name: rls_career_overhaul_american_road-pr-${{ github.event.pull_request.number }}
-          path: rls_career_overhaul_american_road-pr-${{ github.event.pull_request.number }}.zip
+          name: ${{ steps.version.outputs.version }}_career_overhaul
+          path: |
+            gameplay/
+            levels/
+            lua/
+            vehicles/
+            scripts/
           retention-days: 30
+          if-no-files-found: error
+          compression-level: 2
       
       - name: Delete old QA comments and post new one
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const runId = context.runId;
-            const repo = context.repo;
-            const prNumber = context.payload.pull_request.number;
-            
-            // Find and delete old "Build Ready for QA" comments
-            const comments = await github.rest.issues.listComments({
-              owner: repo.owner,
-              repo: repo.repo,
-              issue_number: prNumber
-            });
-            
-            for (const comment of comments.data) {
-              if (comment.body.includes('## 📦 Build Ready for QA')) {
-                await github.rest.issues.deleteComment({
-                  owner: repo.owner,
-                  repo: repo.repo,
-                  comment_id: comment.id
-                });
-              }
-            }
-            
-            // Post new comment
-            const comment = [
-              '## 📦 Build Ready for QA',
-              '',
-              'A new build has been created for this PR.',
-              '',
-              `**[⬇️ Download ZIP Here](https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId})**`,
-              '',
-              '### Installation:',
-              '1. Click the link above',
-              '2. Scroll to the bottom to the "Artifacts" section',
-              '3. Download `rls_career_overhaul_american_road-pr-' + prNumber + '.zip`',
-              '4. Place the downloaded .zip file directly in your BeamNG mods folder (do NOT extract)',
-              '',
-              '_Artifact will be available for 30 days._'
-            ].join('\n');
-            
-            await github.rest.issues.createComment({
-              owner: repo.owner,
-              repo: repo.repo,
-              issue_number: prNumber,
-              body: comment
-            });
+        run: |
+          PR_NUMBER="${{ github.event.number }}"
+          VERSION="${{ steps.version.outputs.version }}"
+          
+          # Delete old "Build Ready for QA" comments
+          gh api repos/${{ github.repository }}/issues/${PR_NUMBER}/comments --jq '.[] | select(.body | contains("## 📦 Build Ready for QA")) | .id' | 
+            xargs -I {} gh api repos/${{ github.repository }}/issues/comments/{} -X DELETE 2>/dev/null || true
+          
+          # Post new comment
+          DOWNLOAD_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          
+          gh pr comment ${PR_NUMBER} --body "## 📦 Build Ready for QA\n\nA new build has been created for this PR.\n\n**[⬇️ Download Career Overhaul v$VERSION]($DOWNLOAD_URL)**\n\n### Installation:\n1. Click the link above\n2. Scroll to the bottom to the \"Artifacts\" section\n3. Download \`${VERSION}_career_overhaul.zip\`\n4. Extract the zip directly into your BeamNG mods folder\n\n_Artifact will be available for 30 days._" 
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
