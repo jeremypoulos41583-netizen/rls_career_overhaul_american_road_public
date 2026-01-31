@@ -16,7 +16,7 @@ jobs:
         run: |
           echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
           echo "PR_NUMBER=${{ github.event.pull_request.number }}" >> $GITHUB_ENV
-          echo "MOD_NAME=my_mod_name" >> $GITHUB_ENV
+          echo "MOD_NAME=rls_career_overhaul_american_road" >> $GITHUB_ENV
 
       - name: Prepare mod folder
         run: |
@@ -42,3 +42,38 @@ jobs:
         with:
           name: ${{ env.ZIP_NAME }}
           path: ${{ env.ZIP_NAME }}
+          retention-days: 30
+
+      - name: Delete old QA comments and post new one
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const repo = context.repo;
+            const prNumber = context.payload.pull_request.number;
+            const runId = context.runId;
+            const zipName = process.env.ZIP_NAME || '';
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: repo.owner,
+              repo: repo.repo,
+              issue_number: prNumber
+            });
+            const botUser = 'github-actions[bot]';
+            for (const comment of comments) {
+              if (comment.user.login === botUser && comment.body && comment.body.includes('ZIP artifact')) {
+                await github.rest.issues.deleteComment({
+                  owner: repo.owner,
+                  repo: repo.repo,
+                  comment_id: comment.id
+                });
+              }
+            }
+            const downloadUrl = `https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId}`;
+            const body = `[ZIP artifact \`${zipName}\`](${downloadUrl})`;
+            await github.rest.issues.createComment({
+              owner: repo.owner,
+              repo: repo.repo,
+              issue_number: prNumber,
+              body
+            });
+        env:
+          ZIP_NAME: ${{ env.ZIP_NAME }}
