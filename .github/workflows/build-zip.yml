@@ -33,7 +33,7 @@ jobs:
           path: rls_career_overhaul_american_road-pr-${{ github.event.pull_request.number }}.zip
           retention-days: 30
       
-      - name: Comment on PR with download link
+      - name: Delete old QA comments and post new one
         uses: actions/github-script@v7
         with:
           script: |
@@ -41,18 +41,28 @@ jobs:
             const repo = context.repo;
             const prNumber = context.payload.pull_request.number;
             
-            const comment = `## ��� Build Ready for QA
+            // Find and delete old "Build Ready for QA" comments
+            const comments = await github.rest.issues.listComments({
+              owner: repo.owner,
+              repo: repo.repo,
+              issue_number: prNumber
+            });
             
-            A new build has been created for this PR.
+            for (const comment of comments.data) {
+              if (comment.body.includes('## 📦 Build Ready for QA')) {
+                await github.rest.issues.deleteComment({
+                  owner: repo.owner,
+                  repo: repo.repo,
+                  comment_id: comment.id
+                });
+              }
+            }
             
-            **[⬇️ Download ZIP Here](https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId})**
-            
-            ### Installation:
-            1. Click the link above
-            2. Scroll to the bottom to the "Artifacts" section
-            3. Download \`rls_career_overhaul_american_road-pr-${prNumber}.zip\`
-            4. Place the downloaded .zip file directly in your BeamNG mods folder (do NOT extract)
-            
+            // Post new comment
+            const comment = `## 📦 Build Ready for QA`\n            
+            A new build has been created for this PR.\n            
+            **[⬇️ Download ZIP Here](https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId})**\n            
+            ### Installation:\n            1. Click the link above\n            2. Scroll to the bottom to the "Artifacts" section\n            3. Download \`rls_career_overhaul_american_road-pr-${prNumber}.zip\`\n            4. Place the downloaded .zip file directly in your BeamNG mods folder (do NOT extract)\n            
             _Artifact will be available for 30 days._`;
             
             await github.rest.issues.createComment({
