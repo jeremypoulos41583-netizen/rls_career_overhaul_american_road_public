@@ -59,11 +59,21 @@ jobs:
             }
             
             // Post new comment
-            const comment = `## 📦 Build Ready for QA`\n            
-            A new build has been created for this PR.\n            
-            **[⬇️ Download ZIP Here](https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId})**\n            
-            ### Installation:\n            1. Click the link above\n            2. Scroll to the bottom to the "Artifacts" section\n            3. Download \`rls_career_overhaul_american_road-pr-${prNumber}.zip\`\n            4. Place the downloaded .zip file directly in your BeamNG mods folder (do NOT extract)\n            
-            _Artifact will be available for 30 days._`;
+            const comment = [
+              '## 📦 Build Ready for QA',
+              '',
+              'A new build has been created for this PR.',
+              '',
+              `**[⬇️ Download ZIP Here](https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId})**`,
+              '',
+              '### Installation:',
+              '1. Click the link above',
+              '2. Scroll to the bottom to the "Artifacts" section',
+              `3. Download \\`rls_career_overhaul_american_road-pr-${prNumber}.zip\\``,
+              '4. Place the downloaded .zip file directly in your BeamNG mods folder (do NOT extract)',
+              '',
+              '_Artifact will be available for 30 days._'
+            ].join('\n');
             
             await github.rest.issues.createComment({
               owner: repo.owner,
