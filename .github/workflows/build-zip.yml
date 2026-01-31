@@ -69,7 +69,7 @@ jobs:
               '### Installation:',
               '1. Click the link above',
               '2. Scroll to the bottom to the "Artifacts" section',
-              `3. Download \\`rls_career_overhaul_american_road-pr-${prNumber}.zip\\``,
+              '3. Download `rls_career_overhaul_american_road-pr-' + prNumber + '.zip`',
               '4. Place the downloaded .zip file directly in your BeamNG mods folder (do NOT extract)',
               '',
               '_Artifact will be available for 30 days._'
