@@ -6,6 +6,10 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,7 +24,37 @@ jobs:
       
       - name: Upload ZIP artifact
         uses: actions/upload-artifact@v4
+        id: artifact-upload
         with:
           name: rls_career_overhaul_american_road-pr-${{ github.event.pull_request.number }}
           path: rls_career_overhaul_american_road.zip
           retention-days: 30
+      
+      - name: Comment on PR with download link
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runId = context.runId;
+            const repo = context.repo;
+            const prNumber = context.payload.pull_request.number;
+            
+            const comment = `## 📦 Build Ready for QA
+            
+            A new build has been created for this PR.
+            
+            **[⬇️ Download ZIP Here](https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId})**
+            
+            ### How to download:
+            1. Click the link above
+            2. Scroll to the bottom of the page
+            3. Find the "Artifacts" section
+            4. Click on \`rls_career_overhaul_american_road-pr-${prNumber}\` to download
+            
+            _Artifact will be available for 30 days._`;
+            
+            await github.rest.issues.createComment({
+              owner: repo.owner,
+              repo: repo.repo,
+              issue_number: prNumber,
+              body: comment
+            });
