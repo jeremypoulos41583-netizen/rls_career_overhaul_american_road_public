@@ -19,7 +19,7 @@
       },
       "isMultiSpot":false,
       "name":"airport_freight",
-      "oldId":57852,
+      "oldId":8281,
       "pos":[
         5605.0288085938,
         -542.85961914063,
@@ -55,7 +55,7 @@
       },
       "isMultiSpot":false,
       "name":"airport_trailer",
-      "oldId":57853,
+      "oldId":8282,
       "pos":[
         5455.384765625,
         -428.01376342773,
@@ -91,7 +91,7 @@
       },
       "isMultiSpot":false,
       "name":"airport_loaner",
-      "oldId":57854,
+      "oldId":8283,
       "pos":[
         5618.1875,
         -545.37542724609,
@@ -127,7 +127,7 @@
       },
       "isMultiSpot":false,
       "name":"sawmill_freight",
-      "oldId":57855,
+      "oldId":8284,
       "pos":[
         -1621.0104980469,
         389.89413452148,
@@ -163,7 +163,7 @@
       },
       "isMultiSpot":false,
       "name":"sawmill_trailer",
-      "oldId":57856,
+      "oldId":8285,
       "pos":[
         -1674.2834472656,
         372.46572875977,
@@ -199,7 +199,7 @@
       },
       "isMultiSpot":false,
       "name":"OrllyParcel_parking",
-      "oldId":57857,
+      "oldId":8286,
       "pos":[
         -2576.3208007813,
         1484.6994628906,
@@ -235,7 +235,7 @@
       },
       "isMultiSpot":false,
       "name":"OrllyTrailer_parking",
-      "oldId":57858,
+      "oldId":8287,
       "pos":[
         -2596.732421875,
         1490.32421875,
@@ -271,7 +271,7 @@
       },
       "isMultiSpot":false,
       "name":"sprawlMartTrailer_parking",
-      "oldId":57859,
+      "oldId":8288,
       "pos":[
         5296.8896484375,
         -1752.0045166016,
@@ -307,7 +307,7 @@
       },
       "isMultiSpot":false,
       "name":"sprawlMartLogistics_parking",
-      "oldId":57860,
+      "oldId":8289,
       "pos":[
         5344.744140625,
         -1742.8057861328,
@@ -343,7 +343,7 @@
       },
       "isMultiSpot":false,
       "name":"airport_parking",
-      "oldId":57861,
+      "oldId":8290,
       "pos":[
         5626.3447265625,
         -538.16302490234,
@@ -359,6 +359,42 @@
         2.5,
         6,
         3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"maryvilleLumber_parking",
+      "oldId":8291,
+      "pos":[
+        4637.2348632813,
+        -2594.9245605469,
+        -556.96978759766
+      ],
+      "rot":[
+        0,
+        0,
+        0.9344645726003,
+        -0.35605578089935
+      ],
+      "scl":[
+        3.25,
+        8,
+        4
       ],
       "spotAmount":1,
       "spotDirection":"Left",

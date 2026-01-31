@@ -360,6 +360,55 @@
       ]
     },
     {
+      "id": "maryvilleLumber",
+      "name": "Maryville Lumber",
+      "description": "Lumber yard. Sends out crate and plank trailers, receives lumber flatbeds.",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "",
+      "manualAccessPoints": [
+        {
+          "psName": "maryvilleLumber_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": ["mediumCratePlanksTrailers", "trailerDeliveryConstructionMaterials"],
+          "logisticTypesReceived": ["lumberFlatbed"]
+        }
+      ],
+      "sitesFile": "freight.sites.json",
+      "logisticTypesProvided": ["mediumCratePlanksTrailers", "trailerDeliveryConstructionMaterials"],
+      "logisticTypesReceived": ["lumberFlatbed"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "mediumCratePlanksTrailers",
+          "logisticTypes": [
+            "trailerDeliveryConstructionMaterials"
+          ]
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "lumberFlatbed",
+          "logisticTypes": [
+            "lumberFlatbed"
+          ]
+        }
+      ]
+    },
+    {
       "id": "sprawlMart",
       "name": "Sprawl * Mart",
       "description": "Ships and receives a wide variety of cargo types.",

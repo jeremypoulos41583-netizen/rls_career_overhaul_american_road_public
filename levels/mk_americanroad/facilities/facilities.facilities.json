@@ -40,6 +40,27 @@
       ],
       "defaultPrice": 80000,
       "capacity": 2
+    },
+    {
+      "id": "maryvilleHouse",
+      "name": "Maryville House",
+      "description": "A comfortable house",
+      "preview": "",
+      "zoneNames": [
+        "Maryville House"
+      ],
+      "parkingSpotNames": [
+        "maryvilleHouse_parking1",
+        "maryvilleHouse_parking2",
+        "maryvilleHouse_parking3",
+        "maryvilleHouse_parking4"
+      ],
+      "icon": "poi_garage_2_round",
+      "tags": [
+        "truck"
+      ],
+      "defaultPrice": 195000,
+      "capacity": 4
     }
   ],
   "computers": [
@@ -90,6 +111,43 @@
         [
           "upstateCottageComputer_area",
           "upstateCottageComputer_icon"
+        ]
+      ],
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurancePolicies": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Store Vehicle"
+        },
+        {
+          "keyLabel": "sleep"
+        }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+    },
+    {
+      "id": "maryvilleHouse",
+      "garageId": "maryvilleHouse",
+      "name": "Maryville House",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "",
+      "doors": [
+        [
+          "maryvilleHouseComputer_area",
+          "maryvilleHouseComputer_icon"
         ]
       ],
       "screens": [
