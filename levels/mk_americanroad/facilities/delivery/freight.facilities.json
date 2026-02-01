@@ -2,36 +2,40 @@
   "deliveryProviders": [
     {
       "id": "airport",
-      "name": "Airport",
+      "name": "Airport Logistics",
       "description": "Main logistics hub. Ships and receives all cargo types.",
       "associatedOrganization": "airport",
-      "preview": "",
+      "preview": "airportLogistics.png",
       "manualAccessPoints": [
         {
-          "psName": "airport_freight",
+          "psName": "airport_parking",
           "isInspectSpot": true,
-          "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","pcofficeSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruckNeedsRepair"],
-          "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruck"]
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "airport_freight",
+          "isInspectSpot": false,
+          "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","pcofficeSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruckNeedsRepair", "emptyFlatbedTrailers", "emptyDryvanTrailers"],
+          "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruck", "lumberFlatbed", "tastiColaDryvan"]
         },
         {
           "psName": "airport_loaner",
           "isInspectSpot": false,
-          "logisticTypesProvided": [],
-          "logisticTypesReceived": [],
-          "loanerTrailerPriority": 0,
+          "logisticTypesProvided": ["vehLargeTruckNeedsRepair"],
+          "logisticTypesReceived": ["vehLargeTruck"],
+          "loanerTrailerPriority": 1,
           "loanerNonTrailerPriority": 1
         },
         {
           "psName": "airport_trailer",
-          "logisticTypesProvided": ["trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair"],
-          "logisticTypesReceived": ["trailerDeliveryResidential","trailerDeliveryConstructionMaterials"],
-          "loanerTrailerPriority": 1,
-          "loanerNonTrailerPriority": 0
+          "logisticTypesProvided": ["trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair", "trailerDeliveryLoadedRetail"],
+          "logisticTypesReceived": ["trailerDeliveryResidential","trailerDeliveryConstructionMaterials", "lumberFlatbed", "trailerDeliveryEmptyRetail"],
         }
       ],
       "sitesFile": "freight.sites.json",
-      "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair"],
-      "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryConstructionMaterials","trailerDeliveryResidential","vehLargeTruck"],
+      "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair","trailerDeliveryLoadedRetail"],
+      "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryConstructionMaterials","trailerDeliveryResidential","vehLargeTruck", "lumberFlatbed","trailerDeliveryEmptyRetail",],
       "logisticMaxItems": 20,
       "logisticGenerators": [
         {
@@ -59,7 +63,7 @@
           },
           "filter": "emptyDryvanTrailers",
           "logisticTypes": [
-            "trailerDeliveryResidential"
+            "trailerDeliveryEmptyRetail"
           ]
         },
         {
@@ -87,7 +91,7 @@
           },
           "filter": "loadedDryvanTrailers",
           "logisticTypes": [
-            "trailerDeliveryConstructionMaterials"
+            "trailerDeliveryLoadedRetail"
           ]
         },
         {
@@ -102,6 +106,48 @@
           "filter": "loadedFlatbedTrailers",
           "logisticTypes": [
             "trailerDeliveryConstructionMaterials"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "tastiColaDryvan",
+          "logisticTypes": [
+            "trailerDeliveryTastiCola"
+          ]
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "lumberFlatbed",
+          "logisticTypes": [
+            "lumberFlatbed"
+          ]
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "tastiColaDryvan",
+          "logisticTypes": [
+            "trailerDeliveryTastiCola"
           ]
         },
         {
@@ -225,25 +271,25 @@
       "name": "Sawmill",
       "description": "Produces lumber and wood products. Requires maintenance parts for machinery.",
       "associatedOrganization": "localDeliveryAssociation",
-      "preview": "",
+      "preview": "sawmill_swamp.png",
       "manualAccessPoints": [
         {
           "psName": "sawmill_freight",
           "isInspectSpot": true,
-          "logisticTypesProvided": ["trailerDeliveryConstructionMaterials"],
-          "logisticTypesReceived": ["mechanicalParts","tiresSupplies","carPartsLightSupplies","carPartsHeavySupplies","vehLargeTruck"]
+          "logisticTypesProvided": ["lumberFlatbed", "emptyLogTrailer", "trailerDeliveryLumber"],
+          "logisticTypesReceived": ["mechanicalParts","tiresSupplies","carPartsLightSupplies","carPartsHeavySupplies","vehLargeTruck", "loadedLogTrailer", "emptyFlatbedTrailers", "trailerDeliveryLumber"]
         },
         {
           "psName": "sawmill_trailer",
-          "logisticTypesProvided": ["trailerDeliveryConstructionMaterials"],
-          "logisticTypesReceived": ["trailerDeliveryResidential","trailerDeliveryConstructionMaterials"],
+          "logisticTypesProvided": ["lumberFlatbed", "emptyLogTrailer", "trailerDeliveryLumber"],
+          "logisticTypesReceived": ["loadedLogTrailer", "emptyFlatbedTrailers", "trailerDeliveryLumber"],
           "loanerTrailerPriority": 1,
           "loanerNonTrailerPriority": 0
         }
       ],
       "sitesFile": "freight.sites.json",
-      "logisticTypesProvided": ["trailerDeliveryConstructionMaterials"],
-      "logisticTypesReceived": ["mechanicalParts","tiresSupplies","carPartsLightSupplies","carPartsHeavySupplies","vehLargeTruck","trailerDeliveryConstructionMaterials","trailerDeliveryResidential"],
+      "logisticTypesProvided": ["lumberFlatbed", "emptyLogTrailer", "trailerDeliveryLumber"],
+      "logisticTypesReceived": ["mechanicalParts","tiresSupplies","carPartsLightSupplies","carPartsHeavySupplies","vehLargeTruck", "loadedLogTrailer", "emptyFlatbedTrailers", "trailerDeliveryLumber"],
       "logisticMaxItems": 10,
       "logisticGenerators": [
         {
@@ -262,9 +308,9 @@
             "min": 300,
             "max": 600
           },
-          "filter": "smallFurnitureTrailers",
+          "filter": "lumberFlatbed",
           "logisticTypes": [
-            "trailerDeliveryResidential"
+            "trailerDeliveryLumber"
           ]
         },
         {
@@ -276,14 +322,13 @@
             "min": 300,
             "max": 600
           },
-          "filter": "smallCratePlanksTrailers",
+          "filter": "emptyLogTrailer",
           "logisticTypes": [
-            "trailerDeliveryConstructionMaterials",
-            "trailerDeliveryResidential"
+            "trailerDeliveryLumber"
           ]
         },
         {
-          "type": "trailerOfferProvider",
+          "type": "trailerOfferReceiver",
           "interval": 210,
           "min": 0,
           "max": 2,
@@ -291,11 +336,46 @@
             "min": 300,
             "max": 600
           },
-          "filter": "mediumFurnitureTrailers",
+          "filter": "loadedLogTrailer",
           "logisticTypes": [
-            "trailerDeliveryResidential"
+            "trailerDeliveryLumber"
           ]
         },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "emptyFlatbedTrailers",
+          "logisticTypes": [
+            "trailerDeliveryLumber"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maryvilleLumber",
+      "name": "Maryville Lumber",
+      "description": "Lumber yard. Sends out crate and plank trailers, receives lumber flatbeds.",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "maryvilleLumber.png",
+      "manualAccessPoints": [
+        {
+          "psName": "maryvilleLumber_parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": ["mediumCratePlanksTrailers", "trailerDeliveryConstructionMaterials"],
+          "logisticTypesReceived": ["lumberFlatbed"]
+        }
+      ],
+      "sitesFile": "freight.sites.json",
+      "logisticTypesProvided": ["mediumCratePlanksTrailers", "trailerDeliveryConstructionMaterials"],
+      "logisticTypesReceived": ["lumberFlatbed"],
+      "logisticMaxItems": 10,
+      "logisticGenerators": [
         {
           "type": "trailerOfferProvider",
           "interval": 210,
@@ -307,12 +387,11 @@
           },
           "filter": "mediumCratePlanksTrailers",
           "logisticTypes": [
-            "trailerDeliveryConstructionMaterials",
-            "trailerDeliveryResidential"
+            "trailerDeliveryConstructionMaterials"
           ]
         },
         {
-          "type": "trailerOfferProvider",
+          "type": "trailerOfferReceiver",
           "interval": 210,
           "min": 0,
           "max": 2,
@@ -320,23 +399,9 @@
             "min": 300,
             "max": 600
           },
-          "filter": "loadedFlatbedTrailers",
+          "filter": "lumberFlatbed",
           "logisticTypes": [
-            "trailerDeliveryConstructionMaterials"
-          ]
-        },
-        {
-          "type": "trailerOfferProvider",
-          "interval": 210,
-          "min": 0,
-          "max": 2,
-          "offerDuration": {
-            "min": 300,
-            "max": 600
-          },
-          "filter": "loadedDryvanTrailers",
-          "logisticTypes": [
-            "trailerDeliveryConstructionMaterials"
+            "lumberFlatbed"
           ]
         }
       ]
@@ -346,25 +411,25 @@
       "name": "Sprawl * Mart",
       "description": "Ships and receives a wide variety of cargo types.",
       "associatedOrganization": "localDeliveryAssociation",
-      "preview": "",
+      "preview": "sprawl.png",
       "manualAccessPoints": [
         {
           "psName": "sprawlMartLogistics_parking",
           "isInspectSpot": true,
-          "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","pcofficeSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruckNeedsRepair"],
-          "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruck"]
+          "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","pcofficeSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruckNeedsRepair", "trailerDeliveryRetail", "trailerDeliveryCola"],
+          "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","vehLargeTruck", "trailerDeliveryLumber", "trailerDeliveryCola"]
         },
         {
           "psName": "sprawlMartTrailer_parking",
-          "logisticTypesProvided": ["trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair"],
-          "logisticTypesReceived": ["trailerDeliveryConstructionMaterials"],
+          "logisticTypesProvided": ["trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair", "trailerDeliveryRetail", "trailerDeliveryCola"],
+          "logisticTypesReceived": ["trailerDeliveryConstructionMaterials", "trailerDeliveryCola"],
           "loanerTrailerPriority": 1,
           "loanerNonTrailerPriority": 0
         }
       ],
       "sitesFile": "freight.sites.json",
-      "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair"],
-      "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryConstructionMaterials","vehLargeTruck"],
+      "logisticTypesProvided": ["freight2Supplies","freight3Supplies","freightSupplies","carPartsLightSupplies","carPartsHeavySupplies","tiresSupplies","mealSupplies","drinkSupplies","snackSupplies","sideDishSupplies","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair", "trailerDeliveryRetail", "trailerDeliveryCola"],
+      "logisticTypesReceived": ["freight2Supplies","freight3Supplies","freightSupplies","cropsSupplies","parcel","shopSupplies","officeSupplies","mechanicalParts","prepSupplies","industrial","trailerDeliveryConstructionMaterials","vehLargeTruck", "trailerDeliveryCola"],
       "logisticMaxItems": 10,
       "logisticGenerators": [
         {
@@ -392,7 +457,35 @@
           },
           "filter": "emptyDryvanTrailers",
           "logisticTypes": [
-            "trailerDeliveryResidential"
+            "trailerDeliveryRetail"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "tastiColaDryvan",
+          "logisticTypes": [
+            "trailerDeliveryCola"
+          ]
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 210,
+          "min": 0,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "tastiColaDryvan",
+          "logisticTypes": [
+            "trailerDeliveryCola"
           ]
         }
       ]

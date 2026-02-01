@@ -7,7 +7,7 @@
       "stock": 30,
       "range": [0.5, 0.80, 1.25, 1.5],
       "associatedOrganization":"plastiCarDealer",
-      "preview":"plasticar.png",
+      "preview":"plastiCar.png",
       "doors":[["plastiCarComputer_area","plastiCarComputer_icon", 30]],
       "parkingSpotNames":["Parking 7206"],
       "activityAcceptProps":[
@@ -88,7 +88,7 @@
       "stock": 20,
       "range": [0.75, 0.80, 1.10, 1.2],
       "associatedOrganization":"carsrus",
-      "preview":"USDM_Dealer_TB.png",
+      "preview":"carsRus.png",
       "doors":[["carsRusDealerComputer_area","carsRusDealerComputer_icon", 30]],
       "parkingSpotNames":["carsRusDealer_parking"],
       "activityAcceptProps":[
@@ -158,8 +158,76 @@
           "timeLimit" : 120,
           "licencePlate" : "carsRus"
       }
-    }
-  ],
+    },
+    {
+      "id":"trailerShop",
+      "name":"Trailer Dealer",
+      "description":"Trailer Sales",
+      "preview":"commercialDealer.png",
+      "doors":[["commercialDealerComputer_area","CommercialDealerComputer_icon", 30]],
+      "parkingSpotNames":["commercialDealer_parking"],
+      "stock": 10,
+      "activityAcceptProps":[
+        {"keyLabel":"Trucks and Trailers"},
+        {"keyLabel":"New & Used"}
+      ],
+    
+      "filter":{
+        "whiteList":{"Type":["Trailer"]}
+      },
+    
+      "subFilters": [
+        {
+          "whiteList":{"Type":["Trailer"],"Mileage":{"min":1613, "max":161290323}},
+          "probability":3
+        }
+      ],
+      "fees": 449,
+      "containsStarterVehicles": false,
+      "testDrive" : {
+        "abandonFees" : 100,
+        "timeLimit" : 120,
+        "licencePlate" : "belasco"
+      },
+    },
+  {
+    "id":"truckShop",
+    "name":"Commercial Vehicle Sales",
+    "description":"Tractors and Trailers",
+    "associatedOrganization":"commercialVehicleSales",
+    "preview":"commercialDealer.png",
+    "doors":[["commercialDealerComputer_area","CommercialDealerComputer_icon", 30]],
+    "parkingSpotNames":["commercialDealer_parking"],
+    "stock": 20,
+    "range": [0.8, 0.9, 1.15, 1.3],
+    "activityAcceptProps":[
+      {"keyLabel":"Trucks and Trailers"},
+      {"keyLabel":"New & Used"}
+    ],
+    "filter":{
+      "whiteList":{"Mileage":{"min":1760006, "max":970000000}},
+      "blackList":{"hasLoad":[true],"Config Type":["Frame"],"Type":["Trailer"],"Tags":["Ambulance"],"Body Style":["Ambulance","Pickup"]}
+    },
+  
+    "subFilters": [
+      {
+        "whiteList":{"Body Style":["Semi Truck", "Tanker Truck", "Flatbed Truck", "Fifth Wheel Truck", "Chassis Cab","Truck","Forklift"]},
+        "probability":5
+      },
+      {
+        "whiteList":{"Body Style":["Bus"]},
+        "probability":1
+      }
+    ],
+    "fees": 1449,
+    "containsStarterVehicles": false,
+    "testDrive" : {
+      "abandonFees" : 100,
+      "timeLimit" : 120,
+      "licencePlate" : "belasco"
+      },
+    },
+  ]  
   "privateSellers":[
       {
         "id": "private",
