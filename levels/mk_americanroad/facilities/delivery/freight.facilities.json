@@ -2,10 +2,10 @@
   "deliveryProviders": [
     {
       "id": "airport",
-      "name": "Airport",
+      "name": "Airport Logistics",
       "description": "Main logistics hub. Ships and receives all cargo types.",
       "associatedOrganization": "airport",
-      "preview": "",
+      "preview": "airportLogistics.png",
       "manualAccessPoints": [
         {
           "psName": "airport_parking",
@@ -22,17 +22,15 @@
         {
           "psName": "airport_loaner",
           "isInspectSpot": false,
-          "logisticTypesProvided": [],
-          "logisticTypesReceived": [],
-          "loanerTrailerPriority": 0,
+          "logisticTypesProvided": ["vehLargeTruckNeedsRepair"],
+          "logisticTypesReceived": ["vehLargeTruck"],
+          "loanerTrailerPriority": 1,
           "loanerNonTrailerPriority": 1
         },
         {
           "psName": "airport_trailer",
           "logisticTypesProvided": ["trailerDeliveryResidential","trailerDeliveryConstructionMaterials","vehLargeTruckNeedsRepair", "trailerDeliveryLoadedRetail"],
           "logisticTypesReceived": ["trailerDeliveryResidential","trailerDeliveryConstructionMaterials", "lumberFlatbed", "trailerDeliveryEmptyRetail"],
-          "loanerTrailerPriority": 1,
-          "loanerNonTrailerPriority": 0
         }
       ],
       "sitesFile": "freight.sites.json",
@@ -273,7 +271,7 @@
       "name": "Sawmill",
       "description": "Produces lumber and wood products. Requires maintenance parts for machinery.",
       "associatedOrganization": "localDeliveryAssociation",
-      "preview": "",
+      "preview": "sawmill_swamp.png",
       "manualAccessPoints": [
         {
           "psName": "sawmill_freight",
@@ -364,7 +362,7 @@
       "name": "Maryville Lumber",
       "description": "Lumber yard. Sends out crate and plank trailers, receives lumber flatbeds.",
       "associatedOrganization": "localDeliveryAssociation",
-      "preview": "",
+      "preview": "maryvilleLumber.png",
       "manualAccessPoints": [
         {
           "psName": "maryvilleLumber_parking",
@@ -413,7 +411,7 @@
       "name": "Sprawl * Mart",
       "description": "Ships and receives a wide variety of cargo types.",
       "associatedOrganization": "localDeliveryAssociation",
-      "preview": "",
+      "preview": "sprawl.png",
       "manualAccessPoints": [
         {
           "psName": "sprawlMartLogistics_parking",
