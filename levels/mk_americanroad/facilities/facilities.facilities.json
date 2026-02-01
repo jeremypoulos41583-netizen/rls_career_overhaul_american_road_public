@@ -4,7 +4,7 @@
       "id": "starterApartment",
       "name": "Starter Apartment",
       "description": "A quaint start",
-      "preview": "",
+      "preview": "starterApt.png",
       "zoneNames": [
 	  
         "Starter Apartment"
@@ -26,7 +26,7 @@
       "id": "upstateCottage",
       "name": "Upstate Cottage",
       "description": "A cozy cottage",
-      "preview": "",
+      "preview": "upstate.png",
       "zoneNames": [
         "Upstate Cottage"
       ],
@@ -40,6 +40,27 @@
       ],
       "defaultPrice": 80000,
       "capacity": 2
+    },
+    {
+      "id": "maryvilleHouse",
+      "name": "Maryville House",
+      "description": "A comfortable house",
+      "preview": "maryvilleCulDeSac",
+      "zoneNames": [
+        "Maryville House"
+      ],
+      "parkingSpotNames": [
+        "maryvilleHouse_parking1",
+        "maryvilleHouse_parking2",
+        "maryvilleHouse_parking3",
+        "maryvilleHouse_parking4"
+      ],
+      "icon": "poi_garage_2_round",
+      "tags": [
+        "truck"
+      ],
+      "defaultPrice": 195000,
+      "capacity": 4
     }
   ],
   "computers": [
@@ -48,7 +69,7 @@
       "garageId": "starterApartment",
       "name": "Starter Apartment",
       "description": "ui.career.computer.bigmapLabel.garage",
-      "preview": "",
+      "preview": "starterApt.png",
       "doors": [
         [
           "starterApartmentComputer_area",
@@ -85,11 +106,48 @@
       "garageId": "upstateCottage",
       "name": "Upstate Cottage",
       "description": "ui.career.computer.bigmapLabel.garage",
-      "preview": "",
+      "preview": "upstate.png",
       "doors": [
         [
           "upstateCottageComputer_area",
           "upstateCottageComputer_icon"
+        ]
+      ],
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "functions": {
+        "painting": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true,
+        "partShop": true,
+        "partInventory": true,
+        "insurancePolicies": true,
+        "sleep": true
+      },
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Store Vehicle"
+        },
+        {
+          "keyLabel": "sleep"
+        }
+      ],
+      "iconOffsetHeight": 0.24,
+      "iconLift": 0.24,
+      "icon": "poi_laptop_round"
+    },
+    {
+      "id": "maryvilleHouse",
+      "garageId": "maryvilleHouse",
+      "name": "Maryville House",
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "preview": "maryvilleCulDeSac.png",
+      "doors": [
+        [
+          "maryvilleHouseComputer_area",
+          "maryvilleHouseComputer_icon"
         ]
       ],
       "screens": [
@@ -123,7 +181,7 @@
       "id": "gas_station_hw1_r",
       "name": "Highway Gas Station (Right)",
       "description": "Refuel your vehicle.",
-      "preview": "",
+      "preview": "hw1_s.png",
       "energyTypes": ["gasoline", "diesel", "unknown"],
       "pumps": [
         ["gas_station_hw1_r", "gas_station_hw1_r_poi"]
@@ -147,7 +205,7 @@
       "id": "gas_station_hw1_l",
       "name": "Highway Gas Station (Left)",
       "description": "Refuel your vehicle.",
-      "preview": "",
+      "preview": "hw1_n.png",
       "energyTypes": ["gasoline", "diesel", "unknown"],
       "pumps": [
         ["gas_station_hw1_l", "gas_station_hw1_l_poi"]
@@ -171,7 +229,7 @@
       "id": "gas_station_hw2_1",
       "name": "Highway Gas Station 2",
       "description": "Refuel your vehicle.",
-      "preview": "",
+      "preview": "pine_hill.png",
       "energyTypes": ["gasoline", "diesel", "unknown"],
       "pumps": [
         ["gas_station_hw2_1", "gas_station_hw2_poi"]
@@ -195,7 +253,7 @@
       "id": "gas_station_track",
       "name": "Track Gas Station",
       "description": "Refuel your vehicle.",
-      "preview": "",
+      "preview": "track.png",
       "energyTypes": ["gasoline", "diesel", "unknown"],
       "pumps": [
         ["gas_station_track", "gas_station_track_poi"]
@@ -219,7 +277,7 @@
       "id": "gas_station_ref",
       "name": "Refinery Gas Station",
       "description": "Refuel your vehicle.",
-      "preview": "",
+      "preview": "refinery.png",
       "energyTypes": ["gasoline", "diesel", "unknown"],
       "pumps": [
         ["gas_station_ref", "gas_station_ref_poi"]
@@ -243,7 +301,7 @@
       "id": "gas_station_ed",
       "name": "Eastdale Gas Station",
       "description": "Refuel your vehicle.",
-      "preview": "",
+      "preview": "ed.png",
       "energyTypes": ["gasoline", "diesel", "unknown"],
       "pumps": [
         ["gas_station_ed", "gas_station_ed_poi"]
@@ -267,7 +325,7 @@
       "id": "gas_station_nc",
       "name": "North Country Gas Station",
       "description": "Refuel your vehicle.",
-      "preview": "",
+      "preview": "nc.png",
       "energyTypes": ["gasoline", "diesel", "unknown"],
       "pumps": [
         ["gas_station_nc", "gas_station_nc_poi"]
@@ -291,7 +349,7 @@
       "id": "gas_station_bolford",
       "name": "Bolford Gas Station",
       "description": "Refuel your vehicle.",
-      "preview": "",
+      "preview": "bolford.png",
       "energyTypes": ["gasoline", "diesel", "unknown"],
       "pumps": [
         ["gas_station_bolford", "gas_station_bolford_poi"]
@@ -315,7 +373,7 @@
       "id": "gas_station_farm",
       "name": "Farm Gas Station",
       "description": "Refuel your vehicle.",
-      "preview": "",
+      "preview": "farm.png",
       "energyTypes": ["gasoline", "diesel", "unknown"],
       "pumps": [
         ["gas_station_farm", "gas_station_farm_poi"]

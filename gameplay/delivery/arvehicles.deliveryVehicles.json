@@ -362,6 +362,64 @@
       "whiteList" : {"model_key" : ["flatbed"],"key":["32ft_wood","48ft_wood","53ft_wood","48ft_spreadaxle","53ft_spreadaxle"]},
    },
   },
+  "loadedLogTrailer": {
+    "type": "trailer",
+    "unlockTag": "loggingMaterials",
+    "filterName": "Loaded Log Trailer",
+    "connector": "towhitch",
+    "baseReward": 2500,
+    "rewardPerKm": 1600,
+    "filter": {
+      "whiteList": {
+        "model_key": ["log_trailer"],
+        "Configuration": ["40ft Dual - 12 Logs", "27ft Dual - 8 Logs", "40ft Dual - 8 Logs"] 
+      }
+    }
+  },
+  "emptyLogTrailer": {
+    "type": "trailer",
+    "unlockTag": "loggingTrailers",
+    "filterName": "Empty Log Trailer",
+    "connector": "towhitch",
+    "baseReward": 1500,
+    "rewardPerKm": 1000,
+    "filter": {
+      "whiteList": {
+        "model_key": ["log_trailer"]
+      },
+      "blackList": {
+        "hasLoad": [true]
+      }
+    }
+  },
+  "lumberFlatbed": {
+    "type": "trailer",
+    "unlockTag": "loadedFlatbedTrailers",
+    "filterName": "Lumber Flatbed",
+    "connector": "towhitch",
+    "baseReward": 2000,
+    "rewardPerKm": 1500,
+    "filter": {
+      "whiteList": {
+        "model_key": ["flatbed"],
+        "Configuration": ["32ft Tri Axle B-Train Lead (8.4T Planks)"]
+      }
+    }
+  },
+  "tastiColaDryvan": {
+    "type": "trailer",
+    "unlockTag": "loadedDryvanTrailers",
+    "filterName": "TastiCola Trailer",
+    "connector": "towhitch",
+    "baseReward": 2200,
+    "rewardPerKm": 1600,
+    "filter": {
+      "whiteList": {
+        "model_key": ["dryvan"],
+        "Configuration": ["53ft Spread Axle 22400kg TastiCola"]
+      }
+    }
+  }
   "loggingMaterials":{ //4
     "type":"trailer",
     "unlockTag":"loggingMaterials",

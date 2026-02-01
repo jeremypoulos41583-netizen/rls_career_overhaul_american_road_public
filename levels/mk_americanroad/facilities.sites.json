@@ -19,7 +19,7 @@
       },
       "isMultiSpot":false,
       "name":"apartment_parking1",
-      "oldId":9903,
+      "oldId":8272,
       "pos":[
         5479.3896484375,
         -1029.2894287109,
@@ -55,7 +55,7 @@
       },
       "isMultiSpot":false,
       "name":"Parking 7206",
-      "oldId":9904,
+      "oldId":8273,
       "pos":[
         5476.6772460938,
         -1031.6467285156,
@@ -91,7 +91,7 @@
       },
       "isMultiSpot":false,
       "name":"upstateCottage_parking1",
-      "oldId":9905,
+      "oldId":8274,
       "pos":[
         4877.888671875,
         2715.4133300781,
@@ -127,7 +127,7 @@
       },
       "isMultiSpot":false,
       "name":"upstateCottage_parking2",
-      "oldId":9906,
+      "oldId":8275,
       "pos":[
         4885.255859375,
         2707.3203125,
@@ -163,7 +163,7 @@
       },
       "isMultiSpot":false,
       "name":"plastiCarDealer_parking",
-      "oldId":9910,
+      "oldId":8276,
       "pos":[
         5589.2143554688,
         -1002.8582763672,
@@ -199,7 +199,7 @@
       },
       "isMultiSpot":false,
       "name":"carsRusDealer_parking",
-      "oldId":9912,
+      "oldId":8277,
       "pos":[
         6020.2377929688,
         -5595.6748046875,
@@ -210,6 +210,186 @@
         0,
         -0.14242121577263,
         0.98980611562729
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"commercialDealer_parking",
+      "oldId":8278,
+      "pos":[
+        5414.3701171875,
+        -1124.5072021484,
+        -553.76495361328
+      ],
+      "rot":[
+        0,
+        0,
+        0.40486794710159,
+        0.91437512636185
+      ],
+      "scl":[
+        4,
+        14,
+        8
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"maryvilleHouse_parking1",
+      "oldId":8280,
+      "pos":[
+        4686.4526367188,
+        -2752.43359375,
+        -559.40356445313
+      ],
+      "rot":[
+        0,
+        0,
+        -0.057932905852795,
+        0.99832051992416
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"maryvilleHouse_parking2",
+      "oldId":8281,
+      "pos":[
+        4685.5620117188,
+        -2743.2297363281,
+        -559.83441162109
+      ],
+      "rot":[
+        0,
+        0,
+        -0.095637090504169,
+        0.99541622400284
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"maryvilleHouse_parking3",
+      "oldId":8282,
+      "pos":[
+        4683.529296875,
+        -2733.6623535156,
+        -560.17895507813
+      ],
+      "rot":[
+        0,
+        0,
+        -0.22421564161777,
+        0.97453951835632
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"maryvilleHouse_parking4",
+      "oldId":8283,
+      "pos":[
+        4692.2900390625,
+        -2758.4865722656,
+        -559.14575195313
+      ],
+      "rot":[
+        0,
+        0,
+        -0.78174358606339,
+        0.62359982728958
       ],
       "scl":[
         2.5,
@@ -249,7 +429,7 @@
         "values":{}
       },
       "name":"Starter Apartment",
-      "oldId":9902,
+      "oldId":8271,
       "top":{
         "active":false,
         "normal":[
@@ -283,6 +463,84 @@
           5480.1142578125,
           -1022.1450195313,
           -545.37719726563
+        ]
+      ]
+    },
+    {
+      "bot":{
+        "active":false,
+        "normal":[
+          0,
+          0,
+          -1
+        ],
+        "pos":[
+          0,
+          0,
+          -10
+        ]
+      },
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "name":"Maryville House",
+      "oldId":8279,
+      "top":{
+        "active":false,
+        "normal":[
+          0,
+          0,
+          1
+        ],
+        "pos":[
+          0,
+          0,
+          10
+        ]
+      },
+      "vertices":[
+        [
+          4666.42578125,
+          -2727.9050292969,
+          -559.97357177734
+        ],
+        [
+          4675.2153320313,
+          -2713.39453125,
+          -560.39294433594
+        ],
+        [
+          4713.3559570313,
+          -2736.9333496094,
+          -560.39440917969
+        ],
+        [
+          4692.2807617188,
+          -2768.3154296875,
+          -558.56628417969
+        ],
+        [
+          4677.5454101563,
+          -2755.28515625,
+          -559.15032958984
+        ],
+        [
+          4680.7333984375,
+          -2741.6960449219,
+          -559.83135986328
+        ],
+        [
+          4674.6708984375,
+          -2733.1000976563,
+          -560.03839111328
         ]
       ]
     }
