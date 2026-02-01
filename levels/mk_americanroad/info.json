@@ -5,6 +5,7 @@
 "roads":"Asphalt, Dirt, Racetrack, Off-road, Swamps, Desert",
 "title":"American Road",
 "defaultSpawnPointName":"spawns_mountain_map1",
+"country": "levels.common.country.usa",
 "biome":"Mountains, plains, towns, beaches, swamps, farmlands, deserts",
 "size":[
   11000,
@@ -277,5 +278,5 @@
   }
   
 ],
-"description":"Edited version of American Road with 30+ new spawn points and POIs"
+"description":"MK's American Road brought to RLS Career"
 }

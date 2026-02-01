@@ -5,7 +5,7 @@
     "name": "O'Rlly Auto Parts",
     "description": "Auto parts store.",
     "associatedOrganization": "localDeliveryAssociation",
-    "preview": "",
+    "preview": "ORllyAuto.png",
     "manualAccessPoints": [
       {
         "psName": "OrllyParcel_parking",
@@ -75,7 +75,7 @@
     "name": "Plasti-Car Shop",
     "description": "Auto parts and service.",
     "associatedOrganization": "plastiCarDealer",
-    "preview": "plasticar.png",
+    "preview": "plastiCar.png",
     "manualAccessPoints": [
       {
         "psName": "plasticCarShop_parking",
