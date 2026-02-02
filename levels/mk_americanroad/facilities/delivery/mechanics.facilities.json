@@ -74,7 +74,7 @@
     "id": "plastiCarShop",
     "name": "Plasti-Car Shop",
     "description": "Auto parts and service.",
-    "associatedOrganization": "plastiCarDealer",
+    "associatedOrganization": "localDeliveryAssociation",
     "preview": "plastiCar.png",
     "manualAccessPoints": [
       {
