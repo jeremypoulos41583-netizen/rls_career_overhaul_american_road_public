@@ -19,7 +19,7 @@
       },
       "isMultiSpot":false,
       "name":"apartment_parking1",
-      "oldId":8272,
+      "oldId":28172,
       "pos":[
         5479.3896484375,
         -1029.2894287109,
@@ -55,7 +55,7 @@
       },
       "isMultiSpot":false,
       "name":"Parking 7206",
-      "oldId":8273,
+      "oldId":28173,
       "pos":[
         5476.6772460938,
         -1031.6467285156,
@@ -91,7 +91,7 @@
       },
       "isMultiSpot":false,
       "name":"upstateCottage_parking1",
-      "oldId":8274,
+      "oldId":28174,
       "pos":[
         4877.888671875,
         2715.4133300781,
@@ -127,7 +127,7 @@
       },
       "isMultiSpot":false,
       "name":"upstateCottage_parking2",
-      "oldId":8275,
+      "oldId":28175,
       "pos":[
         4885.255859375,
         2707.3203125,
@@ -163,7 +163,7 @@
       },
       "isMultiSpot":false,
       "name":"plastiCarDealer_parking",
-      "oldId":8276,
+      "oldId":28176,
       "pos":[
         5589.2143554688,
         -1002.8582763672,
@@ -199,7 +199,7 @@
       },
       "isMultiSpot":false,
       "name":"carsRusDealer_parking",
-      "oldId":8277,
+      "oldId":28177,
       "pos":[
         6020.2377929688,
         -5595.6748046875,
@@ -235,7 +235,7 @@
       },
       "isMultiSpot":false,
       "name":"commercialDealer_parking",
-      "oldId":8278,
+      "oldId":28178,
       "pos":[
         5414.3701171875,
         -1124.5072021484,
@@ -271,7 +271,7 @@
       },
       "isMultiSpot":false,
       "name":"maryvilleHouse_parking1",
-      "oldId":8280,
+      "oldId":28179,
       "pos":[
         4686.4526367188,
         -2752.43359375,
@@ -307,7 +307,7 @@
       },
       "isMultiSpot":false,
       "name":"maryvilleHouse_parking2",
-      "oldId":8281,
+      "oldId":28180,
       "pos":[
         4685.5620117188,
         -2743.2297363281,
@@ -343,7 +343,7 @@
       },
       "isMultiSpot":false,
       "name":"maryvilleHouse_parking3",
-      "oldId":8282,
+      "oldId":28181,
       "pos":[
         4683.529296875,
         -2733.6623535156,
@@ -379,7 +379,7 @@
       },
       "isMultiSpot":false,
       "name":"maryvilleHouse_parking4",
-      "oldId":8283,
+      "oldId":28182,
       "pos":[
         4692.2900390625,
         -2758.4865722656,
@@ -429,7 +429,7 @@
         "values":{}
       },
       "name":"Starter Apartment",
-      "oldId":8271,
+      "oldId":28170,
       "top":{
         "active":false,
         "normal":[
@@ -492,7 +492,7 @@
         "values":{}
       },
       "name":"Maryville House",
-      "oldId":8279,
+      "oldId":28171,
       "top":{
         "active":false,
         "normal":[
@@ -541,6 +541,94 @@
           4674.6708984375,
           -2733.1000976563,
           -560.03839111328
+        ]
+      ]
+    },
+    {
+      "bot":{
+        "active":false,
+        "normal":[
+          0,
+          0,
+          -1
+        ],
+        "pos":[
+          0,
+          0,
+          -10
+        ]
+      },
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "name":"Upstate Cottage",
+      "oldId":28183,
+      "top":{
+        "active":false,
+        "normal":[
+          0,
+          0,
+          1
+        ],
+        "pos":[
+          0,
+          0,
+          10
+        ]
+      },
+      "vertices":[
+        [
+          4916.4951171875,
+          2724.5466308594,
+          -241.61947631836
+        ],
+        [
+          4874.4409179688,
+          2720.158203125,
+          -233.73231506348
+        ],
+        [
+          4878.0971679688,
+          2707.3435058594,
+          -232.42950439453
+        ],
+        [
+          4882.2939453125,
+          2696.1723632813,
+          -231.59201049805
+        ],
+        [
+          4891.0913085938,
+          2672.6330566406,
+          -230.06190490723
+        ],
+        [
+          4899.3208007813,
+          2651.5173339844,
+          -228.02377319336
+        ],
+        [
+          4909.5346679688,
+          2631.044921875,
+          -224.4974822998
+        ],
+        [
+          4972.3383789063,
+          2653.953125,
+          -240.2785949707
+        ],
+        [
+          4929.4990234375,
+          2689.2172851563,
+          -241.71585083008
         ]
       ]
     }
