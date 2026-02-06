@@ -1,14 +1,41 @@
-# rls_career_overhaul_american_road
-RLS Career on MK's American Road
+					         			RLS Career Overhaul
+					           			   American Road
+==================================================================================================================================================================================
+You don’t really notice it at first.
 
-## Code Review & Contribution Guidelines
+The land just keeps going. Hills turn into fields. Fields turn into trees. Roads stretch out like they’ve always been there, like they were meant to be driven, not talked about.
 
-This repository uses CODEOWNERS to manage code review responsibilities. When you open a pull request, the relevant code owners will be automatically notified and requested to review your changes.
+From thirty thousand feet, North Barstow State looks quiet. An airstrip down below. A town tucked into the valley. A river doing what it’s done for longer than anyone remembers. Nothing flashy. Nothing forced.
 
-For detailed information about how CODEOWNERS work with rulesets and branch protection, see:
-- [CODEOWNERS Configuration Guide](.github/CODEOWNERS_CONFIGURATION.md)
+That’s the point.
 
-**Key Points:**
-- Code owners are automatically requested as reviewers when you open a PR
-- Current code owner: @Bigred2998 (for all files)
-- See the CODEOWNERS file at `.github/CODEOWNERS` for ownership details
+Down on the road, it starts to make sense. Cities feel lived in. Businesses sit where they belong. Backroads don’t rush you. Highways don’t apologize for being long. You drive, the scenery changes, and the world doesn’t ask you to hurry.
+
+Everything here is connected. Roads lead somewhere — and usually somewhere else after that. You pass through towns where everyone waves; forests whose trees provide that breathe of fresh air; open plains, rolling hills, and stretches where it’s just you, the car, and the sound of the open road.
+
+Somewhere along the way, the destination stops mattering.
+
+And that's when you get it.......
+
+It’s not about how fast you get there.
+It’s about the journey.
+
+Welcome, to North Barstow
+
+🚧 Work in Progress
+American Road is an actively developed work in progress.
+Additional cities, businesses, detailing, and gameplay improvements are planned for future updates. Feedback is welcome and encouraged.
+
+Expect changes, refinements, and expansion over time.
+
+📌 Notes
+This release is intended as a foundation build
+
+Bug reports, performance feedback, and suggestions are appreciated
+
+🙏 Credits & Acknowledgements
+Original Map Creator: Primo
+Thank you for creating the original map and making this project possible. I have been unable to contact or find him. If anyone knows where or how I can reach him please let me know as I would like to seek his blessing on this project
+
+Major Updates & Overhaul Permission: MegaKnight
+Special thanks for the updates, improvements, and permission to overhaul and expand the map.
