@@ -5,6 +5,10 @@ on:
     types: [opened, synchronize, reopened]
     branches:
       - main
+<<<<<<< Updated upstream
+=======
+      - dev
+>>>>>>> Stashed changes
 
 permissions:
   contents: read
