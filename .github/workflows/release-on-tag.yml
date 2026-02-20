@@ -1,6 +1,6 @@
 # Create a GitHub Release with a BeamNG-ready zip.
 # Run manually: choose major, minor, or patch bump.
-# Zip has one top-level folder rls_career_overhaul_american_road/ with gameplay/, levels/, lua/, vehicles/, scripts/, ui/ inside.
+# Zip has one top-level folder rls_career_overhaul_american_road_vX.X.X/ with gameplay/, levels/, lua/, vehicles/, scripts/, ui/ inside.
 name: Release on tag
 
 on:
@@ -71,11 +71,12 @@ jobs:
 
       - name: Create BeamNG mod zip
         run: |
-          MOD_DIR="rls_career_overhaul_american_road"
-          mkdir -p "zip_temp/$MOD_DIR"
-          cp -r gameplay levels lua vehicles scripts ui "zip_temp/$MOD_DIR/"
-          cd zip_temp && zip -r "../rls_career_overhaul_american_road-${{ steps.version.outputs.new_tag }}.zip" "$MOD_DIR" -x "*.git*" && cd ..
-          rm -rf zip_temp
+          ROOT_NAME="rls_career_overhaul_american_road_${{ steps.version.outputs.new_tag }}"
+          mkdir -p "$ROOT_NAME"
+          for dir in gameplay levels lua vehicles scripts ui; do
+            [ -d "$dir" ] && cp -r "$dir" "$ROOT_NAME/"
+          done
+          zip -r "${ROOT_NAME}.zip" "$ROOT_NAME"
 
       - name: Create Release and upload zip
         uses: softprops/action-gh-release@v2
@@ -84,7 +85,7 @@ jobs:
           name: ${{ steps.version.outputs.new_tag }}
           body: |
             Previous release: ${{ steps.version.outputs.previous_tag }}
-          files: rls_career_overhaul_american_road-${{ steps.version.outputs.new_tag }}.zip
+          files: rls_career_overhaul_american_road_${{ steps.version.outputs.new_tag }}.zip
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
