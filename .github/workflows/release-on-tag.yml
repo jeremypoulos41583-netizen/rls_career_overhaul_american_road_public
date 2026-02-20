@@ -72,11 +72,13 @@ jobs:
       - name: Create BeamNG mod zip
         run: |
           ROOT_NAME="rls_career_overhaul_american_road_${{ steps.version.outputs.new_tag }}"
-          mkdir -p "$ROOT_NAME"
+          BUILD_DIR=$(mktemp -d)
+          mkdir -p "$BUILD_DIR/$ROOT_NAME"
           for dir in gameplay levels lua vehicles scripts ui; do
-            [ -d "$dir" ] && cp -r "$dir" "$ROOT_NAME/"
+            [ -d "$dir" ] && cp -r "$dir" "$BUILD_DIR/$ROOT_NAME/"
           done
-          zip -r "${ROOT_NAME}.zip" "$ROOT_NAME"
+          cd "$BUILD_DIR" && zip -r "$GITHUB_WORKSPACE/${ROOT_NAME}.zip" "$ROOT_NAME" && cd -
+          rm -rf "$BUILD_DIR"
 
       - name: Create Release and upload zip
         uses: softprops/action-gh-release@v2
