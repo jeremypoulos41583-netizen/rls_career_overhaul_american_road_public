@@ -28,6 +28,7 @@ jobs:
         with:
           fetch-depth: 0
           fetch-tags: true
+          lfs: true 
 
       - name: Get previous tag and compute new version
         id: version
